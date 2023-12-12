@@ -11,7 +11,7 @@
     <!-- My Styles -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/mobile.css">
-    <link rel="stylesheet" href="/css/pc.css">
+    <link rel="stylesheet" href="./css/pc.css">
 
     <!-- GoogleFonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,24 +29,63 @@
 <body>
     <header>
         <div class="header-content">
-            <nav class="header-left">  
-                <div class="gnav">
-                    <a href=""><i class="fa-solid fa-bars icon"></i></a>
+            <nav class="header-left">
+
+                <div class="gnav mobile">
+                    <a href=""><i class="fa-solid fa-bars bars icon"></i></a>
                 </div>
+                
                 <div class="header-logo">
                     <a href="./">
-                        <img class="mobile" src="./img/favicon.svg" alt="logo">
-                        <span class="pc">ZACCA</span>
+                        <img class="mobile" src="./img/Favicon.svg" alt="logo">
+                        <img class="pc" src="./img/Logo.svg" alt="logo">
                     </a>
                 </div>
+
+                <div class="gnav pc">
+                    <ul class="gnav-list">
+                        <li>NEWS</li>
+                        <li>PRODUCTS</li>
+                        <li>GUIDE</li>
+                    </ul>
+                </div>
+
             </nav>
-            <nav class="header-right">
+            <nav class="header-right mobile">
                 <ul class="header-right-nav">
                     <li><a href=""><i class="fa-regular fa-heart icon"></i></a></li>
                     <li><a href=""><i class="fa-solid fa-magnifying-glass icon"></i></a></li>
                     <li><a href=""><i class="fa-solid fa-cart-shopping icon"></i></a></li>
                 </ul>
-            </div>
+            </nav>
+            <nav class="header-right pc">
+                <ul class="header-right-nav-pc">
+                    <li>
+                        <a href="">
+                            <i class="fa-regular fa-user icon"></i>
+                            <p>マイページ</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-regular fa-heart icon"></i>
+                            <p>お気に入り</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-magnifying-glass icon"></i>
+                            <p>商品検索</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-cart-shopping icon"></i>
+                            <p>カート</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
         
 

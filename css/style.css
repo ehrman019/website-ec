@@ -34,33 +34,47 @@ ul{
     list-style:none;
 }
 
+a{
+    text-decoration: none;
+}
+
 /* header */
+header .pc{
+    display:none;
+}
+
 .header-content{
     display:flex;
     justify-content: space-between;
     font-size:20px;
     margin:16px auto;
     width:84%;
-}
-
-.header-logo img{
-    height:21px;
-}
-
-.gnav{
-    margin-right:24px;
+    align-items:center;
 }
 
 .header-left{
     display:flex;
 }
 
+.header-logo .mobile{
+    height:22px;
+}
+
+.gnav{
+    margin-right:24px;
+}
+
+.bars{
+    font-size:24px;
+}
+
+
 .header-right-nav{
     display:flex;
 }
 
 .header-right-nav li+li{
-    margin-left:16px
+    margin-left:20px
 }
 
 .icon{

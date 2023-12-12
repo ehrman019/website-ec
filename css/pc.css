@@ -1,3 +1,68 @@
-/* pc styling */
+@media screen and (min-width:64em){
+    /* pc styling */
 
-/* header */
+    /* header */
+    header .mobile{
+        display:none;
+    }
+
+    header .pc{
+        display:block;
+    }
+
+    .header-content{
+        margin:36px auto 24px;
+        width:90%;
+    }
+
+    .header-logo{
+        margin-right:48px;
+    }
+
+    .header-logo .pc{
+        display:block;
+        height:25px;
+    }
+
+    .gnav{
+        display:block;
+        font-size:24px;
+    }
+
+    .gnav-list{
+        display:flex;
+        color: var(--brown);
+    }
+
+    .gnav-list li+li{
+        margin-left:24px;
+    }
+
+    .header-right-nav-pc{
+        display:flex;
+    }
+
+    .header-right-nav-pc li{
+        text-align:center;
+        width:60px;  
+    }
+
+    .header-right-nav-pc p{
+        font-size:12px;
+        font-weight: bold;
+        color: var(--brown);
+        margin: 5px 0 0 0;
+    }
+
+    .header-right-nav-pc li+li{
+        margin-left:24px;
+    }
+
+    header:after{
+        width:98%;
+    }
+
+    
+
+
+}
