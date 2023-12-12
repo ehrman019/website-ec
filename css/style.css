@@ -1,0 +1,80 @@
+/* font-family: 'Notable', sans-serif; */
+/* font-family: 'Zen Kaku Gothic New', sans-serif; */
+
+/* Color */
+
+:root{
+    --darkbrown:#463F3A;
+    --brown:#8A817C;
+    --lightbrown:#BCB8B1;
+    --beige:#F4F3EE;
+    --pink:#E0AFA0;
+    --white:#FFFFFF;
+}
+
+
+/* Default Styling */
+
+*,*::before,*::after{
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background-color:var(--beige);
+    font-family:'Century Gothic','Zen Kaku Gothic New', sans-serif;
+}
+
+ul{
+    margin:0;
+    padding-left:0;
+    list-style:none;
+}
+
+/* header */
+.header-content{
+    display:flex;
+    justify-content: space-between;
+    font-size:20px;
+    margin:16px auto;
+    width:84%;
+}
+
+.header-logo img{
+    height:21px;
+}
+
+.gnav{
+    margin-right:24px;
+}
+
+.header-left{
+    display:flex;
+}
+
+.header-right-nav{
+    display:flex;
+}
+
+.header-right-nav li+li{
+    margin-left:16px
+}
+
+.icon{
+    color: var(--brown);
+}
+
+header:after{
+    display:block;
+    position:relative;
+    bottom:0;
+    content:'';
+    width:96%;
+    margin: 0 auto;
+    background:var(--lightbrown);
+    height:0.4px;
+    border-radius:50%;
+}
