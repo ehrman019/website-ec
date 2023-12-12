@@ -38,7 +38,37 @@ a{
     text-decoration: none;
 }
 
+.container{
+    margin:0 25px;
+    margin-bottom:72px;
+}
+
+h1{
+    font-weight:normal;
+    font-size:24px;
+    margin:0;
+    color:var(--darkbrown)
+}
+
+h1:after{
+    display:block;
+    position:relative;
+    bottom:0;
+    content:'';
+    width: 100%;
+    margin: 0 auto;
+    border-bottom:2px dotted var(--lightbrown);
+
+}
+h3{
+    margin:2px 0 0 0;
+    font-size:14px;
+    color: var(--pink);
+    font-family:'Zen Kaku Gothic New', sans-serif;
+}
+
 /* header */
+
 header .pc{
     display:none;
 }
@@ -47,7 +77,7 @@ header .pc{
     display:flex;
     justify-content: space-between;
     font-size:20px;
-    margin:16px auto;
+    margin:16px auto 10px;
     width:84%;
     align-items:center;
 }
@@ -90,5 +120,6 @@ header:after{
     margin: 0 auto;
     background:var(--lightbrown);
     height:0.4px;
-    border-radius:50%;
+    border-radius:0.2px;
 }
+
