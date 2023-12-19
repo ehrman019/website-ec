@@ -27,19 +27,18 @@
     
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="header-content">
             <nav class="header-left">
 
                 <div class="gnav mobile">
-                    <a href="">
-                        <i class="fa-solid fa-bars bars icon"></i>
-                        <i class="fa-solid fa-xmark icon click"></i>
-                    </a>
+                    <button id="modalOpen">
+                        <i class="fa-solid fa-bars bars icon" id="modal-open"></i>
+                    </button>
                 </div>
                 
                 <div class="header-logo">
-                    <a href="./" id="bar">
+                    <a href="./index.html" id="bar">
                         <img class="mobile" src="./img/Favicon.svg" alt="logo">
                         <img class="pc" src="./img/Logo.svg" alt="logo">
                     </a>
@@ -91,7 +90,7 @@
             </nav>
         </div>
     </header>
-    <main>
+    <main id="main">
         <section class="contact">
             <div class="container">
                 <div class="title">
@@ -105,7 +104,7 @@
 
     </main>
     
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="footer-content">
             <div class="footer-upper">
                 <div class="footer-left">
@@ -145,6 +144,48 @@
 
 
     </footer>
+
+    <aside id="modal" class="modal mobile">
+        
+        <button id="modalClose">
+            <i class="fa-solid fa-xmark icon" id="modal-close"></i>
+        </button>
+        <div class="modal-content">
+            <ul class="modal-list">
+                <li>
+                    <a href="">
+                        <p>MyPage</p>
+                        <span>マイページ</span>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p>Products</p>
+                        <span>商品一覧</span>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p>Information</p>
+                        <span>お知らせ</span>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p>Guide</p>
+                        <span>お買い物ガイド</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </aside>
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="./script.js"></script>
 
 
     

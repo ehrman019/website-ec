@@ -16,9 +16,15 @@
 
     /* header */
 
+    .header {
+        height:auto;
+        padding:0;
+    }
+
     .header-content{
-        margin:36px auto 24px;
-        width:90%;
+        padding:36px 48px 24px 48px;
+        margin:0 auto;
+        width:98%;
     }
 
     .header-logo{
@@ -46,11 +52,16 @@
 
     .header-right-nav-pc{
         display:flex;
+        height:42px;
     }
 
     .header-right-nav-pc li{
         text-align:center;
         width:60px;  
+    }
+    .header-right-nav-pc i{
+        width:60px;
+        height:24px;
     }
 
     .header-right-nav-pc p{
@@ -58,7 +69,8 @@
         font-size:12px;
         font-weight: bold;
         color: var(--brown);
-        margin: 5px 0 0 0;
+        padding: 5px 0 0 0;
+        margin:0;
     }
 
     .header-right-nav-pc li+li{

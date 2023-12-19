@@ -49,6 +49,7 @@ h1{
     color:var(--brown)
 }
 
+
 h1:after{
     display:block;
     position:relative;
@@ -59,6 +60,7 @@ h1:after{
     border-bottom:2px dotted var(--lightbrown);
 
 }
+
 h3{
     margin:2px 0 0 0;
     font-size:12px;
@@ -79,18 +81,22 @@ h3{
     left:0;
     background-color:var(--beige);
     opacity:0.9;
-
+    height:auto;
+    z-index:3;
 
 }
+
 .header-content{
     
     display:flex;
     align-items:center;
     justify-content: space-between;
-    width:84%;
-    margin:16px auto 10px;
-    align-items:center;
+    width:96%;
+    padding:16px 20px 10px;
+    margin:auto;
     font-size:20px;
+    border-bottom:0.4px solid var(--lightbrown)
+    
 }
 
 
@@ -127,32 +133,57 @@ h3{
     color: var(--brown);
 }
 
-header:after{
-    display:block;
+.header-line{
+    
+    z-index:1;
     position:relative;
-    bottom:0;
-    content:'';
     width:96%;
-    margin: 0 auto;
+    margin: auto;
     background:var(--lightbrown);
     height:0.4px;
     border-radius:0.2px;
+    
 }
 
-#open {
+#modalOpen {
     border:none;
+    width:32px;
 }
+
+
 
 /* Modal */
 
 .modal {
-    padding:96px 0;
+    display:none;
     background-color:var(--beige);
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:500px;
+    z-index:3;
+    
+}
+.modal-button-content{
+    width:96%;
+    padding-top:16px;
+    padding-left:20px;
+    margin:auto;
+}
+
+#modalClose{
+    border:none;
+    width:32px;
+}
+
+#modalClose i{
+    font-size:28px;
 }
 
 .modal-content{
-    width:240px;
-    margin:auto;
+    width:270px;
+    margin:36px auto;
 }
 .modal p{
     font-size:18px;
@@ -171,9 +202,51 @@ header:after{
     border-bottom:solid 0.5px var(--lightbrown);
 }
 
+.modal-list li:last-child{
+    border:none;
+}
+
+
+/* Animation */
+.fadeIn {
+    animation-name:fadeIn;
+    animation-duration:0.4s;
+    animation-timing-function:ease-out;
+    animation-fill-mode:forwards;
+
+}
+
+.fadeOut{
+    animation-name:fadeOut;
+    animation-duration:0.3s;
+    animation-timing-function:linear;
+    animation-fill-mode:forwards;
+
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+@keyframes fadeOut{
+    0%{
+        opacity:1;
+    }
+    100%{
+        opacity:0;
+        display:none;
+    }
+}
+
 
 
 /* main */
+
 .MV img{
     margin:0 auto;
     box-shadow:7px 7px 10px #686868;
