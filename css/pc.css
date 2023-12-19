@@ -69,6 +69,89 @@
         width:98%;
     }
 
+    /* Main */
+
+    .MV {
+        margin-top:160px;
+    }
+
+    /* Footer */
+    .footer-upper {
+        display:flex;
+        justify-content: space-between;
+        width:100%;
+        margin-bottom:48px;
+    }
+
+    .footer-content {
+        padding: 72px 0 48px;
+        width:84%;
+        margin:auto;
+    }
+
+    .footer-left {
+        text-align:left;
+    }
+
+    .footer-logo img {
+        height:32px;
+    }
+
+    .footer-logo p{
+        font-size:18px;
+        margin-top:12px;
+    }
+
+    .footer-logo {
+        margin-bottom:32px;
+    }
+
+    .sns i{
+        font-size:32px;
+    }
+
+    .sns img {
+        height: 30px;
+    }
+
+    .nav-sns {
+        margin-left:0;
+    }
+
+    .nav-sns li+li {
+        margin-left: 20px;
+    }
+
+    .footer-right {
+        margin:0;
+    }
+
+    .footer-right a{
+        font-size:18px;
+    }
+
+    .footer-right li+li {
+        margin-top:18px;
+    }
+     .footer-right-1 {
+        margin-right: 72px;
+    }
+
+    .copy {
+        text-align:left;
+    }
+
+    .copy p {
+        font-size:14px;
+    }
+
+
+
+
+
+
+    
+
     
 
 
