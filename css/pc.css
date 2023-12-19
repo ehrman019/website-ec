@@ -1,14 +1,20 @@
 @media screen and (min-width:64em){
     /* pc styling */
+    h1 {
+        font-size:36px;
+    }
 
-    /* header */
-    header .mobile{
+    h3 {
+        font-size:18px;
+    }
+    .mobile{
         display:none;
     }
-
-    header .pc{
+    .pc{
         display:block;
     }
+
+    /* header */
 
     .header-content{
         margin:36px auto 24px;
@@ -24,7 +30,7 @@
         height:25px;
     }
 
-    .gnav{
+    .gnav .pc{
         display:block;
         font-size:24px;
     }
