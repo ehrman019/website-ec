@@ -105,8 +105,12 @@ h3{
     margin-right:24px;
 }
 
-.bars{
+.gnav i{
     font-size:24px;
+}
+
+.mobile .click {
+    display:none;
 }
 
 
@@ -137,11 +141,13 @@ header:after{
 /* main */
 .MV img{
     margin:0 auto;
+    box-shadow:7px 7px 10px #686868;
+    border-radius:50%;
 }
 
 .MV {
     margin-top:100px;
-    margin-bottom:100px;
+    margin-bottom:60px;
 }
 
 /* Footer */
