@@ -247,7 +247,7 @@ h3{
 
 /* main */
 
-.MV img{
+.MV-img{
     margin:0 auto;
     box-shadow:7px 7px 10px #686868;
     border-radius:50%;
@@ -256,6 +256,34 @@ h3{
 .MV {
     margin-top:100px;
     margin-bottom:60px;
+    position:relative;
+    width:100%;
+    margin:120px auto;
+    text-align:center;
+}
+
+.MV-content {
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    text-align:center;
+    opacity:0.8;
+    width: 205px;
+    height:fit-content;
+}
+
+.MV-content svg{
+    fill:var(--white);
+}
+
+
+.MV-content p{
+    font-size:18px;
+    color:var(--white);
+    margin-bottom:0;
 }
 
 /* Footer */
@@ -275,8 +303,9 @@ h3{
     text-align:center;
 }
 
-.footer-logo img{
+.footer-logo svg{
     height:24px;
+    fill:var(--lightbrown);
 }
 
 .footer-logo p{

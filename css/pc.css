@@ -87,10 +87,25 @@
         margin-top:160px;
     }
 
-    .MV img {
+    .MV-img {
         box-shadow:10px 10px 15px #686868;
         border-radius: 50px;
     }
+
+    .MV-content {
+        width:273.6px;
+    }
+
+    .MV-content svg{
+        height:48px;
+        width:273.6px;
+        margin-bottom: 16px;
+    }
+
+    .MV-content p{
+        font-size:24px;
+    }
+    
 
     /* Footer */
     .footer-upper {
@@ -110,7 +125,7 @@
         text-align:left;
     }
 
-    .footer-logo img {
+    .footer-logo svg {
         height:32px;
     }
 
