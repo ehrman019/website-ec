@@ -16,7 +16,12 @@
 
     .container{
         margin:0 64px;
-        margin-bottom: 72px;
+    }
+
+    .form-input {
+        height:48px;
+        border-radius: 15px;
+        width:300px;
     }
 
     /* header */
@@ -86,12 +91,32 @@
         width:98%;
     }
 
+    /* Main */
+
+    .main section:first-child{
+        margin-top:120px;
+    }
+
+    /* Search */
+
+    .search-content button {
+        height:47px;
+        width:47px;
+        border-radius: 15px;
+        margin-left:10px;
+
+    }
+
+    .search-content i {
+        font-size: 24px;
+    }
+
 
 
     /* MV */
 
     .MV {
-        margin-top:160px;
+        margin-top:0 0 120px;
     }
 
     .MV-img {

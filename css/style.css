@@ -25,7 +25,7 @@ html{
 
 body{
     background-color:var(--beige);
-    font-family:'Century Gothic','Zen Kaku Gothic New', sans-serif;
+    font-family:'Futura','Century Gothic','Zen Kaku Gothic New', sans-serif;
 }
 
 .pc {
@@ -44,7 +44,6 @@ a{
 
 .container{
     margin:0 25px;
-    margin-bottom:72px;
 }
 
 h1{
@@ -76,9 +75,14 @@ h3{
     height:36px;
     border-radius: 10px;
     border: 1px solid var(--lightbrown);
+    background-color:var(--white);
+    padding:6px 15px;
+    text-decoration:none;
 }
 
-
+button {
+    border:none;
+}
 
 /* header */
 
@@ -191,7 +195,7 @@ h3{
 
 .modal-content{
     width:270px;
-    margin:36px auto;
+    margin:96px auto;
 }
 .modal p{
     font-size:18px;
@@ -250,17 +254,43 @@ h3{
         display:none;
     }
 }
+/* main */
+.main section:first-child{
+    margin-top:72px;
+}
+
+.main section{
+    margin-bottom:48px;
+}
 
 /* Search */
 
-
-
-
-
-/* main */
-#main section:first-child{
-    margin-top:72px;
+.main .search-content{
+    display:flex;
+    justify-content: flex-end;
+    margin-bottom:36px;
 }
+
+.search-content button{
+    background-color:var(--brown);
+    height:35px;
+    width:35px;
+    border-radius: 10px;
+    margin-left:3px;
+    padding: 0;
+}
+
+.search-content form {
+    display:flex;
+    align-items:center;
+}
+
+.search-content i{
+    font-size:18px;
+    color:var(--beige);
+}
+
+
 
 /* MV */
 
@@ -271,11 +301,9 @@ h3{
 }
 
 .MV {
-    margin-top:100px;
-    margin-bottom:60px;
+    margin:0 0 60px;
     position:relative;
     width:100%;
-    margin:120px auto;
     text-align:center;
 }
 
