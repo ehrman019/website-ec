@@ -28,6 +28,10 @@ body{
     font-family:'Century Gothic','Zen Kaku Gothic New', sans-serif;
 }
 
+.pc {
+    display:none;
+}
+
 ul{
     margin:0;
     padding-left:0;
@@ -68,9 +72,13 @@ h3{
     font-family:'Zen Kaku Gothic New', sans-serif;
 }
 
-.pc {
-    display:none;
+.form-input {
+    height:36px;
+    border-radius: 10px;
+    border: 1px solid var(--lightbrown);
 }
+
+
 
 /* header */
 
@@ -243,13 +251,22 @@ h3{
     }
 }
 
+/* Search */
+
+
+
 
 
 /* main */
+#main section:first-child{
+    margin-top:72px;
+}
+
+/* MV */
 
 .MV-img{
     margin:0 auto;
-    box-shadow:7px 7px 10px #686868;
+    box-shadow:5px 5px 10px #b2b2b2;
     border-radius:50%;
 }
 
