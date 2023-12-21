@@ -30,7 +30,7 @@ body{
 }
 
 .container{
-    margin:0 25px;
+    margin:0 30px;
 }
 
 h1{
@@ -68,7 +68,6 @@ form textarea {
     border-radius: 10px;
     border: 1px solid var(--lightbrown);
     background-color:var(--white);
-    padding:6px 15px;
     text-decoration:none;
     color:var(--darkbrown);
 
@@ -76,11 +75,13 @@ form textarea {
 
 form input {
     height:36px;
+    padding:6px 15px;
 }
 
 form textarea {
     height:320px;
-    padding-top:10px;
+    padding:12px 15px;
+    resize: vertical;
 }
 
 form input::placeholder,
@@ -115,6 +116,18 @@ button {
 
 button:hover{
     opacity:0.8;
+}
+
+.button-short{
+    background-color: var(--pink);
+    color:var(--white);
+    height:40px;
+    width:150px;
+}
+
+input[type="submit"] {
+    font-size:16px;
+    font-weight:bold;
 }
 
 /* header */
@@ -289,11 +302,11 @@ button:hover{
 }
 /* Main */
 .main section:first-child{
-    margin-top:72px;
+    margin-top:96px;
 }
 
 .main section{
-    margin-bottom:48px;
+    margin-bottom:72px;
 }
 
 /* Search */
@@ -301,7 +314,7 @@ button:hover{
 .main .search-content{
     display:flex;
     justify-content: flex-end;
-    margin-bottom:36px;
+    margin-bottom:24px;
 }
 
 .search-content button{
@@ -326,17 +339,17 @@ button:hover{
 
 /* MV */
 
+.MV {
+    margin:0 0 60px; /* margin-bottom:60px に変更不可 */
+    position:relative;
+    width:100%;
+    text-align:center;
+}
+
 .MV-img{
     margin:0 auto;
     box-shadow:5px 5px 10px #b2b2b2;
     border-radius:50%;
-}
-
-.MV {
-    margin:0 0 60px;
-    position:relative;
-    width:100%;
-    text-align:center;
 }
 
 .MV-content {
@@ -348,11 +361,11 @@ button:hover{
     margin:auto;
     text-align:center;
     opacity:0.8;
-    width: 205px;
     height:fit-content;
 }
 
 .MV-content svg{
+    height:36px;
     fill:var(--white);
 }
 
@@ -365,18 +378,32 @@ button:hover{
 
 /* Contact */
 
-.contact-form-input {
-    width:270px;
-    margin-bottom:14px;
-}
-
-.contact-form-textarea {
-    width:270px;
+.contact-content {
+    width:80%;
+    margin: 30px auto;
 }
 
 .contact-content p{
     color:var(--darkbrown);
-    margin-bottom:7px;
+}
+
+.contact-content-text {
+    margin:0 0 36px;
+}
+
+.contact-form-content {
+    margin-bottom:36px
+}
+
+.contact-form-input,
+.contact-form-textarea {
+    width:100%;
+}
+
+
+.contact-form-content p{
+    margin-bottom:4px;
+    margin-left:4px;
 }
 
 .contact-content span{
@@ -398,6 +425,10 @@ button:hover{
 
 .contact-form-text{
     font-size:12px;
+}
+
+.contact-form-button {
+    text-align:center;
 }
 
 /* Footer */

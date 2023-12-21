@@ -1,3 +1,5 @@
+/* modal */
+
 const buttonOpen = document.getElementById('modalOpen');
 const buttonClose = document.getElementById('modalClose');
 

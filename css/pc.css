@@ -18,10 +18,16 @@
         margin:0 64px;
     }
 
-    .form-input {
+    form input {
         height:48px;
         border-radius: 15px;
         width:300px;
+        padding:5px 20px; 
+    }
+
+    form input::placeholder,
+    form textarea::placeholder {
+        font-size:18px;
     }
 
     /* header */
@@ -102,6 +108,10 @@
 
     /* Search */
 
+    input[type="search"] {
+        font-size:18px;
+    }
+
     .search-content button {
         height:47px;
         width:47px;
@@ -119,7 +129,7 @@
     /* MV */
 
     .MV {
-        margin-top:0 0 120px;
+        margin:0 0 80px; /* margin-bottom:80px に変更不可 */
     }
 
     .MV-img {
@@ -128,14 +138,14 @@
         width:90%;
     }
 
-    .MV-content {
-        width:273.6px;
-    }
-
     .MV-content svg{
         height:48px;
-        width:273.6px;
         margin-bottom: 16px;
+        stroke: var(--lightbrown);
+        stroke-width:2px;
+        stroke-opacity:0.8;
+        stroke-linecap: round;
+        stroke-linejoin: round;
     }
 
     .MV-content p{
