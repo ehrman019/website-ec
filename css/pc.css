@@ -15,7 +15,7 @@
     }
 
     .container{
-        margin:0 64px;
+        margin:0 72px;
     }
 
     form input {
@@ -103,7 +103,11 @@
     /* Main */
 
     .main section:first-child{
-        margin-top:120px;
+        margin-top:140px;
+    }
+
+    .main section {
+        margin-bottom: 140px;
     }
 
     /* Search */
@@ -150,6 +154,39 @@
 
     .MV-content p{
         font-size:24px;
+    }
+
+    /* Contact */
+
+    .contact-content {
+        width:fit-content;
+        margin-top: 64px;
+        margin-left: 160px;
+    }
+
+    .contact-content-text {
+        font-size:20px;
+        margin-left:10px;
+        margin-bottom: 64px;
+    }
+
+    .contact-form {
+        margin-left: 10px;
+    }
+
+    .contact-form-text {
+        font-size: 16px;
+    }
+
+    .contact-form-content p{
+        font-size: 18px;
+        margin-left: 4px;
+        margin-bottom:6px;
+    }
+
+    .contact-form-input,
+    .contact-form-textarea {
+        width:500px;
     }
     
 
