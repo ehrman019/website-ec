@@ -160,8 +160,7 @@
 
     .contact-content {
         width:fit-content;
-        margin-top: 64px;
-        margin-left: 160px;
+        margin: 72px auto 0;
     }
 
     .contact-content-text {
@@ -171,7 +170,7 @@
     }
 
     .contact-form {
-        margin-left: 10px;
+        margin-left: 20px;
     }
 
     .contact-form-text {
