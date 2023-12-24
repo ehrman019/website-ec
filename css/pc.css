@@ -137,7 +137,7 @@
     /* Main */
 
     .main section:first-child{
-        margin-top:140px;
+        padding-top:140px;
     }
 
     .main section {
@@ -147,7 +147,7 @@
     /* Search */
 
     #main .search-content {
-        margin-top:120px;
+        padding-top:120px;
         margin-left:54px;
     }
 
@@ -276,17 +276,16 @@
 
     /* Footer */
 
+    .footer-content {
+        padding: 72px 8% 48px;
+        margin:auto;
+    }
+
     .footer-upper {
         display:flex;
         justify-content: space-between;
         width:100%;
         margin-bottom:48px;
-    }
-
-    .footer-content {
-        padding: 72px 0 48px;
-        width:84%;
-        margin:auto;
     }
 
     .footer-left {
@@ -343,6 +342,30 @@
 
     .copy p {
         font-size:14px;
+    }
+
+    .footer-before {
+        padding-right:30px;
+        padding-bottom: 20px;
+    }
+    
+    .footer-before-button {
+        border: 3px solid var(--lightbrown);
+        border-radius: 7px;
+        height: 64px;
+        width: 64px;
+    }
+    
+    .footer-before-button p{
+        margin:0;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    .footer-before-button i{
+        color: var(--lightbrown);
+        margin-top:10px;
+        font-size:20px;
     }
 
 
