@@ -121,7 +121,7 @@ form input {
 }
 
 form textarea {
-    height:320px;
+    height:240px;
     padding:12px 15px;
     resize: vertical;
 }
@@ -446,7 +446,7 @@ input[type="submit"] {
 }
 
 .contact-form {
-    width: fit-content;
+    width: 90%;
     margin:auto;
 }
 
@@ -498,6 +498,10 @@ input[type="submit"] {
     font-size:14px;
     font-weight:bold;
     margin: 30px 36px 0;
+}
+
+.guide-nav-list:last-child {
+    margin-top:12px;
 }
 
 .guide-nav-list li+li{

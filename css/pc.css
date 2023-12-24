@@ -231,16 +231,19 @@
 
     /* Guide */
 
+    .guide-nav {
+        display:flex;
+        width:500px;
+        margin-left:160px;
+        justify-content: space-between;
+    }
+
     .guide-nav-list {
         font-size: 18px;
-        margin:64px auto 0;
-        display: flex;
-        width:fit-content;
     }
 
     .guide-nav-list li+li {
-        margin-left: 36px;
-        margin-top:0;
+        margin-top:24px;
     }
 
     .guide-content article {
