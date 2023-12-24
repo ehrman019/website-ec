@@ -35,9 +35,9 @@
             <nav class="header-left">
 
                 <div class="gnav mobile">
-                    <button id="modalOpen">
+                    <a id="modalOpen">
                         <i class="fa-solid fa-bars bars icon" id="modal-open"></i>
-                    </button>
+                    </a>
                 </div>
                 
                 <div class="header-logo">
@@ -138,19 +138,16 @@
     </header>
 
     <main id="main" class="main">
-        <div class="container">
-
-            <section class="search-content">
-            
-                <form action="">
-                    <input class="serch-form-input" type="search" name="search" placeholder="キーワード検索">
-                    <button type="submit">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                </form>
-            
-            </section>
-        </div>
+        <section class="search-content">
+        
+            <form action="">
+                <input class="serch-form-input" type="search" name="search" placeholder="キーワード検索">
+                <button type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        
+        </section>
         
         <figure class="MV fadeIn">
             <img class="MV-img mobile" src="./img/MV300_300.jpg" alt="">
@@ -165,34 +162,23 @@
         
         <section id="pickup" class="pickup">
             <div class="container">
-                <div class="title">
-                    <h1>PICK UP</h1>
-                    <h3>注目商品</h3>
-                </div>
+                
+                <h1 data-title="注目商品">PICK UP <span></span></h1>
             </div>  
         </section>
         <section id="products" class="products">
             <div class="container">
-                <div class="title">
-                    <h1>NEW ARRIVAL</h1>
-                    <h3>新着商品</h3>
-                </div>
+                <h1 data-title="新着商品">NEW ARRIVAL <span></span></h1>
             </div>  
         </section>
         <section id="category" class="category">
             <div class="container">
-                <div class="title">
-                    <h1>CATEGORY</h1>
-                    <h3>カテゴリーから探す</h3>
-                </div>
+                <h1 data-title="カテゴリーから探す">CATEGORY <span></span></h1>
             </div>  
         </section>
         <section id="info" class="info">
             <div class="container">
-                <div class="title">
-                    <h1>INFORMATION</h1>
-                    <h3>お知らせ</h3>
-                </div>
+                <h1 data-title="お知らせ">INFORMATION <span></span></h1>
             </div>  
         </section>
 
