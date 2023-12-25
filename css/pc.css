@@ -216,8 +216,7 @@
 
     .login-content {
         width: 80%;
-        margin: auto;
-        margin-top: 48px;
+        margin: 48px auto 0;
     }
 
     .login-content p {
@@ -247,14 +246,49 @@
         width:500px;
     }
     
-    .login-form .button-short {
-        display:block;
-        margin:0 auto;
-    }
-    
     .login-content-text {
         text-align:center;
     }
+
+
+    /* Signup */
+
+    .signup-content {
+        width: 80%;
+        margin: 48px auto 0;
+    }
+
+    .signup-content p {
+        font-size:22px;
+    }
+    
+    .signup-form { 
+        margin-bottom:56px;
+    }
+    
+    .signup-form-content {
+        margin-bottom: 40px;
+    }
+
+    .signup-form-content-list {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+
+    .signup-form-content-list p {
+        width:270px;
+    }
+    
+    .signup-form-input {
+        margin-bottom: 0;
+        width:500px;
+    }
+    
+    .signup-content-text {
+        text-align:center;
+    }
+
 
 
     /* Contact */

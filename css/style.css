@@ -181,6 +181,19 @@ input[type="submit"] {
     font-weight:bold;
 }
 
+.required-input {
+    color:var(--pink);
+    margin-left:10px;
+}
+
+.optional-input {
+    background-color: var(--lightbrown);
+    color:var(--beige);
+    font-size:12px;
+    padding:1.5px 5px;
+    border-radius: 5px;
+}
+
 /* header */
 
 .header {
@@ -359,7 +372,7 @@ input[type="submit"] {
 /* Main */
 
 .main section:first-child{
-    padding-top:96px;
+    padding-top:72px;
 }
 
 .main section{
@@ -541,18 +554,7 @@ input[type="submit"] {
     margin-left:4px;
 }
 
-.contact-content span{
-    color:var(--pink);
-    margin-left:10px;
-}
 
-.contact-content .option {
-    background-color: var(--lightbrown);
-    color:var(--beige);
-    font-size:12px;
-    padding:1.5px 5px;
-    border-radius: 5px;;
-}
 
 .contact-form-text span{
     margin-left:0;
