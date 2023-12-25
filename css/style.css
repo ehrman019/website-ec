@@ -35,7 +35,7 @@ body{
 
 h1{
     font-size:24px;
-    margin-left:10px;
+    margin-left:3%;
     color:var(--brown);
     position:relative;
 
@@ -47,9 +47,9 @@ h1 span:after{
     content: '';
     display: block;
     height: 4px;
-    width: 100%;
+    width: 103%;
     position:absolute;
-    left:-10px;
+    left:-3%;
 }
 
 h1:after{
@@ -66,7 +66,7 @@ h3 {
     font-weight: normal;
     color: var(--darkbrown);
     position:relative;
-    padding-left: 20px;
+    padding-left: 8%;
     margin-bottom: 2px;
 }
 
@@ -78,7 +78,7 @@ h3:before {
     border-radius: 3px;
     top:0;
     bottom:0;
-    left:3px;
+    left:2%;
     margin:auto;
     position:absolute;
 }
@@ -91,7 +91,7 @@ h3:after {
     height: 3px;
     width: 100%;
     position:absolute;
-    left: -3px;
+    left: 0;
 }
 
 
@@ -106,7 +106,8 @@ ul{
 }
 
 form input,
-form textarea {
+form textarea,
+form select{
     border-radius: 10px;
     border: 1px solid var(--lightbrown);
     background-color:var(--white);
@@ -115,7 +116,9 @@ form textarea {
 
 }
 
-form input {
+
+form input,
+form select{
     height:36px;
     padding:6px 15px;
 }
@@ -138,7 +141,8 @@ form textarea::placeholder {
 }
 
 form input:focus-visible, 
-form textarea:focus-visible {
+form textarea:focus-visible,
+form select:focus-visible{
     outline:1px var(--lightbrown);
     border:1.5px solid var(--brown);
     color:var(--brown);
@@ -183,7 +187,15 @@ input[type="submit"] {
 
 .required-input {
     color:var(--pink);
-    margin-left:10px;
+    margin-left:6px;
+}
+
+.required-text span{
+    margin-left:0;
+}
+
+.required-text{
+    font-size:12px;
 }
 
 .optional-input {
@@ -192,6 +204,7 @@ input[type="submit"] {
     font-size:12px;
     padding:1.5px 5px;
     border-radius: 5px;
+    margin-left: 10px;
 }
 
 /* header */
@@ -485,6 +498,7 @@ input[type="submit"] {
     text-align:center;
 }
 
+
 /* Signup */
 
 .signup-content {
@@ -517,6 +531,38 @@ input[type="submit"] {
     width:100%;
 }
 
+
+/* SignupNex */
+
+.signupnex-content {
+    width:90%;
+    margin: 48px auto;
+}
+
+.signupnex-list {
+    margin-bottom: 64px;
+}
+
+.signupnex-list-content {
+    width:90%;
+    margin: 24px auto 0;
+}
+
+.signupnex-list-content p {
+    margin: 0 0 5px 5px;
+}
+
+.signupnex-form-group {
+    margin-bottom: 10px;
+}
+
+.signupnex-form-name-input {
+    width:48%;
+}
+
+.signupnex-form-long-input {
+    width: 100%;
+}
 
 
 /* Contact */
@@ -553,21 +599,6 @@ input[type="submit"] {
     margin-bottom:4px;
     margin-left:4px;
 }
-
-
-
-.contact-form-text span{
-    margin-left:0;
-}
-
-.contact-form-text{
-    font-size:12px;
-}
-
-.contact-form-button {
-    text-align:center;
-}
-
 
 
 /* Guide */

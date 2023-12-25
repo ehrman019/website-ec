@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>お買い物ガイド |  ZACCA</title>
+    <title>新規登録 |  ZACCA</title>
 
     <!-- Normalize.css -->
     <link rel="stylesheet" href="./css/normalize.css">
@@ -137,83 +137,85 @@
 
     <main id="main" class="main">
         <div class="container">
-            <section class="signup2">
+            <section class="signupnex">
                 <h1 data-title="新規登録">SIGN UP<span></span></h1>
-
-                <div class="signup2-content">
-
-                    <div class="signup2-content-list">
-                        <h3>ご本人情報</h3>
-                        <p class="signup2-content-list-text"><span class="required-input">※</span>必須項目</p>
-                        <form action="" class="signup2-form">
-                            <div class="signup2-form-name">
-                                <p>お名前 <span class="required-input">※</span></p>
-                                <input type="text" class="signup2-form-name-input">
-                                <input type="text" class="signup2-form-name-input">
+                <form>
+                    <div class="signupnex-content">
+                        <form action="" class="signupnex-form"></form>
+                        <div class="signupnex-list">
+                            <h3>ご本人情報</h3>
+                            <p class="required-text"><span class="required-input">※</span>必須項目</p>
+                            <div class="signupnex-list-content">
+                                <div class="signupnex-form-name signupnex-form-group">
+                                    <p>お名前 <span class="required-input">※</span></p>
+                                    <input type="text" placeholder="姓" class="signupnex-form-name-input">
+                                    <input type="text" placeholder="名" class="signupnex-form-name-input">
+                                </div>
+                                <div class="signupnex-form-name signupnex-form-group">
+                                    <p>お名前（ふりがな） <span class="required-input">※</span></p>
+                                    <input type="text" placeholder="せい" class="signupnex-form-name-input">
+                                    <input type="text" placeholder="めい" class="signupnex-form-name-input">
+                                </div>
+                                <div class="signupnex-form-gender signupnex-form-group">
+                                    <p>性別 <span class="required-input">※</span></p>
+                                    <select name="gender" id="">
+                                        <option value="item1" selected disabled>-</option>
+                                        <option value="item2">女性</option>
+                                        <option value="item3">男性</option>
+                                        <option value="item4">その他</option>
+                                    </select>
+                                    
+                                </div>
+                                <div class="signupnex-form-birth signupnex-form-group">
+                                    <p>生年月日 <span class="required-input">※</span></p>
+                                    <select name="year" id="" class="year"></select>
+                                    <select name="month" id="" class="month"></select>
+                                    <select name="day" id="" class="day"></select>
+                                </div>
                             </div>
-                            <div class="signup2-form-name">
-                                <p>お名前（ふりがな） <span class="required-input">※</span></p>
-                                <input type="text" class="signup2-form-name-input">
-                                <input type="text" class="signup2-form-name-input">
-                            </div>
-                            <div class="signup2-form-gender">
-                                <p>性別 <span class="required-input">※</span></p>
-                                <select name="gender" id="">
-                                    <option value="item1" selected disabled>-</option>
-                                    <option value="item2">女性</option>
-                                    <option value="item3">男性</option>
-                                    <option value="item4">その他</option>
-                                </select>
-                                
-                            </div>
-                            <div class="signup2-form-birth">
-                                <p>生年月日 <span class="required-input">※</span></p>
-                                
-                            </div>
-                        </form>
-                    </div>
-                    <div class="signup2-content-list">
-                        <h3>ご住所</h3>
-                        <p class="signup2-content-list-text"><span class="required-input">※</span>必須項目</p>
-                        <form action="" class="signup2-form">
-                            <div class="signup2-form-address">
-                                <p>郵便番号<span class="required-input">※</span></p>
-                                <input type="text" class="signup2-form-address-input">
-                            </div>
-                            <div class="signup2-form-address">
-                                <p>都道府県<span class="required-input">※</span></p>
-                                <select name="" id=""></select>
-                            </div>
-                            <div class="signup2-form-address">
-                                <p>市区町村<span class="required-input">※</span></p>
-                                <input type="text" class="signup2-form-address-input">
-                            </div>
-                            <div class="signup2-form-address">
-                                <p>番地<span class="required-input">※</span></p>
-                                <input type="text" class="signup2-form-long-input">
-                            </div>
-                            <div class="signup2-form-address">
-                                <p>建物名<span class="optional-input">任意</span></p>
-                                <input type="text" class="signup2-form-long-input">
-                            </div>
-                        </form>
-                    </div>
-                    <div class="signup2-content-list">
-                        <h3>ご連絡先</h3>
-                        <p class="signup2-content-list-text"><span class="required-input">※</span>必須項目</p>
-
-                        <div class="signup2-form-tel">
-                            <p>電話番号 <span class="required-input">※</span></p>
-                            <input type="text" class="signup2-form-long-input">
                         </div>
-
-
+                        <div class="signupnex-list">
+                            <h3>ご住所</h3>
+                            <p class="required-text"><span class="required-input">※</span>必須項目</p>
+                            <div class="signupnex-list-content">
+                                <div class="signupnex-form-address signupnex-form-group">
+                                    <p>郵便番号<span class="required-input">※</span></p>
+                                    <input type="text" placeholder="1000000(ハイフンなし)" class="signupnex-form-address-input">
+                                </div>
+                                <div class="signupnex-form-address signupnex-form-group">
+                                    <p>都道府県<span class="required-input">※</span></p>
+                                    <select name="" id=""></select>
+                                </div>
+                                <div class="signupnex-form-address signupnex-form-group">
+                                    <p>市区町村<span class="required-input">※</span></p>
+                                    <input type="text" placeholder="市区町村" class="signupnex-form-address-input">
+                                </div>
+                                <div class="signupnex-form-address signupnex-form-group">
+                                    <p>番地<span class="required-input">※</span></p>
+                                    <input type="text" placeholder="番地" class="signupnex-form-long-input">
+                                </div>
+                                <div class="signupnex-form-address signupnex-form-group">
+                                <p>建物名<span class="optional-input">任意</span></p>
+                                <input type="text" placeholder="建物名" class="signupnex-form-long-input">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="signupnex-list">
+                            <h3>ご連絡先</h3>
+                            <p class="required-text"><span class="required-input">※</span>必須項目</p>
+                            <div class="signupnex-list-content">
+                                <div class="signupnex-form-tel signupnex-form-group">
+                                    <p>電話番号 <span class="required-input">※</span></p>
+                                    <input type="text" placeholder="080XXXXXXX" class="signupnex-form-long-input">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="signupnex-button">
+                            <input type="submit" value="登録する" class="button-short">
+                        </div>     
                     </div>
-
                     
-                </div>
-
-
+                </form>
             </section>
         </div>
     </main>
