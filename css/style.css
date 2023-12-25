@@ -113,9 +113,7 @@ form select{
     background-color:var(--white);
     text-decoration:none;
     color:var(--darkbrown);
-
 }
-
 
 form input,
 form select{
@@ -148,6 +146,37 @@ form select:focus-visible{
     color:var(--brown);
 }
 
+form select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    }
+    
+
+form select::-ms-expand{
+    display: none;
+}
+
+.select {
+    position:relative;
+    width:fit-content;
+}
+
+.select::after {
+    position: absolute;
+    content: '';
+    width: 9px;
+    height:9px;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    border-bottom: 3px solid var(--lightbrown);
+    border-right: 3px solid var(--lightbrown);
+    border-radius: 2px;
+  }
+
+
+
 input[type="search"]::-webkit-search-cancel-button {
     -webkit-appearance: none;
 }
@@ -173,6 +202,7 @@ button:hover{
 .button-short{
     background-color: var(--pink);
     color:var(--white);
+    font-weight:bold;
     height:40px;
     width:150px;
     cursor: pointer;
