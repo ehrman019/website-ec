@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>お買い物ガイド |  ZACCA</title>
+    <title>新規登録 | ZACCA</title>
 
     <!-- Normalize.css -->
     <link rel="stylesheet" href="./css/normalize.css">
@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/mobile.css">
     <link rel="stylesheet" href="./css/pc.css">
+
+    
 
     <!-- GoogleFonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,9 +35,9 @@
             <nav class="header-left">
 
                 <div class="gnav mobile">
-                    <button id="modalOpen">
+                    <a id="modalOpen">
                         <i class="fa-solid fa-bars bars icon" id="modal-open"></i>
-                    </button>
+                    </a>
                 </div>
                 
                 <div class="header-logo">
@@ -137,98 +139,34 @@
 
     <main id="main" class="main">
         <div class="container">
-            <section class="guide">
-                <div class="title">
-                    <h1 data-title="お買い物ガイド">SHOPPING GUIDE <span></span></h1>
-                    <!-- <h2>お買い物ガイド</h2> -->
+            <section class="signup">
+                <h1 data-title="新規登録">SIGN UP <span></span></h1>
+
+                <div class="signup-content">
+                    <form action="" class="signup-form">
+                        <div class="signup-form-content">
+                            <div class="signup-form-content-list">
+                                <p>新規メールアドレス</p>
+                                <input type="text" class="signup-form-input" placeholder="メールアドレス">
+                            </div>
+                            <div class="signup-form-content-list">
+                                <p>パスワード設定</p>
+                                <input type="text" class="signup-form-input" placeholder="パスワード">
+                            </div>
+                            <div class="signup-form-content-list">
+                                <p>パスワード設定（再入力）</p>
+                                <input type="text" class="signup-form-input" placeholder="パスワード">
+                            </div>
+                        </div>
+                        <input type="submit" value="次ヘ進む" class="button-short">
+                    </form>
                 </div>
-
-                <nav class="guide-nav">
-                    <ul class="guide-nav-list">
-                        <li><a href="#find">商品を探す</a></li>
-                        <li><a href="#order">ご注文について</a></li>
-                        <li><a href="#payment">お支払方法について</a></li>
-                    </ul>
-                    <ul class="guide-nav-list">
-                        <li><a href="#delivery">配送について</a></li>
-                        <li><a href="#exchange">交換・返品について</a></li>
-                        <li><a href="./contact.html">お問い合わせ</a></li>
-                    </ul>
-                </nav>
-
-                <div class="guide-content">
-                    <article id="find">
-                        <h3>商品を探す</h3>
-                        
-                        <div class="guide-content-text">
-                            <p>こちらの<a href="">PRODUCTS</a>から一覧を<br class="mobile">ご覧いただけます。また、</p>
-                            <ul class="guide-content-list">
-                                <li><a href="">キーワード検索</a></li>
-                                <li><a href="">カテゴリー検索</a></li>
-                            </ul>
-
-                            <p>などの方法で検索できます。<br>ぜひお気に入りを見つけてください。</p>
-
-                            <p>会員登録していただくと、<br class="mobile">お気に入り登録することができます。<br>新規登録は<a href="./signup">こちら</a></p>
-
-                        </div>
-                        
-                    </article>
-
-                    <article id="order">
-                        <h3>ご注文について</h3>
-                        <div class="guide-content-text">
-                            <p>ご注文は1点から可能です。<br>カートに商品を入れ、<br class="mobile">購入手続きへお進みください。</p>
-                            <p>会員登録がお済みでない方は、<br class="mobile">購入手続きの前に会員登録ページに<br class="mobile">進みます。<br>会員情報を入力して頂きますと、<br class="mobile">購入手続きへお進みできます。</p>
-                            <p>配送料については<a href="#delivery">こちら</a></p>
-                            
-                        </div>
-                    </article>
-
-                    <article id="payment">
-                        <h3>お支払方法について</h3>
-                        <div class="guide-content-text">
-                            <p>購入手続き画面で、以下の方法から<br class="mobile">選択できます。</p>
-                            <ul class="guide-content-list">
-                                    <li>クレジットカード</li>
-                                    <li>コンビニ支払い</li>
-                                    <li>代引き（手数料  +￥330）</li>
-                            </ul>
-                        </div>
-                    </article>
-
-                    <article id="delivery">
-                        <h3>配送について</h3>
-                        <div class="guide-content-text">
-                            <p>受け取り日時の指定が可能です。<br>ご購入手続きの際に選択してください。</p>
-                            <p>送料は全国一律500円となります。<br>5,000円以上お買い上げの方は送料無料です。</p>
-                        </div>
-                    </article>
-
-                    <article id="exchange">
-                        <h3>交換・返品について</h3>
-                        <div class="guide-content-text">
-                            <p> 出荷日を含め14日以内であれば、<br class="mobile">交換・返品可能です。</p>
-                            <p>条件・手続き方法など詳しくは<a href="">こちら</a></p>
-                        </div>
-                    </article>
-                </div>
-
-
+                
             </section>
         </div>
     </main>
     
-
     <footer class="footer" id="footer">
-        <div class="footer-before">
-            <a href="#top" class="footer-before-button">
-                <div class="footer-before-button-content">
-                    <i class="fa-solid fa-chevron-up"></i>
-                    <p>TOP</p>
-                </div>
-            </a>
-        </div>
         <div class="footer-content">
             <div class="footer-upper">
                 <div class="footer-left">
@@ -242,7 +180,7 @@
                         <ul class="nav-sns">
                             <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
                             <li><a href="">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50.53">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50.53">
                                     <path class="cls-1" d="m26.24.02v1.81c-1.14.13-1.96.4-2.44.84-.48.44-.74,1.07-.74,1.94,0,1.43,1.03,3.88,3.12,7.33l3.43,5.73,4.36-6.15c1.12-1.58,1.92-2.93,2.42-4.04.51-1.12.76-2.11.76-2.95,0-.95-.27-1.62-.84-2.04-.57-.42-1.45-.63-2.63-.67V0h15.29v1.85c-1.12.27-2.23.91-3.39,1.92-1.16,1.01-2.8,3.01-4.97,6l-8.59,11.77,13.4,22.24c.72,1.18,1.33,2.11,1.85,2.8.53.69.99,1.18,1.39,1.5.4.32.86.53,1.35.63v1.81h-25.25v-1.81c1.1-.11,1.9-.36,2.44-.8.55-.44.82-1.07.82-1.94,0-1.35-.84-3.45-2.55-6.3l-4.97-8.34-6.04,8.51c-1.73,2.44-2.59,4.42-2.59,5.92,0,1.73,1.14,2.7,3.43,2.93v1.81H0v-1.81c1.05-.32,2.17-1.05,3.35-2.21,1.18-1.16,2.91-3.31,5.2-6.49l9.25-12.85L6.34,7.98c-.7-1.14-1.33-2.13-1.9-2.99-.57-.86-1.05-1.5-1.45-1.92-.4-.42-.74-.72-1.03-.88-.29-.17-.61-.29-.97-.38V0h25.25v.02Zm8.95,47.28h7.27L15.88,3.29h-7.27l26.58,44.02Z"/>
                             </svg></a></li>
                         </ul>
@@ -276,6 +214,6 @@
 
     <!-- JavaScript -->
     <script type="text/javascript" src="./script.js"></script>
-    
+
 </body>
 </html>

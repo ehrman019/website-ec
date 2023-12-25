@@ -172,6 +172,8 @@ button:hover{
     height:40px;
     width:150px;
     cursor: pointer;
+    display: block;
+    margin: 0 auto;
 }
 
 input[type="submit"] {
@@ -466,16 +468,41 @@ input[type="submit"] {
     width:100%;
 }
 
-.login-form .button-short {
-    display:block;
-    margin:0 auto;
-}
-
 .login-content-text {
     text-align:center;
 }
 
+/* Signup */
 
+.signup-content {
+    width: 80%;
+    margin: 36px auto 0;
+    
+}
+
+.signup-content p {
+    font-size: 16px;
+}
+
+.signup-form {
+    margin-bottom:36px;
+}
+
+.signup-form-content {
+    margin-bottom: 36px;
+}
+
+.signup-form-content-list {
+    margin-bottom: 20px;
+}
+
+.signup-form p {
+    margin: 5px 3px;
+}
+
+.signup-form-input {
+    width:100%;
+}
 
 
 
