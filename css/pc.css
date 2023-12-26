@@ -52,22 +52,45 @@
         margin:0 72px;
     }
 
-    form input {
-        height:48px;
-        border-radius: 15px;
-        width:300px;
-        padding:5px 20px; 
-    }
+    
 
     form input,
-    form textarea {
+    form textarea,
+    form select {
         font-size:20px;
+        border-radius: 15px;
     }
 
     form input::placeholder,
     form textarea::placeholder {
         font-size:20px;
     }
+
+    form input {
+        height:48px;
+        width:300px;
+        padding:5px 20px; 
+    }
+
+    form select {
+        height: 48px;
+        padding: 10px 36px 10px 18px;
+    }
+
+    .select::after {
+        position: absolute;
+        content: '';
+        width: 10px;
+        height:10px;
+        right: 14px;
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+        border-bottom: 3px solid var(--lightbrown);
+        border-right: 3px solid var(--lightbrown);
+        border-radius: 1px;
+        pointer-events: none;
+    }
+    
 
     .button-short {
         height: 50px;
@@ -76,6 +99,10 @@
 
     input[type="submit"] {
         font-size:20px;
+    }
+
+    .required-text {
+        font-size:16px;
     }
 
     /* header */
@@ -289,6 +316,29 @@
         text-align:center;
     }
 
+
+    /* SignupNex */
+
+    .signupnex-list-content {
+        width:420px;
+        margin-top:64px;
+    }
+
+    .signupnex-list-content p {
+        margin: 0 0 6px 6px;
+        font-size: 18px;
+    }
+
+    .signupnex-form-group {
+        margin-bottom:20px;
+    }
+    .signupnex-form-short-input {
+        width: 220px;
+    }
+
+    .signupnex-form-postcode-input {
+        width: 180px;
+    }
 
 
     /* Contact */

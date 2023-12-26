@@ -159,11 +159,11 @@
                                 <div class="signupnex-form-gender signupnex-form-group">
                                     <p>性別 <span class="required-input">※</span></p>
                                     <div class="select">
-                                        <select name="gender" id="">
-                                            <option value="" selected disabled>-</option>
-                                            <option value="">女性</option>
-                                            <option value="">男性</option>
-                                            <option value="">その他</option>
+                                        <select name="gender" id="gender" class="select-hidden">
+                                            <option hidden>-</option>
+                                            <option value="female">女性</option>
+                                            <option value="male">男性</option>
+                                            <option value="other">その他</option>
                                         </select>
                                     </div>
                                 </div>
@@ -171,61 +171,61 @@
                                     <p>生年月日 <span class="required-input">※</span></p>
                                     <ul class="signupnex-form-birth-select">
                                         <li class="select">
-                                            <select name="year" id="year" class="year">
-                                                <option value="" selected disabled>-</option>
+                                            <select name="year" id="year" class="year select-hidden" >
+                                                <option hidden>-</option>
                                             </select>
                                         </li>
                                         <li class="select">
-                                            <select name="month" id="" class="month">
-                                                <option value="" selected disabled>-</option>
-                                                <option value="">1</option>
-                                                <option value="">2</option>
-                                                <option value="">3</option>
-                                                <option value="">4</option>
-                                                <option value="">5</option>
-                                                <option value="">6</option>
-                                                <option value="">7</option>
-                                                <option value="">8</option>
-                                                <option value="">9</option>
-                                                <option value="">10</option>
-                                                <option value="">11</option>
-                                                <option value="">12</option>
+                                            <select name="month" id="month" class="month select-hidden">
+                                                <option hidden>-</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
                                             </select>
                                         </li>
                                         <li class="select">
-                                            <select name="day" id="" class="day">
-                                                <option value="" selected disabled>-</option>
-                                                <option value="">1</option>
-                                                <option value="">2</option>
-                                                <option value="">3</option>
-                                                <option value="">4</option>
-                                                <option value="">5</option>
-                                                <option value="">6</option>
-                                                <option value="">7</option>
-                                                <option value="">8</option>
-                                                <option value="">9</option>
-                                                <option value="">10</option>
-                                                <option value="">11</option>
-                                                <option value="">12</option>
-                                                <option value="">13</option>
-                                                <option value="">14</option>
-                                                <option value="">15</option>
-                                                <option value="">16</option>
-                                                <option value="">17</option>
-                                                <option value="">18</option>
-                                                <option value="">19</option>
-                                                <option value="">20</option>
-                                                <option value="">21</option>
-                                                <option value="">22</option>
-                                                <option value="">23</option>
-                                                <option value="">24</option>
-                                                <option value="">25</option>
-                                                <option value="">26</option>
-                                                <option value="">27</option>
-                                                <option value="">28</option>
-                                                <option value="">29</option>
-                                                <option value="">30</option>
-                                                <option value="">31</option>
+                                            <select name="day" id="day" class="day select-hidden">
+                                                <option value="" hidden>-</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                                <option value="13">13</option>
+                                                <option value="14">14</option>
+                                                <option value="15">15</option>
+                                                <option value="16">16</option>
+                                                <option value="17">17</option>
+                                                <option value="18">18</option>
+                                                <option value="19">19</option>
+                                                <option value="20">20</option>
+                                                <option value="21">21</option>
+                                                <option value="22">22</option>
+                                                <option value="23">23</option>
+                                                <option value="24">24</option>
+                                                <option value="25">25</option>
+                                                <option value="26">26</option>
+                                                <option value="27">27</option>
+                                                <option value="28">28</option>
+                                                <option value="29">29</option>
+                                                <option value="30">30</option>
+                                                <option value="31">31</option>
                                             </select>
                                         </li>
                                     </ul>
@@ -238,12 +238,12 @@
                             <div class="signupnex-list-content">
                                 <div class="signupnex-form-address signupnex-form-group">
                                     <p>郵便番号<span class="required-input">※</span></p>
-                                    <input type="text" placeholder="1000000(ハイフンなし)" class="signupnex-form-address-input">
+                                    <input type="text" placeholder="(ハイフンなし)" class="signupnex-form-postcode-input">
                                 </div>
                                 <div class="signupnex-form-address signupnex-form-group">
                                     <p>都道府県<span class="required-input">※</span></p>
                                     <div class="select">
-                                        <select name="prefecture" id="">
+                                        <select name="prefecture" id="" class="select-hidden">
                                             <option value="" selected disabled>-</option>
                                             <optgroup label="北海道・東北">
                                                 <option value="">北海道</option>
@@ -314,7 +314,7 @@
                                 </div>
                                 <div class="signupnex-form-address signupnex-form-group">
                                     <p>市区町村<span class="required-input">※</span></p>
-                                    <input type="text" placeholder="市区町村" class="signupnex-form-address-input">
+                                    <input type="text" placeholder="市区町村" class="signupnex-form-short-input">
                                 </div>
                                 <div class="signupnex-form-address signupnex-form-group">
                                     <p>番地<span class="required-input">※</span></p>
@@ -332,7 +332,7 @@
                             <div class="signupnex-list-content">
                                 <div class="signupnex-form-tel signupnex-form-group">
                                     <p>電話番号 <span class="required-input">※</span></p>
-                                    <input type="text" placeholder="080XXXXXXX" class="signupnex-form-long-input">
+                                    <input type="text" placeholder="080XXXXXXX(ハイフンなし)" class="signupnex-form-long-input">
                                 </div>
                             </div>
                         </div>

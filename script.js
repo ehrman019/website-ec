@@ -55,8 +55,28 @@ const nowYear = now.getFullYear();
 var year = 1910;
 
 while(year<=nowYear){
-    selectYear.innerHTML += `<option value="">${year}</option>`
+    if(year === 1990){
+        selectYear.innerHTML += `<option value="" id="default">${year}</option>`
+    }else{
+        selectYear.innerHTML += `<option value="">${year}</option>`
+    }
     year++;
+}
+
+selectYear.addEventListener('focusin',()=>{
+    const def = document.getElementById('default');
+    def.setAttribute('selected','');
+});
+
+
+/* Select */
+
+const selects = document.querySelectorAll('.select-hidden');
+console.log(selects);
+for(const elm of selects){
+    elm.addEventListener('focusin',()=>{
+        elm.classList.remove('select-hidden');
+    })
 }
 
 
