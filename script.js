@@ -50,23 +50,63 @@ buttonClose.addEventListener('click',()=>{
 /* Birth */
 
 const selectYear = document.getElementById('year');
+const selectMonth = document.getElementById('month');
+const selectDay = document.getElementById('day');
 const now = new Date();
 const nowYear = now.getFullYear();
-var year = 1910;
+var y = 1910;
 
-while(year<=nowYear){
-    if(year === 1990){
-        selectYear.innerHTML += `<option value="" id="default">${year}</option>`
+while(y<=nowYear){
+    if(y === 1990){
+        selectYear.innerHTML += `<option value="" id="default">${y}</option>`
     }else{
-        selectYear.innerHTML += `<option value="">${year}</option>`
+        selectYear.innerHTML += `<option value="">${y}</option>`
     }
-    year++;
+    y++;
+}
+
+for(var i=1;i<=12;i++){
+    selectMonth.innerHTML += `<option value="${i}">${i}</option>`
 }
 
 selectYear.addEventListener('focusin',()=>{
     const def = document.getElementById('default');
     def.setAttribute('selected','');
 });
+
+
+const thirtyone = ['1','3','5','7','8','10','12'];
+const thirty = ['4','6','9','11'];
+
+
+selectMonth.addEventListener('click',()=>{
+    selectDay.innerHTML = `<option value="" hidden>-</option>`;
+    let year = selectYear.value;
+    let month = selectMonth.value;
+    console.log(month);
+    if(year!=='-' && month!=='-'){
+        let num = 0;
+        if(thirtyone.includes(month)){
+            num = 31;
+        }else if(thirty.includes(month)){
+            num = 30;
+        }else if(year%400 === 0 || (year%100!==0 && year%4==0)){
+            num = 29;
+        }else{
+            num = 28;
+        }
+
+        for(var i=1;i<=num;i++){
+            selectDay.innerHTML += `<option value="${i}">${i}</option>`
+        }
+    }
+})
+
+
+
+
+
+
 
 
 /* Select */

@@ -35,27 +35,28 @@ body{
 
 h1{
     font-size:24px;
-    margin-left:3%;
+    padding-left:3%;
     color:var(--brown);
     position:relative;
 
 }
 
-h1 span:after{
-    background-image: radial-gradient(circle farthest-side, var(--lightbrown), var(--lightbrown) 60%, transparent 60%, transparent);
-    background-size: 4px 4px;
+h1:before{
+    background-image: radial-gradient(circle closest-side, var(--lightbrown), var(--lightbrown) 60%, transparent 60%, transparent);
+    background-size: 6px 5px;
     content: '';
     display: block;
     height: 4px;
-    width: 103%;
+    width: 100%;
     position:absolute;
-    left:-3%;
+    left:0;
+    top:26px;
 }
 
 h1:after{
     content:attr(data-title);
     font-size:12px;
-    margin-top:5px;
+    margin-top:6px;
     color: var(--pink);
     display:block;
 }
@@ -66,7 +67,7 @@ h3 {
     font-weight: normal;
     color: var(--darkbrown);
     position:relative;
-    padding-left: 8%;
+    padding-left: 20px;
     margin-bottom: 2px;
 }
 
@@ -78,14 +79,14 @@ h3:before {
     border-radius: 3px;
     top:0;
     bottom:0;
-    left:2%;
+    left:4px;
     margin:auto;
     position:absolute;
 }
 
 h3:after {
-    background-image: radial-gradient(circle farthest-side, var(--lightbrown), var(--lightbrown) 60%, transparent 60%, transparent);
-    background-size: 3px 3px;
+    background-image: radial-gradient(circle closest-side, var(--lightbrown), var(--lightbrown) 60%, transparent 60%, transparent);
+    background-size: 4px 3px;
     content: '';
     display: block;
     height: 3px;
@@ -210,20 +211,15 @@ input[type="submit"] {
     font-weight:bold;
 }
 
-.required-input {
+.required-span {
     color:var(--pink);
-    margin-left:6px;
-}
-
-.required-text span{
-    margin-left:0;
 }
 
 .required-text{
     font-size:12px;
 }
 
-.optional-input {
+.optional-span {
     background-color: var(--lightbrown);
     color:var(--beige);
     font-size:12px;
@@ -586,6 +582,11 @@ input[type="submit"] {
     width:48%;
 }
 
+.month,
+.day {
+    width:64px;
+}
+f
 .signupnex-form-short-input {
     width: 160px;
 }
@@ -645,6 +646,10 @@ form .select-hidden {
 .contact-form-content p{
     margin-bottom:4px;
     margin-left:4px;
+}
+
+.contact-form-content .required-span{
+    margin-left:3px;
 }
 
 

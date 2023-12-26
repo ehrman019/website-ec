@@ -3,14 +3,15 @@
 
     h1 {
         font-size:36px;
-        margin-left:16px;
+        padding-left:16px;
     }
 
     h1 span:after{
         background-size: 6px 6px;
         height: 6px;
         width: 100%;
-        left:-16px;
+        left:0;
+        top:40px;
     }
 
     h1:after{
