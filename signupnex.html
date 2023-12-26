@@ -160,18 +160,75 @@
                                     <p>性別 <span class="required-input">※</span></p>
                                     <div class="select">
                                         <select name="gender" id="">
-                                            <option value="item1" selected disabled>-</option>
-                                            <option value="item2">女性</option>
-                                            <option value="item3">男性</option>
-                                            <option value="item4">その他</option>
+                                            <option value="" selected disabled>-</option>
+                                            <option value="">女性</option>
+                                            <option value="">男性</option>
+                                            <option value="">その他</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="signupnex-form-birth signupnex-form-group">
                                     <p>生年月日 <span class="required-input">※</span></p>
-                                    <select name="year" id="" class="year"></select>
-                                    <select name="month" id="" class="month"></select>
-                                    <select name="day" id="" class="day"></select>
+                                    <ul class="signupnex-form-birth-select">
+                                        <li class="select">
+                                            <select name="year" id="year" class="year">
+                                                <option value="" selected disabled>-</option>
+                                            </select>
+                                        </li>
+                                        <li class="select">
+                                            <select name="month" id="" class="month">
+                                                <option value="" selected disabled>-</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                                <option value="">5</option>
+                                                <option value="">6</option>
+                                                <option value="">7</option>
+                                                <option value="">8</option>
+                                                <option value="">9</option>
+                                                <option value="">10</option>
+                                                <option value="">11</option>
+                                                <option value="">12</option>
+                                            </select>
+                                        </li>
+                                        <li class="select">
+                                            <select name="day" id="" class="day">
+                                                <option value="" selected disabled>-</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                                <option value="">5</option>
+                                                <option value="">6</option>
+                                                <option value="">7</option>
+                                                <option value="">8</option>
+                                                <option value="">9</option>
+                                                <option value="">10</option>
+                                                <option value="">11</option>
+                                                <option value="">12</option>
+                                                <option value="">13</option>
+                                                <option value="">14</option>
+                                                <option value="">15</option>
+                                                <option value="">16</option>
+                                                <option value="">17</option>
+                                                <option value="">18</option>
+                                                <option value="">19</option>
+                                                <option value="">20</option>
+                                                <option value="">21</option>
+                                                <option value="">22</option>
+                                                <option value="">23</option>
+                                                <option value="">24</option>
+                                                <option value="">25</option>
+                                                <option value="">26</option>
+                                                <option value="">27</option>
+                                                <option value="">28</option>
+                                                <option value="">29</option>
+                                                <option value="">30</option>
+                                                <option value="">31</option>
+                                            </select>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -185,7 +242,75 @@
                                 </div>
                                 <div class="signupnex-form-address signupnex-form-group">
                                     <p>都道府県<span class="required-input">※</span></p>
-                                    <select name="" id=""></select>
+                                    <div class="select">
+                                        <select name="prefecture" id="">
+                                            <option value="" selected disabled>-</option>
+                                            <optgroup label="北海道・東北">
+                                                <option value="">北海道</option>
+                                                <option value="">青森県</option>
+                                                <option value="">岩手県</option>
+                                                <option value="">秋田県</option>
+                                                <option value="">宮城県</option>
+                                                <option value="">山形県</option>
+                                                <option value="">福島県</option>
+                                            </optgroup>
+                                            <optgroup label="関東">
+                                                <option value="">茨城県</option>
+                                                <option value="">栃木県</option>
+                                                <option value="">群馬県</option>
+                                                <option value="">埼玉県</option>
+                                                <option value="">千葉県</option>
+                                                <option value="">東京都</option>
+                                                <option value="">神奈川県</option>      
+                                            </optgroup>
+                                            <optgroup label="中部">
+                                                <option value="">新潟県</option>
+                                                <option value="">富山県</option>
+                                                <option value="">石川県</option>
+                                                <option value="">福井県</option>
+                                                <option value="">山梨県</option>
+                                                <option value="">長野県</option>
+                                                <option value="">岐阜県</option>
+                                                <option value="">静岡県</option>
+                                                <option value="">愛知県</option>
+                                            </optgroup>
+                                            <optgroup label="近畿">
+                                                <option value="">三重県</option>
+                                                <option value="">滋賀県</option>
+                                                <option value="">京都府</option>
+                                                <option value="">大阪府</option>
+                                                <option value="">兵庫県</option>
+                                                <option value="">奈良県</option>
+                                                <option value="">和歌山県</option>
+                                            </optgroup>
+                                            <optgroup label="中国">
+                                                <option value="">鳥取県</option>
+                                                <option value="">島根県</option>
+                                                <option value="">岡山県</option>
+                                                <option value="">広島県</option>
+                                                <option value="">山口県</option>
+                                            </optgroup>
+                                            <optgroup label="四国">
+                                                <option value="">香川県</option>
+                                                <option value="">徳島県</option>
+                                                <option value="">高知県</option>
+                                                <option value="">愛媛県</option>
+                                            </optgroup>
+                                            <optgroup label="九州・沖縄">
+                                                <option value="">福岡県</option>
+                                                <option value="">大分県</option>
+                                                <option value="">佐賀県</option>
+                                                <option value="">長崎県</option>
+                                                <option value="">熊本県</option>
+                                                <option value="">宮崎県</option>
+                                                <option value="">鹿児島県</option>
+                                                <option value="">沖縄県</option>
+                                            </optgroup>
+                                            <optgroup label="">
+
+                                            </optgroup>
+                                        </select>
+                                    </div>
                                 </div>
                                 <div class="signupnex-form-address signupnex-form-group">
                                     <p>市区町村<span class="required-input">※</span></p>

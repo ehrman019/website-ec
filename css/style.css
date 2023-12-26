@@ -115,10 +115,14 @@ form select{
     color:var(--darkbrown);
 }
 
-form input,
-form select{
+form input{
     height:36px;
     padding:6px 15px;
+}
+
+form select{
+    height:36px;
+    padding:6px 30px 6px 15px;
 }
 
 form textarea {
@@ -150,7 +154,7 @@ form select{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    }
+}
     
 
 form select::-ms-expand{
@@ -173,6 +177,7 @@ form select::-ms-expand{
     border-bottom: 3px solid var(--lightbrown);
     border-right: 3px solid var(--lightbrown);
     border-radius: 2px;
+    pointer-events: none;
   }
 
 
@@ -592,6 +597,14 @@ input[type="submit"] {
 
 .signupnex-form-long-input {
     width: 100%;
+}
+
+.signupnex-form-birth-select {
+    display:flex;
+}
+
+.signupnex-form-birth-select li+li {
+    margin-left:4px;
 }
 
 

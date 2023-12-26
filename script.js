@@ -45,3 +45,18 @@ buttonClose.addEventListener('click',()=>{
     });
     
 });
+
+
+/* Birth */
+
+const selectYear = document.getElementById('year');
+const now = new Date();
+const nowYear = now.getFullYear();
+var year = 1910;
+
+while(year<=nowYear){
+    selectYear.innerHTML += `<option value="">${year}</option>`
+    year++;
+}
+
+
