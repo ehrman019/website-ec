@@ -343,6 +343,7 @@ input[type="submit"] {
     width:270px;
     margin:96px auto;
 }
+
 .modal p{
     font-size:18px;
     margin-bottom:3px;
@@ -380,8 +381,23 @@ input[type="submit"] {
     animation-duration:0.3s;
     animation-timing-function:linear;
     animation-fill-mode:forwards;
+}
+
+.fadeInpage {
+    animation-name:fadeInpage;
+    animation-duration:0.4s;
+    animation-timing-function:ease-out;
+    animation-fill-mode:forwards;
 
 }
+
+.fadeOutpage {
+    animation-name:fadeOutpage;
+    animation-duration:0.3s;
+    animation-timing-function:linear;
+    animation-fill-mode:forwards;
+}
+
 
 @keyframes fadeIn{
     0%{
@@ -398,19 +414,32 @@ input[type="submit"] {
     }
     100%{
         opacity:0;
-        display:none;
+    }
+}
+
+@keyframes fadeInpage{
+    0%{
+        opacity:0.2;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+@keyframes fadeOutpage{
+    0%{
+        opacity:1;
+    }
+    100%{
+        opacity:0.2;
     }
 }
 
 
 /* Main */
 
-.main section:first-child{
-    padding-top:72px;
-}
-
 .main section{
-    margin-bottom:72px;
+    padding-top:72px;
 }
 
 

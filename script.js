@@ -10,16 +10,29 @@ const footer = document.getElementById('footer');
 
 
 const open = (Elm) =>{
-    Elm.style.display='block';
-    Elm.classList.add("fadeIn");
+    Elm.style.display = "block";
     Elm.classList.remove("fadeOut");
-    
+    Elm.classList.add("fadeIn");
 }
 
 const close = (Elm) =>{
+    Elm.style.display = "none";
     Elm.classList.add("fadeOut");
     Elm.classList.remove("fadeIn");
-    //Elm.style.display='none';
+}
+
+const pagein = (Elm) =>{
+    Elm.classList.remove("fadeOutpage");
+    Elm.classList.add("fadeInpage");
+}
+
+const pageout = (Elm) =>{
+    Elm.classList.remove("fadeInpage");
+    Elm.classList.add("fadeOutpage");
+}
+
+function handle(event) {
+    event.preventDefault();
 }
 
 var y;
@@ -27,17 +40,27 @@ buttonOpen.addEventListener('click',()=>{
 
     y=window.scrollY;
     open(modal);
-    close(main);
-    close(footer);
+    pageout(main);
+    pageout(footer);
+
+
+    document.addEventListener('touchmove', handle, { passive: false });
+    document.addEventListener('mousewheel', handle, { passive: false });
+    
     
 });
 
+
 buttonClose.addEventListener('click',()=>{
- 
+
     close(modal);
+    pagein(main);
+    pagein(footer);
+
+
+    document.removeEventListener('touchmove', handle, { passive: false });
+    document.removeEventListener('mousewheel', handle, { passive: false });
     
-    open(main);
-    open(footer);
 
     window.scroll({
         top:y,
@@ -45,6 +68,7 @@ buttonClose.addEventListener('click',()=>{
     });
     
 });
+
 
 
 /* Birth */
@@ -58,9 +82,9 @@ var y = 1910;
 
 while(y<=nowYear){
     if(y === 1990){
-        selectYear.innerHTML += `<option value="" id="default">${y}</option>`
+        selectYear.innerHTML += `<option value="${y}" id="default">${y}</option>`
     }else{
-        selectYear.innerHTML += `<option value="">${y}</option>`
+        selectYear.innerHTML += `<option value="${y}" >${y}</option>`
     }
     y++;
 }

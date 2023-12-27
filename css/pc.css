@@ -183,10 +183,10 @@
         padding-top:140px;
     }
 
-    .main section {
-        margin-bottom: 140px;
+    .main section{
+        padding-top:100px;
+        margin-bottom:40px;
     }
-
 
     /* Search */
 
@@ -216,7 +216,7 @@
     /* MV */
 
     .MV {
-        margin:0 0 80px; /* margin-bottom:80px に変更不可 */
+        margin:0; /* margin-bottom:80px に変更不可 */
     }
 
     .MV-img {
