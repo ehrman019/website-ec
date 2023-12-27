@@ -2,6 +2,7 @@
 
 const buttonOpen = document.getElementById('modalOpen');
 const buttonClose = document.getElementById('modalClose');
+const modalnav = document.getElementById('modalnav');
 
 const modal = document.getElementById('modal');
 const header = document.querySelector('.header:after');
@@ -69,6 +70,17 @@ buttonClose.addEventListener('click',()=>{
     
 });
 
+
+modalnav.addEventListener('click',()=>{
+    
+    close(modal);
+    pagein(main);
+    pagein(footer);
+
+    document.removeEventListener('touchmove', handle, { passive: false });
+    document.removeEventListener('mousewheel', handle, { passive: false });
+
+});
 
 
 /* Birth */
