@@ -6,7 +6,7 @@
         padding-left:16px;
     }
 
-    h1 span:after{
+    h1:before{
         background-size: 6px 6px;
         height: 6px;
         width: 100%;
@@ -389,7 +389,11 @@
     }
 
     .guide-nav-list li+li {
-        margin-top:24px;
+        margin-top:30px;
+    }
+
+    .guide-nav-list:last-child {
+        margin-top:30px;
     }
 
     .guide-content article {

@@ -69,6 +69,10 @@ for(var i=1;i<=12;i++){
     selectMonth.innerHTML += `<option value="${i}">${i}</option>`
 }
 
+for(var i=1;i<=31;i++){
+    selectDay.innerHTML += `<option value="${i}">${i}</option>`
+}
+
 selectYear.addEventListener('focusin',()=>{
     const def = document.getElementById('default');
     def.setAttribute('selected','');
