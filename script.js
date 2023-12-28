@@ -17,7 +17,6 @@ const open = (Elm) =>{
 }
 
 const close = (Elm) =>{
-    Elm.style.display = "none";
     Elm.classList.add("fadeOut");
     Elm.classList.remove("fadeIn");
 }

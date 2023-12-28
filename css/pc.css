@@ -342,6 +342,23 @@
     }
 
 
+    /* MyPage */
+  
+    .mypage-content {
+        margin-top:60px;
+        margin-left: 72px;
+    }
+
+    .mypage-list li {
+        font-size: 20px;
+    }
+
+    .mypage-list li+li {
+        margin-top:30px;
+    }
+
+
+
     /* Contact */
 
     .contact-content {

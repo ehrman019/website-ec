@@ -289,8 +289,6 @@ input[type="submit"] {
     margin-left:20px
 }
 
-
-
 .header-line{
     
     z-index:1;
@@ -414,12 +412,13 @@ input[type="submit"] {
     }
     100%{
         opacity:0;
+        display:none;
     }
 }
 
 @keyframes fadeInpage{
     0%{
-        opacity:0.2;
+        opacity:0.3;
     }
     100%{
         opacity:1;
@@ -431,7 +430,7 @@ input[type="submit"] {
         opacity:1;
     }
     100%{
-        opacity:0.2;
+        opacity:0.3;
     }
 }
 
@@ -439,7 +438,7 @@ input[type="submit"] {
 /* Main */
 
 .main section{
-    padding-top:72px;
+    padding-top:64px;
 }
 
 
@@ -639,6 +638,23 @@ f
 
 form .select-hidden {
     color: var(--lightbrown);
+}
+
+
+/* MyPage */
+
+.mypage-content {
+    margin-top: 30px;
+    margin-left: 36px;
+}
+
+.mypage-list li{
+    font-size: 13px;
+    font-weight:bold;
+}
+
+.mypage-list li+li {
+    margin-top: 14px;
 }
 
 
