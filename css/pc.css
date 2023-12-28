@@ -422,6 +422,18 @@
     }
 
 
+
+    /* 404 */
+
+    .notfound-content {
+        margin: 64px auto 96px;
+    }
+
+    .notfound-content p{
+        font-size: 20px;
+    }
+
+
     
 
     /* Footer */
