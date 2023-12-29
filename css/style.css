@@ -195,6 +195,17 @@ button:hover{
     opacity:0.8;
 }
 
+.button {
+    background-color: var(--pink);
+    color:var(--white);
+    font-weight:bold;
+    height:40px;
+    cursor: pointer;
+    display: block;
+    box-shadow: 0 0 10px var(--lightbrown) 80%;
+
+}
+
 .button-short{
     background-color: var(--pink);
     color:var(--white);
@@ -204,6 +215,10 @@ button:hover{
     cursor: pointer;
     display: block;
     margin: 0 auto;
+}
+
+.button-long {
+    width: 250px;
 }
 
 input[type="submit"] {
@@ -658,6 +673,46 @@ form .select-hidden {
 .mypage-list li+li {
     margin-top: 14px;
 }
+
+
+
+/* ProductPage */
+.product-content {
+    width:90%;
+    margin: 48px auto;
+}
+
+.product-img {
+    margin:0 auto;
+    width:fit-content;
+}
+
+.product-img img{
+    border-radius:25px;
+    width:250px;
+    height:250px;
+    box-shadow: 3px 3px 3px var(--lightbrown);
+    margin: 0 auto;
+}
+
+.product-info {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.product-name {
+    font-size: 28px;
+}
+
+.product-price {
+    font-size: 20px;
+    color: var(--brown);
+}
+
+.product-detail-text p{
+    font-size:14px;
+}
+
 
 
 /* Contact */
