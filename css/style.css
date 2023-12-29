@@ -331,6 +331,7 @@ input[type="submit"] {
 
 #modalClose{
     width:32px;
+    background-color: var(--beige);
 }
 
 #modalClose i{
@@ -367,6 +368,7 @@ input[type="submit"] {
 /* Animation */
 
 .fadeIn {
+    display:block;
     animation-name:fadeIn;
     animation-duration:0.4s;
     animation-timing-function:ease-out;
@@ -376,7 +378,7 @@ input[type="submit"] {
 
 .fadeOut{
     animation-name:fadeOut;
-    animation-duration:0.3s;
+    animation-duration:0.4s;
     animation-timing-function:linear;
     animation-fill-mode:forwards;
 }

@@ -2,83 +2,63 @@
 
 const buttonOpen = document.getElementById('modalOpen');
 const buttonClose = document.getElementById('modalClose');
-const modalnav = document.getElementById('modalnav');
+const modalclick = document.querySelectorAll('.modalnav');
 
 const modal = document.getElementById('modal');
-const header = document.querySelector('.header:after');
 const main = document.getElementById('main');
 const footer = document.getElementById('footer');
 
 
-const open = (Elm) =>{
-    Elm.style.display = "block";
-    Elm.classList.remove("fadeOut");
-    Elm.classList.add("fadeIn");
+const changeClass = (Elm,before,after) => {
+    console.log('ok');
+    Elm.classList.remove(before);
+    Elm.classList.add(after);
 }
 
-const close = (Elm) =>{
-    Elm.classList.add("fadeOut");
-    Elm.classList.remove("fadeIn");
-}
+const open = (Elm) => { changeClass(Elm,"fadeOut","fadeIn"); }
+const close = (Elm) =>{ changeClass(Elm,"fadeIn","fadeOut"); }
+const pagein = (Elm) =>{ changeClass(Elm,"fadeOutpage","fadeInpage"); }
+const pageout = (Elm) =>{ changeClass(Elm,"fadeInpage","fadeOutpage"); }
 
-const pagein = (Elm) =>{
-    Elm.classList.remove("fadeOutpage");
-    Elm.classList.add("fadeInpage");
-}
-
-const pageout = (Elm) =>{
-    Elm.classList.remove("fadeInpage");
-    Elm.classList.add("fadeOutpage");
-}
-
-function handle(event) {
+const handle = (event) => {
     event.preventDefault();
+}
+
+const modalopen = () => {
+    open(modal);
+    pageout(main);
+    pageout(footer);
+    document.addEventListener('touchmove', handle, { passive: false });
+    document.addEventListener('mousewheel', handle, { passive: false });
+}
+
+const modalclose = () => {
+    close(modal);
+    pagein(main);
+    pagein(footer);
+    document.removeEventListener('touchmove', handle, { passive: false });
+    document.removeEventListener('mousewheel', handle, { passive: false });
 }
 
 var y;
 buttonOpen.addEventListener('click',()=>{
-
+    modal.style.display = 'block';
     y=window.scrollY;
-    open(modal);
-    pageout(main);
-    pageout(footer);
-
-
-    document.addEventListener('touchmove', handle, { passive: false });
-    document.addEventListener('mousewheel', handle, { passive: false });
-    
-    
+    modalopen();
 });
 
-
 buttonClose.addEventListener('click',()=>{
-
-    close(modal);
-    pagein(main);
-    pagein(footer);
-
-
-    document.removeEventListener('touchmove', handle, { passive: false });
-    document.removeEventListener('mousewheel', handle, { passive: false });
-    
-
+    modalclose();
     window.scroll({
         top:y,
         behavior:"instant"
     });
-    
 });
 
-
-modalnav.addEventListener('click',()=>{
-    
-    close(modal);
-    pagein(main);
-    pagein(footer);
-
-    document.removeEventListener('touchmove', handle, { passive: false });
-    document.removeEventListener('mousewheel', handle, { passive: false });
-
+modalclick.forEach(function(Elm){
+    Elm.addEventListener('click',()=>{
+        modalclose();
+    });
 });
 
 
