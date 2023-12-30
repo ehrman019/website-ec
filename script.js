@@ -1,3 +1,40 @@
+const changeClass = (Elm,before,after) => {
+    Elm.classList.remove(before);
+    Elm.classList.add(after);
+}
+
+/* header */
+
+const Header = document.getElementById('header');
+const product = document.querySelectorAll('.product');
+
+/*
+const slideHeader = (set_position) =>{
+    let now_position = document.documentElement.scrollTop;
+    if (set_position  < now_position ) {
+        changeClass(Header,'slideDown','slideUp');
+    } else if(set_position > now_position) {
+        changeClass(Header,'slideUp','slideDown');
+    }
+}*/
+
+window.addEventListener('scroll', function () {
+    if(product !== null){
+        product.forEach((elm)=>{
+            let top = elm.scrollTop + 72;
+            let position = document.documentElement.scrollTop;
+
+            if(top <= position && position <=  top+250){
+                changeClass(Header,'slideDown','slideUp');
+            }else{
+                changeClass(Header,'slideUp','slideDown');
+            }
+        })
+    }
+});
+
+
+
 /* modal */
 
 const buttonOpen = document.getElementById('modalOpen');
@@ -9,10 +46,7 @@ const main = document.getElementById('main');
 const footer = document.getElementById('footer');
 
 
-const changeClass = (Elm,before,after) => {
-    Elm.classList.remove(before);
-    Elm.classList.add(after);
-}
+
 
 const open = (Elm) => { changeClass(Elm,"fadeOut","fadeIn"); }
 const close = (Elm) =>{ changeClass(Elm,"fadeIn","fadeOut"); }
@@ -141,14 +175,17 @@ const pcsNum = document.getElementById('pcs-input');
 
 if(pcsNum !== null){
     pcsNum.value = 1;
+
+    
     decButton.addEventListener('click',()=>{
-        if(pcsNum.vaule!==0){
+        if(pcsNum.value>1){
             pcsNum.value--;
         }
+        
     });
 
     incButton.addEventListener('click',()=>{
-        if(pcsNum.value!==99){
+        if(pcsNum.value<99){
             pcsNum.value++;
         }
     });

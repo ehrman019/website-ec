@@ -98,6 +98,7 @@ h3:after {
 
 p {
     color:var(--darkbrown);
+    margin: 0;
 }
 
 ul{
@@ -199,7 +200,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .pcs-button {
-    height:30px;
+    height:80%;
     width:30px;
     margin: auto;
     border-radius: 10px;
@@ -250,23 +251,17 @@ button:hover{
     height:40px;
     cursor: pointer;
     display: block;
-    box-shadow: 0 0 10px var(--lightbrown) 80%;
+    box-shadow: 0 0 6px #CECDC5;
 
 }
 
 .button-short{
-    background-color: var(--pink);
-    color:var(--white);
-    font-weight:bold;
-    height:40px;
     width:150px;
-    cursor: pointer;
-    display: block;
     margin: 0 auto;
 }
 
 .button-long {
-    width: 250px;
+    width: 100%;
 }
 
 input[type="submit"] {
@@ -750,10 +745,6 @@ f
     
 }
 
-.product-img .show{
-    display:block;
-}
-
 .product-thumb {
     width:fit-content;
     margin:0 auto;
@@ -779,17 +770,16 @@ f
 
 
 .product-thumb-list img{
-    box-sizing:content-box;
     margin: auto;
     width: 20%;
     border-radius: 10px;
     box-shadow: 1px 1px 3px var(--lightbrown);
     margin: 0 5px;
+    border: 1px solid transparent;
 }
 
 .product-thumb .show{
-    border: 3px solid var(--lightbrown);
-    margin:0 2px;
+    border: 1px solid var(--brown);
 }
 
 .product-info {
@@ -799,11 +789,12 @@ f
 
 .product-text {
     padding-left:5%;
+    margin-bottom: 20px;
 }
 
 .product-name {
     font-size: 28px;
-    margin-bottom: 6px;
+    margin-bottom: 10px;
 }
 
 .product-price {
@@ -811,12 +802,24 @@ f
     color: var(--brown);
 }
 
+.product-form {
+    margin-bottom:24px;
+}
+
 .product-form .select{
     margin-bottom: 6px;
 }
 
+.product-form select {
+    height: 30px;
+}
+
 .product-form .pcs {
     margin-bottom: 12px;
+}
+
+.product-form .pcs-input {
+    height: 30px;
 }
 
 .product-detail-text {
@@ -826,6 +829,13 @@ f
 
 .product-detail-text p{
     font-size:14px;
+}
+
+
+/* ProductList */
+
+.productlist {
+    height: 480px;
 }
 
 
@@ -859,10 +869,17 @@ f
     width:100%;
 }
 
+.contact-form .required-text {
+    margin-bottom: 10px;
+}
 
 .contact-form-content p{
     margin-bottom:4px;
     margin-left:4px;
+}
+
+.contact-form-input {
+    margin-bottom: 10px;
 }
 
 .contact-form-content .required-span{
