@@ -10,7 +10,6 @@ const footer = document.getElementById('footer');
 
 
 const changeClass = (Elm,before,after) => {
-    console.log('ok');
     Elm.classList.remove(before);
     Elm.classList.add(after);
 }
@@ -162,10 +161,10 @@ const showimages = (img,thumbnails,imagelist) =>{
     var i=1;
     imagelist.forEach((image)=>{
         if(i === 1){
-            img.innerHTML += `<img src="${image}" alt="product-img${i}" class="show">`;
+            img.innerHTML += `<img src="${image}" alt="product-img${i}" class="fadeIn">`;
             thumbnails.innerHTML += `<img src="${image}" alt="product-img${i}" class="show">`;
         }else{
-            img.innerHTML += `<img src="${image}" alt="product-img${i}" class="">`;
+            img.innerHTML += `<img src="${image}" alt="product-img${i}" class="fadeOut">`;
             thumbnails.innerHTML += `<img src="${image}" alt="product-img${i}" >`;
         }
         i++;
@@ -206,11 +205,13 @@ if(productImg !== null){
         thumbnails[i].addEventListener('click',function(){
             let nowIndex = getImgIndex(thumbnails);
             thumbnails[nowIndex].classList.remove('show');
-            images[nowIndex].classList.remove('show');
+            images[nowIndex].style.display='block';     
+            close(images[nowIndex])
 
             this.classList.add('show');
             nowIndex = getImgIndex(thumbnails);
-            images[nowIndex].classList.add('show');
+            
+            open(images[nowIndex]);
         });
     }
 
@@ -218,26 +219,28 @@ if(productImg !== null){
         let nowIndex =  getImgIndex(thumbnails);
 
         thumbnails[nowIndex].classList.remove('show');
-        images[nowIndex].classList.remove('show');
+        images[nowIndex].style.display='block';
+        close(images[nowIndex])
 
         nowIndex+=num-1;
         nowIndex%=num;
 
         thumbnails[nowIndex].classList.add('show');
-        images[nowIndex].classList.add('show');
+        open(images[nowIndex]);
     });
 
     thumbNex.addEventListener('click',()=>{
         let nowIndex =  getImgIndex(thumbnails);
 
         thumbnails[nowIndex].classList.remove('show');
-        images[nowIndex].classList.remove('show');
+        images[nowIndex].style.display='block';
+        close(images[nowIndex])
 
         nowIndex++;
         nowIndex%=num;
 
         thumbnails[nowIndex].classList.add('show');
-        images[nowIndex].classList.add('show');
+        open(images[nowIndex]);
     });
 
 
