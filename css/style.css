@@ -154,6 +154,10 @@ form select::-ms-expand{
     display: none;
 }
 
+form .select-hidden {
+    color: var(--lightbrown);
+}
+
 .select {
     position:relative;
     width:fit-content;
@@ -175,6 +179,50 @@ form select::-ms-expand{
 
 input[type="search"]::-webkit-search-cancel-button {
     -webkit-appearance: none;
+}
+
+.pcs {
+    position: relative;
+    width:fit-content;
+}
+
+.pcs-input {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100px;
+    text-align:center;
+}
+
+.pcs-input::placeholder {
+    text-align:center;
+    
+}
+
+.pcs-button {
+    height:30px;
+    width:30px;
+    margin: auto;
+    border-radius: 10px;
+    top: 0;
+    color: var(--lightbrown);
+    background-color: var(--white);
+
+}
+
+.pcs .pcs-dec{
+    position:absolute;
+    bottom:0;
+    left:3px;
+    font-size: 16px;
+    font-weight:800;
+ 
+}
+.pcs .pcs-inc{
+    position:absolute;
+    bottom:0;
+    right: 3px;
+    font-size: 21px;
+    font-weight:400;
 }
 
 a{
@@ -653,9 +701,7 @@ f
     margin-left:4px;
 }
 
-form .select-hidden {
-    color: var(--lightbrown);
-}
+
 
 
 /* MyPage */
@@ -679,34 +725,94 @@ form .select-hidden {
 /* ProductPage */
 .product-content {
     width:90%;
-    margin: 48px auto;
+    margin: 36px auto 0;
 }
 
 .product-img {
-    margin:0 auto;
+    margin:0 auto 20px;
     width:fit-content;
 }
 
 .product-img img{
+    display:none;
     border-radius:25px;
-    width:250px;
-    height:250px;
+    width:90%;
     box-shadow: 3px 3px 3px var(--lightbrown);
     margin: 0 auto;
 }
 
+.product-img .show{
+    display:block;
+}
+
+.product-thumb {
+    width:fit-content;
+    margin:10px auto;
+    display: flex;
+}
+
+.product-thumb button {
+    margin:0 3px;
+    background-color: var(--beige);
+}
+
+.product-thumb i{
+    font-size:12px;
+    color: var(--lightbrown);
+}
+
+
+.product-thumb-list {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.product-thumb-list img{
+    box-sizing:content-box;
+    margin: auto;
+    width: 20%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px var(--lightbrown);
+    margin: 0 5px;
+}
+
+.product-thumb .show{
+    border: 3px solid var(--lightbrown);
+    margin:0 2px;
+}
+
 .product-info {
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto 36px;
+}
+
+.product-text {
+    padding-left:5%;
 }
 
 .product-name {
     font-size: 28px;
+    margin-bottom: 6px;
 }
 
 .product-price {
     font-size: 20px;
     color: var(--brown);
+}
+
+.product-form .select{
+    margin-bottom: 6px;
+}
+
+.product-form .pcs {
+    margin-bottom: 12px;
+}
+
+.product-detail-text {
+    width:90%;
+    margin: auto;
 }
 
 .product-detail-text p{
