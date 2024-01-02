@@ -224,10 +224,10 @@ const thumbPrev = document.getElementById('thumb-prev');
 const thumbNex = document.getElementById('thumb-nex');
 
 const imagelist1 = [
-    './img/pierce2ver1.jpg',
-    './img/pierce2ver2.jpg',
-    './img/pierce2ver3.jpg',
-    './img/pierce2ver4.jpg',
+    './img/pierce.jpg',
+    './img/pierce-ver2.jpg',
+    './img/pierce-ver3.jpg',
+    './img/pierce-ver4.jpg',
 ]
 
 
@@ -279,17 +279,28 @@ if(productImg !== null){
         thumbnails[nowIndex].classList.add('show');
         open(images[nowIndex]);
     });
-
-
-    
-
-
-
-
-
-
-
 }
+
+
+/* Pickup */
+
+const setImages = [
+    './img/pierce2ver2.jpg',
+    './img/pencilcase.jpg',
+    './img/clock.jpg',
+    './img/frame.jpg',
+    './img/bracelet.jpg',
+    './img/cutlery.jpg',
+    './img/Pierce-summer.jpg',
+    './img/pirce2s.jpg'
+
+];// 上から最新順に入力 
+
+const pickupMobile = document.getElementById(".pickup-imgs-mobile");
+
+
+
+
 
 
 

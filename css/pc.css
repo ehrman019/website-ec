@@ -55,21 +55,20 @@
 
     
 
-    form input,
-    form textarea,
+    form input[type="text"],
+    form textarea[type="text"],
     form select {
         font-size:20px;
         border-radius: 15px;
     }
 
-    form input::placeholder,
-    form textarea::placeholder {
+    form input[type="text"]::placeholder,
+    form textarea[type="text"]::placeholder {
         font-size:20px;
     }
 
-    form input {
+    form input[type="text"] {
         height:48px;
-        width:300px;
         padding:5px 20px; 
     }
 
@@ -90,6 +89,10 @@
         border-right: 3px solid var(--lightbrown);
         border-radius: 1px;
         pointer-events: none;
+    }
+
+    .button {
+        font-size: 20px;
     }
 
     
@@ -243,7 +246,11 @@
 
     .main section{
         padding-top:100px;
-        margin-bottom:40px;
+ 
+    }
+
+    .main section:last-child{
+        margin-bottom: 64px;
     }
 
     /* Search */
@@ -451,10 +458,15 @@
         box-shadow: 5px 5px 5px #CECDC5;
     }
 
+    .product-thumb i {
+        font-size: 16px;
+    }
+
     .product-thumb-list img {
         width: 80px;
         box-shadow:2px 2px 4px #E3E2D9;
         margin: 0 8px;
+
     }
 
     .product-thumb .show {
