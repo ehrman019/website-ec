@@ -132,12 +132,12 @@ form select:focus-visible{
     color:var(--darkbrown);
 }
 
-form input{
+form input[type="text"]{
     height:36px;
     padding:6px 15px;
 }
 
-form textarea {
+form textarea[type="text"]{
     height:240px;
     padding:12px 15px;
     resize: vertical;
@@ -176,7 +176,21 @@ form .select-hidden {
     border-right: 3px solid var(--lightbrown);
     border-radius: 2px;
     pointer-events: none;
-  }
+}
+
+input[type="search"]{
+    border-radius: 10px;
+    border: 1px solid var(--lightbrown);
+    background-color:var(--white);
+    text-decoration:none;
+    color:var(--darkbrown);
+    font-size:14px;
+}
+
+input[type="search"]::placeholder{
+    font-size:14px;
+}
+
 
 input[type="search"]::-webkit-search-cancel-button {
     -webkit-appearance: none;
@@ -282,6 +296,53 @@ button:hover{
     border-radius: 5px;
     margin-left: 10px;
 }
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 24px auto 10px;
+}
+
+.product-list li {
+    width: 46%;
+    text-align: center;
+    margin: 0  2% 8%;
+}
+
+.product-list img {
+    width:100%;
+    border-radius: 10%;
+}
+
+.product-list p{
+    text-align:center;
+    margin: 3px;
+    font-size: 14px;
+
+}
+
+.product-list span {
+    display: block;
+    margin-top: 3px;
+    color: var(--brown);
+    font-size: 11px;
+}
+
+.product-more {
+    float:right;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--brown);
+    padding-right: 5%;
+}
+
+
+
+
+
+
+
 
 /* header */
 
@@ -527,12 +588,18 @@ button:hover{
     color:var(--beige);
 }
 
+.search-form-input {
+    height: 36px;
+    padding: 6px 15px;
+    width: 200px;
+}
+
 
 
 /* MV */
 
 .MV {
-    margin:0 0 60px; /* margin-bottom:60px に変更不可 */
+    margin:0; /* margin-bottom:0px に変更不可 */
     position:relative;
     width:100%;
     text-align:center;

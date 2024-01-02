@@ -285,7 +285,7 @@ if(productImg !== null){
 /* Pickup */
 
 const setImages = [
-    './img/pierce2ver2.jpg',
+    './img/pierce.jpg',
     './img/pencilcase.jpg',
     './img/clock.jpg',
     './img/frame.jpg',
