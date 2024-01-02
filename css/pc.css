@@ -606,12 +606,25 @@
 
     /* 404 */
 
+    .notfound-img {
+        margin-top: 48px;
+    }
+
+    .notfound-img  img{
+        border-radius: 25px;
+    }
+
+    .notfound-img p{
+        font-size:64px;
+    }
+
     .notfound-content {
         margin: 64px auto 96px;
     }
 
     .notfound-content p{
         font-size: 20px;
+        margin-bottom: 20px;
     }
 
 
