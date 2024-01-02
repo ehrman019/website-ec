@@ -144,7 +144,7 @@
     }
 
     .header-content{
-        padding:36px 48px 24px 48px;
+        padding:24px 48px 24px 48px;
         margin:0 auto;
         width:98%;
     }
@@ -154,12 +154,12 @@
     }
 
     .header-logo svg{
-        height:32px;
+        height:28px;
     }
 
     .gnav {
-        font-size:24px;
-        margin-top:6px;
+        font-size:20px;
+        margin-top:8px;
 
     }
 
@@ -241,10 +241,6 @@
 
     /* Main */
 
-    .main section:first-child{
-        padding-top:140px;
-    }
-
     .main section{
         padding-top:100px;
         margin-bottom:40px;
@@ -252,25 +248,34 @@
 
     /* Search */
 
-    #main .search-content {
-        padding-top:120px;
-        margin-left:54px;
+
+    .main .search-content {
+        margin-bottom: 10px;
     }
 
     input[type="search"] {
-        font-size:18px;
+        font-size:16px;
+        height: 37px;
+        border-radius: 10px;
+        width: 240px;
+        padding: 5px 12px;
+    }
+
+    input[type="search"]::placeholder{
+        font-size:16px;
+        
     }
 
     .search-content button {
-        height:47px;
-        width:47px;
-        border-radius: 15px;
-        margin-left:6px;
+        height:36px;
+        width:36px;
+        border-radius: 10px;
+        margin-left:4px;
 
     }
 
     .search-content i {
-        font-size: 24px;
+        font-size: 18px;
     }
 
 
@@ -625,6 +630,10 @@
     .notfound-content p{
         font-size: 20px;
         margin-bottom: 20px;
+    }
+
+    .notfound-content .notice {
+        font-size: 18px;
     }
 
 

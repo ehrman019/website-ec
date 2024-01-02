@@ -504,7 +504,7 @@ input[type="submit"] {
 
 /* Search */
 
-#main .search-content{
+.search-content{
     display:flex;
     justify-content: flex-end;
     padding-top:72px;
@@ -991,7 +991,12 @@ f
 
 .notfound-content p{
     font-size: 16px;
-    margin-bottom: 16px;
+    margin: 0 auto 16px;
+    width: fit-content;
+}
+
+.notfound-content .notice {
+    font-size: 14px;
 }
 
 
