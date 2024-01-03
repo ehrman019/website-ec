@@ -300,6 +300,8 @@ button:hover{
     margin-left: 10px;
 }
 
+/*
+
 .product-list {
     display: flex;
     flex-wrap: wrap;
@@ -332,8 +334,41 @@ button:hover{
     font-size: 11px;
 }
 
+
+*/
+
+.product-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px 0;
+    width: 90%;
+    margin: 24px auto;
+}
+
+.product-list img {
+    width: 90%;
+    border-radius: 10%;
+    margin: 0 auto;
+    display: block;
+}
+
+.product-list p{
+    text-align:center;
+    margin: 3px;
+    font-size: 14px;
+
+}
+
+.product-list span {
+    display: block;
+    margin-top: 3px;
+    color: var(--brown);
+    font-size: 11px;
+}
+
 .product-more {
-    float:right;
+    display:flex;
+    justify-content: end;
     font-size: 16px;
     font-weight: bold;
     color: var(--brown);
@@ -831,6 +866,39 @@ button:hover{
 .mypage-list li+li {
     margin-top: 14px;
 }
+
+/* Favorites */
+/*
+.favorites-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px 0;
+    width: 90%;
+    margin: 24px auto;
+}
+
+.favorites-list img {
+    width: 90%;
+    border-radius: 10%;
+    margin: 0 auto;
+    display: block;
+}
+
+.favorites-list p{
+    text-align:center;
+    margin: 3px;
+    font-size: 14px;
+
+}
+
+.favorites-list span {
+    display: block;
+    margin-top: 3px;
+    color: var(--brown);
+    font-size: 11px;
+}
+
+*/
 
 
 
