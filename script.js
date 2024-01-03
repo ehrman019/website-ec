@@ -177,26 +177,31 @@ if(selects !== null){
 
 /* pcs */
 
-const decButton = document.getElementById('pcs-dec');
-const incButton = document.getElementById('pcs-inc');
-const pcsNum = document.getElementById('pcs-input');
+const decButton = document.querySelectorAll('.pcs-dec');
+const incButton = document.querySelectorAll('.pcs-inc');
+const pcsNum = document.querySelectorAll('.pcs-input');
 
-if(pcsNum !== null){
-    pcsNum.value = 1;
+let sz = pcsNum.length;
 
-    
-    decButton.addEventListener('click',()=>{
-        if(pcsNum.value>1){
-            pcsNum.value--;
-        }
+for(let i = 0;i < sz;i++) {
+
+    if(pcsNum[i] !== null){
+        pcsNum[i].value = 1;
+
         
-    });
+        decButton[i].addEventListener('click',()=>{
+            if(pcsNum[i].value>1){
+                pcsNum[i].value--;
+            }
+            
+        });
 
-    incButton.addEventListener('click',()=>{
-        if(pcsNum.value<99){
-            pcsNum.value++;
-        }
-    });
+        incButton[i].addEventListener('click',()=>{
+            if(pcsNum[i].value<99){
+                pcsNum[i].value++;
+            }
+        });
+    }
 }
 
 

@@ -1250,12 +1250,16 @@ button:hover{
     margin-bottom:36px;
 }
 
-.contact-form-input,
-.contact-form-textarea {
+.contact-form input[type="text"],
+.contact-form textarea[type="text"] {
     width:100%;
 }
 
-.contact-form-textarea {
+.contact-form input[type="text"] {
+    margin-bottom: 10px;
+}
+
+.contact-form textarea[type="text"] {
     height: 250px;
 }
 
@@ -1263,17 +1267,36 @@ button:hover{
     margin-bottom: 10px;
 }
 
-.contact-form-content p{
+.contact-form-content dt{
+    color: var(--darkbrown);
     margin-bottom:4px;
     margin-left:4px;
+    font-size: 16px;
 }
 
-.contact-form-input {
-    margin-bottom: 10px;
+.contact-form-content dd {
+    margin: 0;
 }
 
 .contact-form-content .required-span{
     margin-left:3px;
+}
+
+.contact-form-content .required::after {
+    content: '※';
+    color: var(--pink);
+    font-size: 16px;
+    margin-left: 3px;
+}
+
+.contact-form-content .optional::after {
+    content: '任意';
+    color: var(--white);
+    background-color: var(--lightbrown);
+    font-size: 12px;
+    padding: 2px 5px;
+    border-radius: 5px;
+    margin-left: 4px;
 }
 
 

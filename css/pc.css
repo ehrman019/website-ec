@@ -804,23 +804,43 @@
         font-size: 16px;
     }
 
-    .contact-form-content p{
+    .contact-form input[type="text"] {
+        margin-bottom: 14px;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form textarea[type="text"] {
+        width:500px;
+    }
+
+    .contact-form textarea[type="text"]{
+        height: 350px;
+    }
+
+    .contact-form-content dt{
         font-size: 18px;
         margin-left: 8px;
         margin-bottom:6px;
     }
 
-    .contact-form-input {
-        margin-bottom: 14px;
+    .contact-form-content .required-span{
+        font-size: 18px;
+        margin-left:3px;
     }
-
-    .contact-form-input,
-    .contact-form-textarea {
-        width:500px;
+    
+    .contact-form-content .required::after {
+        font-size: 18px;
+        margin-left: 4px;
     }
-
-    .contact-form-textarea{
-        height: 350px;
+    
+    .contact-form-content .optional::after {
+        content: '任意';
+        color: var(--white);
+        font-size: 13px;
+        background-color: var(--lightbrown);
+        padding: 2px 5px;
+        border-radius: 5px;
+        margin-left: 6px;
     }
 
 
