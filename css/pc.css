@@ -179,6 +179,25 @@
         padding-right: 5%;
     }
     
+    .category-list {
+        display: flex;
+        margin-top: 64px;
+    }
+
+    .category-list li{
+        width: 20%;
+        border-radius: 30%;
+    }
+
+    .category-list img {
+        width: 70%;
+    }
+
+    
+    .category-list p {
+        font-size: 18px;
+        margin-top: 18px;
+    }
 
 
 
@@ -345,6 +364,31 @@
 
     .MV-content p{
         font-size:24px;
+    }
+
+
+    /* Info */
+
+    .info-list {
+        width: 90%;
+        margin: 48px auto 0;
+    }
+    
+    .info-list span {
+        margin-right: 14px;
+    }
+    
+    .info-list p {
+        font-size: 20px;
+        position: relative;
+        margin-bottom: 10px;
+    }
+    
+    .info-list p::after {
+        background-size: 4px 4px;
+        height: 4px;
+        width: 100%;
+        left: -5px;
     }
 
 
