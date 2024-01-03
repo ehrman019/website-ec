@@ -121,6 +121,27 @@ const createList = (l,r,elm,def) =>{
     }
 }
 
+const createDay = () => {
+    let year = selectYear.value;
+    let month = selectMonth.value;
+    console.log(month);
+    if(year!=='-' && month!=='-'){
+        selectDay.innerHTML = `<option value="" hidden>-</option>`;
+        let num = 0;
+        if(thirtyone.includes(month)){
+            num = 31;
+        }else if(thirty.includes(month)){
+            num = 30;
+        }else if(year%400 === 0 || (year%100!==0 && year%4==0)){
+            num = 29;
+        }else{
+            num = 28;
+        }
+
+        createList(1,num,selectDay);
+    }
+}
+
 if(selectYear !== null){
 
     createList(nowYear-120,nowYear,selectYear,1990);
@@ -133,25 +154,12 @@ if(selectYear !== null){
     });
 
     selectMonth.addEventListener('click',()=>{
-        selectDay.innerHTML = `<option value="" hidden>-</option>`;
-        let year = selectYear.value;
-        let month = selectMonth.value;
-        console.log(month);
-        if(year!=='-' && month!=='-'){
-            let num = 0;
-            if(thirtyone.includes(month)){
-                num = 31;
-            }else if(thirty.includes(month)){
-                num = 30;
-            }else if(year%400 === 0 || (year%100!==0 && year%4==0)){
-                num = 29;
-            }else{
-                num = 28;
-            }
+        createDay();
+    });
 
-            createList(1,num,selectDay);
-        }
-    })
+    selectYear.addEventListener('click',()=>{
+        createDay();
+    });
 }
 
 

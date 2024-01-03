@@ -138,7 +138,6 @@ form input[type="text"]{
 }
 
 form textarea[type="text"]{
-    height:240px;
     padding:12px 15px;
     resize: vertical;
 }
@@ -734,11 +733,6 @@ button:hover{
     width:48%;
 }
 
-.month,
-.day {
-    width:64px;
-}
-f
 .signupnex-form-short-input {
     width: 160px;
 }
@@ -758,6 +752,10 @@ f
 
 .signupnex-form-birth-select li+li {
     margin-left:4px;
+}
+
+.signupnex-list .required-text {
+    margin-top: 6px;
 }
 
 
@@ -934,6 +932,10 @@ f
 .contact-form-input,
 .contact-form-textarea {
     width:100%;
+}
+
+.contact-form-textarea {
+    height: 250px;
 }
 
 .contact-form .required-text {
