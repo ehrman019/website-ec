@@ -107,39 +107,27 @@ ul{
     list-style:none;
 }
 
-form input[type="text"],
-form textarea[type="text"],
-form select{
+input[type="text"],
+textarea[type="text"],
+select{
     border-radius: 10px;
     border: 1px solid var(--lightbrown);
     background-color:var(--white);
     text-decoration:none;
     color:var(--darkbrown);
-    font-size:14px;
 }
 
-form input[type="text"]::placeholder,
-form textarea[type="text"]::placeholder {
+input[type="text"]::placeholder,
+textarea[type="text"]::placeholder {
     color:var(--lightbrown);
-    font-size:14px;
 }
 
-form input:focus-visible, 
-form textarea:focus-visible,
-form select:focus-visible{
+input:focus-visible, 
+textarea:focus-visible,
+select:focus-visible{
     outline:1px var(--lightbrown);
     border:1.5px solid var(--brown);
     color:var(--darkbrown);
-}
-
-form input[type="text"]{
-    height:36px;
-    padding:6px 15px;
-}
-
-form textarea[type="text"]{
-    padding:12px 15px;
-    resize: vertical;
 }
 
 form select{
@@ -1253,14 +1241,24 @@ button:hover{
 .contact-form input[type="text"],
 .contact-form textarea[type="text"] {
     width:100%;
+    font-size: 14px;
+}
+
+.contact-form input[type="text"]::placeholder,
+.contact-form textarea[type="text"]::placeholder {
+    font-size: 14px;
 }
 
 .contact-form input[type="text"] {
+    height:36px;
+    padding:6px 15px;
     margin-bottom: 10px;
 }
 
 .contact-form textarea[type="text"] {
     height: 250px;
+    padding:12px 15px;
+    resize: vertical;
 }
 
 .contact-form .required-text {
