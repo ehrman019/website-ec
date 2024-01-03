@@ -834,10 +834,7 @@
     }
     
     .contact-form-content .optional::after {
-        content: '任意';
-        color: var(--white);
         font-size: 13px;
-        background-color: var(--lightbrown);
         padding: 2px 5px;
         border-radius: 5px;
         margin-left: 6px;
