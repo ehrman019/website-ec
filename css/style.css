@@ -178,7 +178,7 @@ form .select-hidden {
 }
 
 input[type="search"]{
-    border-radius: 10px;
+    border-radius: 10%;
     border: 1px solid var(--lightbrown);
     background-color:var(--white);
     text-decoration:none;
@@ -201,42 +201,26 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .pcs-input {
-    padding-left: 40px;
-    padding-right: 40px;
-    width: 100px;
     text-align:center;
 }
 
 .pcs-input::placeholder {
     text-align:center;
-    
 }
 
 .pcs-button {
     height:80%;
-    width:30px;
     margin: auto;
     border-radius: 10px;
     top: 0;
     color: var(--lightbrown);
     background-color: var(--white);
-
 }
 
-.pcs .pcs-dec{
+.pcs-dec,
+.pcs-inc{
     position:absolute;
-    bottom:0;
-    left:3px;
-    font-size: 16px;
-    font-weight:800;
- 
-}
-.pcs .pcs-inc{
-    position:absolute;
-    bottom:0;
-    right: 3px;
-    font-size: 21px;
-    font-weight:400;
+    
 }
 
 a{
@@ -403,6 +387,46 @@ button:hover{
     color: var(--brown);
 }
 
+.page-nav {
+    font-size: 16px;
+    display: flex;
+    margin: 24px auto;
+    width: fit-content;
+}
+
+.page-nav ul {
+    display:flex;
+    margin: 0 36px;
+}
+
+.page-nav li+li {
+    margin-left: 20px;
+}
+
+.page-nav i {
+    color: var(--brown);
+    font-size: 12px;
+    padding: 0 10px;
+}
+
+.price-input[type="text"] {
+    border:none;
+    background-color: var(--beige);
+    padding: 0;
+}
+
+.price-input-content {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.price-input-content::after {
+    content:'(税込)';
+    display: block;
+    position: absolute;
+    right: 0;
+}
 
 /* header */
 
@@ -903,6 +927,7 @@ button:hover{
 
 
 /* ProductPage */
+
 .product-content {
     width:90%;
     margin: 36px auto 0;
@@ -1006,8 +1031,28 @@ button:hover{
 }
 
 .product-form .pcs-input {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100px;
     height: 30px;
-    
+}
+
+.product-form .pcs-button {
+    width:30px;
+}
+
+.product-form .pcs-dec {
+    left:3px;
+    font-size: 16px;
+    font-weight:800;
+    bottom:0;
+}
+
+.product-form .pcs-inc {
+    right: 3px;
+    font-size: 21px;
+    font-weight:400;
+    bottom:0;
 }
 
 .product-detail-text {
@@ -1025,6 +1070,159 @@ button:hover{
 .productlist {
     height: 480px;
 }
+
+
+/* Cart */
+
+.cart form {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.cart-list {
+    margin: 0 auto 24px;
+    padding-bottom: 1px;
+    border-bottom: 1px solid var(--lightbrown);
+}
+
+
+.cart-list li{
+    display: flex;
+    margin: 0 auto;
+    padding: 0 16px 24px;
+    border-bottom: 1px solid var(--lightbrown);
+}
+
+.cart-list li+li {
+    margin-top: 24px;
+}
+
+.cart-list-img {
+    width: fit-content;
+    margin: 0;
+}
+
+.cart-list-img img {
+    width: 100px;
+    border-radius: 10%;
+}
+
+.cart-content {
+    margin-left: 20px;
+    width: 100%;
+}
+
+.cart-name {
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+.cart-price {
+    font-size: 14px;
+    color: var(--brown);
+    padding-bottom: 6px;
+}
+
+.cart-pcs {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.cart-pcs a{
+    font-size:12px;
+    margin-right: 2px;
+}
+
+.cart-pcs .pcs {
+    margin: 0 0 0 auto;
+}
+
+.cart-list .pcs-input {
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 80px;
+    height: 24px;
+    border-radius: 8px;
+    margin: 0 0 2px auto;
+
+}
+
+.cart-list .pcs-button {
+    width:20px;
+    height: 70%;
+}
+
+.cart-list .pcs-dec {
+    left:3px;
+    font-size: 14px;
+    font-weight:800;
+    bottom: 0;
+}
+
+.cart-list .pcs-inc {
+    right: 6px;
+    font-size: 18px;
+    font-weight:400;
+    bottom:4px;
+}
+
+.cart-subtotal-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-subtotal[type="text"]{
+    font-size: 24px;
+    width: 64px;
+    text-align: right;
+}
+
+.cart-subtotal-content .price-input-content::after {
+    bottom: -8px;
+    font-size: 12px;
+    color: var(--darkbrown);
+}
+
+.cart-subtotal-yen {
+    font-size: 24px;
+}
+
+.cart-total-content {
+    text-align: right;
+    width: 90%;
+    margin: 0 auto 36px;
+}
+
+.cart-total-content .price-input-content {
+    justify-content: flex-end;
+}
+
+.cart-total[type="text"]{
+    font-size: 30px;
+    font-weight: bold;
+    width: 100px;
+    text-align: right;
+}
+
+.cart-total-content .price-input-content::after {
+    bottom: -16px;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--darkbrown);
+}
+
+.cart-total-yen {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.cart-total-text {
+    font-size: 18px;
+}
+
+
+
 
 
 
