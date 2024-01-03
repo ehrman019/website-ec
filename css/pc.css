@@ -53,9 +53,12 @@
         margin:0 72px;
     }
 
-    
+
+    /* Default - form */
 
     form input[type="text"],
+    input[type="password"],
+    input[type="search"],
     form textarea[type="text"],
     form select {
         border-radius: 15px;
@@ -412,38 +415,43 @@
 
     .login-content {
         width: 80%;
-        margin: 48px auto 0;
-    }
-
-    .login-content p {
-        font-size:22px;
-    }
-    
-    .login-form { 
-        margin-bottom:56px;
+        margin: 48px auto 56px;
     }
     
     .login-form-content {
         margin-bottom: 40px;
     }
 
-    .login-form-content-list {
+    .login-form-content dl{
         display: flex;
         justify-content: center;
         align-items:center;
     }
 
-    .login-form-content-list p {
-        width:180px;
+    .login-form-content dt{
+        width: 170px;
+        font-size: 20px;
     }
     
-    .login-form-input {
+    .login-form-content input[type="text"],
+    .login-form-content input[type="password"] {
         margin-bottom: 0;
         width:500px;
+        height: 42px;
+        font-size: 17px;
+        padding: 8px 20px;
+    }
+
+    .login-form-content input[type="text"]::placeholder,
+    .login-form-content input[type="password"]::placeholder {
+        font-size: 17px;
     }
     
     .login-content-text {
         text-align:center;
+        margin-top: 36px;
+        font-size: 20px;
+
     }
 
 

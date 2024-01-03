@@ -142,16 +142,16 @@
                 <h1 data-title="ログイン">LOGIN</h1>
 
                 <div class="login-content">
-                    <form action="" class="login-form">
+                    <form method="post" action="">
                         <div class="login-form-content">
-                            <div class="login-form-content-list">
-                                <p>メールアドレス</p>
-                                <input type="text" class="login-form-input" placeholder="メールアドレス">
-                            </div>
-                            <div class="login-form-content-list">
-                                <p>パスワード</p>
-                                <input type="text" class="login-form-input" placeholder="パスワード">
-                            </div>
+                            <dl>
+                                <dt><label for="uid">メールアドレス</label></dt>
+                                <dd><input type="text" name="uid"  id="uid" class="login-form-input" size="40" maxlength="32" placeholder="メールアドレス"></dd>
+                            </dl>
+                            <dl>
+                                <dt><label for="pwd">パスワード</label></dt>
+                                <input type="password" name="pwd" id="pwd" size="40" maxlength="32" class="login-form-input" placeholder="パスワード">
+                            </dl>
                         </div>
                         <input type="button" onclick=" location.href='./mypage.html' " value="ログイン" class="button-short button">
                     </form>
