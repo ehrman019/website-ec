@@ -167,19 +167,17 @@ form .select-hidden {
 .select::after {
     position: absolute;
     content: '';
-    width: 9px;
-    height:9px;
-    right: 10px;
     top: 50%;
     transform: translateY(-50%) rotate(45deg);
-    border-bottom: 3px solid var(--lightbrown);
-    border-right: 3px solid var(--lightbrown);
-    border-radius: 2px;
     pointer-events: none;
 }
 
 input[type="search"]::-webkit-search-cancel-button {
     -webkit-appearance: none;
+}
+
+dt {
+    color: var(--darkbrown);
 }
 
 dd {
@@ -835,7 +833,9 @@ button:hover{
     font-size: 16px;
 }
 
-/* SignupNex */
+/* --------------
+   SignupNex 
+----------------*/
 
 .signupnex-content {
     width:90%;
@@ -851,45 +851,81 @@ button:hover{
     margin: 24px auto 0;
 }
 
-.signupnex-list-content p {
-    margin: 0 0 5px 5px;
+.signupnex-content .required-text {
     font-size: 14px;
-}
-
-.signupnex-form-group {
-    margin-bottom: 10px;
-}
-
-.signupnex-form-name-input {
-    width:48%;
-}
-
-.signupnex-form-short-input {
-    width: 160px;
-}
-
-.signupnex-form-long-input {
-    width: 100%;
-}
-
-.signupnex-form-postcode-input {
-    width: 140px;
-}
-
-
-.signupnex-form-birth-select {
-    display:flex;
-}
-
-.signupnex-form-birth-select li+li {
-    margin-left:4px;
-}
-
-.signupnex-list .required-text {
     margin-top: 6px;
 }
 
+.signupnex-content input[type="text"],
+.signupnex-content select{
+    height: 36px;
+    padding: 5px 24px 5px 12px;
+    font-size: 14px;
+}
 
+.signupnex-content .select::after {
+    width: 9px;
+    height:9px;
+    right: 10px;
+    border-bottom: 3px solid var(--lightbrown);
+    border-right: 3px solid var(--lightbrown);
+    border-radius: 2px;
+}
+
+.signupnex-content dt {
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.signupnex-name,
+.signupnex-birth {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.signupnex-name input {
+    width:100%;
+}
+
+.signupnex-name dd {
+    width: 120px;
+}
+
+.signupnex-name dd+dd,
+.signupnex-birth dd+dd {
+    margin-left: 3px;
+}
+
+
+.signupnex-long input
+ {
+    width: 100%;
+}
+
+.signupnex-post input {
+    width: 140px;
+}
+
+.signupnex-city input {
+    width: 180px;
+}
+
+.signupnex-tel input {
+    width: 220px;
+}
+
+.signupnex-content .required::after {
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.signupnex-content .optional::after {
+    font-size: 12px;
+    padding: 1px 4px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
 
 
 /* MyPage */
