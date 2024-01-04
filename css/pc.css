@@ -818,7 +818,9 @@
     }
 
 
-    /* Cart */
+    /*--------
+       Cart 
+    ---------*/
 
     
     .cart-content {
@@ -851,9 +853,10 @@
         margin: auto 36px;
     }
 
-    .cart-pcs a {
+    .cart-pcs .delete {
         font-size: 16px;
         margin-right: 3px;
+
     }
 
     .cart-list .pcs-input {
@@ -889,31 +892,22 @@
 
     }
 
-    .cart-subtotal[type="text"] {
-        font-size: 30px;
-        width: 80px;
+    .cart-subtotal-text {
+        font-size: 18px;
+        margin-bottom: 24px;
     }
 
-    .cart-subtotal-content .price-input-content::after {
-        bottom: -11px;
-        font-size: 14px;
-    }
-
-    .cart-subtotal-yen {
+    .cart-subtotal {
         font-size: 30px;
     }
 
-    .cart-total[type="text"] {
-        font-size: 40px;
-        width: 130px;
+    .cart-total-content {
+        width: 100%;
+        padding: 0 36px;
+
     }
 
-    .cart-total-content .price-input-content::after {
-        bottom: -18px;
-        font-size: 16px;
-    }
-
-    .cart-total-yen {
+    .cart-total {
         font-size: 40px;
     }
 
@@ -922,18 +916,24 @@
         margin-bottom: 10px;
     }
 
+    .cart-calc button {
+        font-size: 12px;
+    }
+
+    .cart-calc {
+        margin-bottom: 36px;
+    }
+    
+    .cart-calc button {
+        font-size: 18px;
+        padding: 7px 10px;
+        border-radius: 10px;
+    }
+
 
     .cart input[type="submit"] {
        margin: 0 0 0 auto;
     }
-
-
-
-
-
-
-
-    
 
 
 
@@ -1033,7 +1033,7 @@
         padding-top: 96px;
     }
 
-    .guide-content-text {
+    .guide-article {
         margin-top:64px;
         margin-left: 10%;
         margin-right: 10%;
@@ -1041,7 +1041,7 @@
         line-height: 24px;
     }
 
-    .guide-content-text p{
+    .guide-article-text{
         margin-bottom: 30px;
     }
 

@@ -187,7 +187,6 @@ for(let i = 0;i < sz;i++) {
 
     if(pcsNum[i] !== null){
         pcsNum[i].value = 1;
-
         
         decButton[i].addEventListener('click',()=>{
             if(pcsNum[i].value>1){
@@ -295,21 +294,49 @@ if(productImg !== null){
 }
 
 
-/* Pickup */
 
-const setImages = [
-    './img/pierce.jpg',
-    './img/pencilcase.jpg',
-    './img/clock.jpg',
-    './img/frame.jpg',
-    './img/bracelet.jpg',
-    './img/cutlery.jpg',
-    './img/Pierce-summer.jpg',
-    './img/pirce2s.jpg'
+/* Cart */
 
-];// 上から最新順に入力 
+const cartPrice = document.querySelectorAll('.cart-price');
+const cartPcs = document.querySelectorAll('.pcs-input');
+const cartSubtotal = document.querySelectorAll('.cart-subtotal');
+const cartTotal = document.getElementById('cart-total');
 
-const pickupMobile = document.getElementById(".pickup-imgs-mobile");
+const calcPrice = () =>{
+
+    if(cartPrice === null) return;
+    
+
+    let sum = 0;
+
+    const sz = cartPrice.length;
+    
+    for(let i=0;i<sz;i++){
+
+        const p = cartPrice[i].getAttribute('data-price');
+        const num = cartPcs[i].value;
+
+        cartSubtotal[i].innerText = new Intl.NumberFormat().format(p*num);
+
+        sum += p*num;
+
+    }
+    
+    cartTotal.innerText = new Intl.NumberFormat().format(sum);
+    
+    
+}
+
+calcPrice();
+
+const cartButton = document.getElementById('cart-calc-button');
+
+cartButton.addEventListener('click',()=>{
+    calcPrice();
+});
+
+
+
 
 
 

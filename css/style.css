@@ -616,7 +616,7 @@ button:hover{
 
 .modal-content{
     width:64%;
-    margin:96px auto;
+    margin: 64px auto;
 }
 
 .modal p{
@@ -1159,15 +1159,17 @@ button:hover{
     font-size:14px;
 }
 
-/* Cart */
+/* -------
+   Cart 
+--------*/
 
-.cart form {
+.cart-form-content {
     width: 90%;
     margin: 0 auto;
 }
 
 .cart-list {
-    margin: 0 auto 24px;
+    margin: 0 auto 6px;
     padding-bottom: 1px;
     border-bottom: 1px solid var(--lightbrown);
 }
@@ -1209,14 +1211,20 @@ button:hover{
     padding-bottom: 6px;
 }
 
+.cart-price::after {
+    content: 'yen';
+}
+
 .cart-pcs {
     text-align: right;
     margin-bottom: 10px;
 }
 
-.cart-pcs a{
+.cart-pcs .delete{
     font-size:12px;
     margin-right: 2px;
+    color: var(--brown);
+    background-color: var(--beige);
 }
 
 .cart-pcs .pcs {
@@ -1258,8 +1266,6 @@ button:hover{
     align-items: center;
 }
 
-
-
 .cart-subtotal {
     font-size: 24px;
 }
@@ -1291,8 +1297,17 @@ button:hover{
     content: '￥';
 }
 
+.cart-calc {
+    margin-bottom: 24px;
+}
 
-
+.cart-calc button {
+    color: var(--beige);
+    background-color: var(--lightbrown);
+    font-size: 14px;
+    padding: 3px 8px;
+    border-radius: 8px;
+}
 
 
 
@@ -1401,23 +1416,24 @@ button:hover{
     padding-top: 48px;
 }
 
-.guide-content-text {
+.guide-article {
     margin-top:30px;
     margin-left:6%;
     margin-right:6%;
 }
 
-.guide-content-text {
+.guide-article {
     font-size:14px;
     line-height: 24px;
 }
 
-.guide-content-text p {
+.guide-article-text {
     margin-bottom:24px;
 }
 
 .guide-content-list {
     margin-bottom: 24px;
+    
 }
 
 .guide-content-list li {
