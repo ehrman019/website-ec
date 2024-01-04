@@ -29,14 +29,15 @@
     
 </head>
 <body>
-    <header class="header" id="header">      
+    <header class="header" id="header">
+        
         <div class="header-content">
             <nav class="header-left">
 
                 <div class="gnav mobile">
-                    <a id="modalOpen">
+                    <button id="modalOpen">
                         <i class="fa-solid fa-bars bars icon" id="modal-open"></i>
-                    </a>
+                    </button>
                 </div>
                 
                 <div class="header-logo">
@@ -58,7 +59,7 @@
             </nav>
             <nav class="header-right mobile">
                 <ul class="header-right-nav">
-                    <li><a href="./mypage #favorites"><i class="fa-regular fa-heart  icon"></i></a></li>
+                    <li><a href="./mypage.html #favorites"><i class="fa-regular fa-heart  icon"></i></a></li>
                     <li><a href="./search.html"><i class="fa-solid fa-magnifying-glass icon"></i></a></li>
                     <li><a href="./cart.html"><i class="fa-solid fa-cart-shopping icon"></i></a></li>
                 </ul>
@@ -66,7 +67,7 @@
             <nav class="header-right pc">
                 <ul class="header-right-nav-pc">
                     <li>
-                        <a href="./mypage.html">
+                        <a href="./login.html">
                             <i class="fa-regular fa-user icon"></i>
                             <p>マイページ</p>
                         </a>
@@ -104,28 +105,42 @@
             <div class="modal-content">
                 <ul class="modal-list">
                     <li>
-                        <a href="./mypage.html" >
+                        <a href="./index.html" class="modalnav">
+                            <p>TOP</p>
+                            <span>トップページ</span>
+    
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./login.html" class="modalnav">
                             <p>MyPage</p>
                             <span>マイページ</span>
     
                         </a>
                     </li>
                     <li>
-                        <a href="./products.html" >
+                        <a href="./products.html" class="modalnav">
                             <p>Products</p>
                             <span>商品一覧</span>
     
                         </a>
                     </li>
                     <li>
-                        <a href="./index.html #info" id="modalnav">
+                        <a href="./search.html" class="modalnav">
+                            <p>Search</p>
+                            <span>商品検索</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="./index.html #info" class="modalnav">
                             <p>Information</p>
                             <span>お知らせ</span>
     
                         </a>
                     </li>
                     <li>
-                        <a href="./guide.html">
+                        <a href="./guide.html" class="modalnav">
                             <p>Guide</p>
                             <span>お買い物ガイド</span>
                         </a>

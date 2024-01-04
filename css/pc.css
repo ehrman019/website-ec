@@ -14,7 +14,7 @@
         top:40px;
     }
 
-    h1:after{
+    h1::after{
         font-size:18px;
         margin-top:8px;
         
@@ -26,7 +26,7 @@
         margin-bottom: 2px;
     }
     
-    h3:before {
+    h3::before {
         height: 18px;
         width: 18px;
         border-radius: 6px;
@@ -35,7 +35,7 @@
         left:5px;
     }
     
-    h3:after {
+    h3::after {
         background-size: 4px 4px;
         height: 4px;
         width: 100%;
@@ -180,7 +180,6 @@
     
     .category-list {
         display: flex;
-        margin-top: 64px;
     }
 
     .category-list li{
@@ -193,10 +192,7 @@
     }
 
     
-    .category-list p {
-        font-size: 18px;
-        margin-top: 18px;
-    }
+    
     
 
     .page-nav {
@@ -336,8 +332,12 @@
         margin-bottom: 64px;
     }
 
-    /* Search */
+    /*---------
+       Home
+    ----------*/
 
+
+    /* Search */
 
     .main .search-content {
         margin-bottom: 10px;
@@ -358,11 +358,10 @@
     }
 
 
-
     /* MV */
 
     .MV {
-        margin:0; /* margin-bottom:80px に変更不可 */
+        margin:0;
     }
 
     .MV-img {
@@ -383,6 +382,17 @@
 
     .MV-content p{
         font-size:24px;
+    }
+
+    /* Category */
+
+    .home-category .category-list {
+        margin-top: 64px;
+    }
+
+    .home-category .category-list p {
+        font-size: 18px;
+        margin-top: 18px;
     }
 
 
@@ -411,7 +421,70 @@
     }
 
 
-    /* Login */
+    /* ----------
+       Search
+    ------------*/
+
+    .search-content {
+        width: 80%;
+        margin: 40px auto 0;
+    }
+
+    .search-title {
+        font-size: 20px;
+        font-weight: bold;
+        color: var(--brown);
+        margin-bottom: 36px;
+        padding-left: 6px;
+        position: relative;
+    }
+
+    .search-title::after {
+        background-size: 4px 4px;
+        height: 4px;
+        width: 100%;
+        left: -5px;
+    }
+
+    .search-keyword {
+        margin-bottom: 64px;
+    }
+
+    .search-keyword-content {
+        width: 84%;
+    }
+
+    .search-keyword-content input {
+        height: 42px;
+        padding: 5px 10px;
+        font-size: 18px;
+        width: 300px;
+    }
+
+    .search-keyword-content i{
+        font-size:20px;
+        color:var(--beige);
+    }
+
+    .search-keyword-content button{
+        background-color:var(--brown);
+        height:40px;
+        width:40px;
+        border-radius: 10px;
+        margin-left:4px;
+    }
+
+    .search-category .category-list p {
+        font-size: 16px;
+        font-weight: normal;
+        margin-top: 16px;
+    }
+
+
+
+    /* --------
+       Login 
+    ----------*/
 
     .login-content {
         width: 80%;
@@ -678,6 +751,10 @@
         font-size: 30px;
     }
 
+    .product-price::after {
+        font-size: 18px;
+    }
+
     .product-form {
         margin-bottom: 48px;
     }
@@ -687,9 +764,18 @@
     }
 
     .product-form select {
-        height: 40px;
-        width: 150px;
-        font-size:16px;
+        height: 38px;
+        padding: 7px 50px 7px 14px;
+        font-size:18px;
+    }
+
+    .product-form .select::after{
+        height: 11px;
+        width: 11px;
+        right: 14px;
+        border-bottom: 3px solid var(--lightbrown);
+        border-right: 3px solid var(--lightbrown);
+        border-radius: 2px;
     }
 
     .product-form .pcs {
@@ -698,8 +784,9 @@
 
     .product-form .pcs-input {
         width: 120px;
-        height:40px;
+        height: 38px;
         padding: 0 45px;
+        font-size: 18px;
     }
 
     .product-form .pcs-button {

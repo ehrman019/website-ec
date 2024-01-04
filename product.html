@@ -35,9 +35,9 @@
             <nav class="header-left">
 
                 <div class="gnav mobile">
-                    <a id="modalOpen">
+                    <button id="modalOpen">
                         <i class="fa-solid fa-bars bars icon" id="modal-open"></i>
-                    </a>
+                    </button>
                 </div>
                 
                 <div class="header-logo">
@@ -98,14 +98,21 @@
         <aside id="modal" class="modal mobile fadeOut">
             <div class="modal-button-content">
         
-                <a id="modalClose">
+                <button id="modalClose">
                     <i class="fa-solid fa-xmark icon" id="modal-close"></i>
-                </a>
+                </button>
             </div>
             <div class="modal-content">
                 <ul class="modal-list">
                     <li>
-                        <a href="./mypage.html" class="modalnav">
+                        <a href="./index.html" class="modalnav">
+                            <p>TOP</p>
+                            <span>トップページ</span>
+    
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./login.html" class="modalnav">
                             <p>MyPage</p>
                             <span>マイページ</span>
     
@@ -118,6 +125,13 @@
     
                         </a>
                     </li>
+                    <li>
+                        <a href="./search.html" class="modalnav">
+                            <p>Search</p>
+                            <span>商品検索</span>
+                        </a>
+                    </li>
+                    
                     <li>
                         <a href="./index.html #info" class="modalnav">
                             <p>Information</p>
@@ -162,10 +176,10 @@
                             <div class="product-form">
                                 <form action="">
                                     <div class="select">
-                                        <select name="product-type" id="product-type" class="select-hidden product-type">
+                                        <select name="product-type" id="product-type" class="select-hidden">
                                             <option value="" hidden>type</option>
-                                            <option value="">none</option>
-
+                                            <option value="1">ベージュ</option>
+                                            <option value="2">ホワイト</option>
                                         </select>
                                     </div>
                                     <div class="pcs">
@@ -191,6 +205,44 @@
             </section>
             <section class="productlist pickup">
                 <h1 data-title="注目商品">PICK UP</h1>
+                <ul class="product-list">
+                    <li>
+                        <a href="./product.html">
+                            <div>
+                                <img src="./img/pierce.jpg" alt="pierce">
+                                <p>花のピアス<br><span>2,000yen</span></p>
+                            </div>
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="">
+                            <div>
+                                <img src="./img/pencilcase.jpg" alt="pencilcase">
+                                <p>ペンケース<br><span>2,500yen</span></p>
+                            </div>
+                        </a>   
+                    </li>             
+                    <li>
+                        <a href="">
+                            <div>
+                                <img src="./img/clock.jpg" alt="clock">
+                                <p>レトロな時計<br><span>3,000yen</span></p>
+                            </div>
+                        </a>   
+                    </li>
+                    <li>
+                        <a href="">
+                            <div>
+                                <img src="./img/frame.jpg" alt="clock">
+                                <p>フォトフレーム<br><span>3,000yen</span></p>
+                            </div>
+                        </a>   
+                    </li>
+                </ul>
+                <div class="product-more">
+                    <a href="./products.html">もっと見る</a>
+                </div>
 
             </section>
 

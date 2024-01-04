@@ -105,7 +105,14 @@
             <div class="modal-content">
                 <ul class="modal-list">
                     <li>
-                        <a href="./mypage.html" class="modalnav">
+                        <a href="./index.html" class="modalnav">
+                            <p>TOP</p>
+                            <span>トップページ</span>
+    
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./login.html" class="modalnav">
                             <p>MyPage</p>
                             <span>マイページ</span>
     
@@ -118,6 +125,13 @@
     
                         </a>
                     </li>
+                    <li>
+                        <a href="./search.html" class="modalnav">
+                            <p>Search</p>
+                            <span>商品検索</span>
+                        </a>
+                    </li>
+                    
                     <li>
                         <a href="./index.html #info" class="modalnav">
                             <p>Information</p>
@@ -138,13 +152,15 @@
     </header>
 
     <main id="main" class="main">
-        <section class="search-content" id="top">
+        <section class="home-search" id="top">
         
-            <form action="">
-                <input class="search-form-input" type="search" name="search" placeholder="キーワード検索..">
-                <button type="submit">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
+            <form action="" method="get">
+                <div class="home-search-content">
+                    <input type="search" name="search" id="search" placeholder="キーワード検索..">
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
             </form>
         
         </section>
@@ -198,7 +214,7 @@
                     </li>
                 </ul>
                 <div class="product-more">
-                    <a href="">もっと見る</a>
+                    <a href="./products.html">もっと見る</a>
                 </div>
             </section>
 
@@ -241,11 +257,11 @@
                     </li>
                 </ul>
                 <div class="product-more">
-                    <a href="">もっと見る</a>
+                    <a href="./products.html">もっと見る</a>
                 </div>
             </section>
 
-            <section id="category" class="category">
+            <section id="category" class="home-category">
                 <h1 data-title="カテゴリーから探す">CATEGORY</h1>
                 <ul class="category-list">
                     <li>

@@ -130,14 +130,14 @@ select{
 
 input[type="text"]::placeholder,
 input[type="password"]::placeholder,
-input[type="password"]::placeholder,
+input[type="search"]::placeholder,
 textarea[type="text"]::placeholder {
     color:var(--lightbrown);
 }
 
 input[type="text"]:focus-visible,
 input[type="password"]:focus-visible,
-input[type="password"]:focus-visible,
+input[type="search"]:focus-visible,
 textarea:focus-visible,
 select:focus-visible{
     outline:1px var(--lightbrown);
@@ -149,6 +149,8 @@ select{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    cursor: pointer;
+    
 }
 
 form select::-ms-expand{
@@ -638,11 +640,7 @@ button:hover{
     border:none;
 }
 
-
-
-/*-----------
-    Main 
-------------*/
+/* main */
 
 .main section{
     padding-top:64px;
@@ -650,10 +648,12 @@ button:hover{
 
 
 /*-------------
-    Search 
+    Home 
 --------------*/
 
-.search-content{
+/* seach */
+
+.home-search{
     display:flex;
     justify-content: flex-end;
     padding-top:72px;
@@ -661,7 +661,17 @@ button:hover{
     margin-right: 25px;
 }
 
-.search-content button{
+.home-search-content  {
+    display:flex;
+    align-items:center;
+}
+
+.home-search-content i{
+    font-size:18px;
+    color:var(--beige);
+}
+
+.home-search button{
     background-color:var(--brown);
     height:35px;
     width:35px;
@@ -669,17 +679,7 @@ button:hover{
     margin-left:3px;
 }
 
-.search-content form {
-    display:flex;
-    align-items:center;
-}
-
-.search-content i{
-    font-size:18px;
-    color:var(--beige);
-}
-
-.search-form-input {
+.home-search-content input {
     height: 36px;
     padding: 6px 15px;
     width: 200px;
@@ -687,9 +687,7 @@ button:hover{
 
 
 
-/*----------
-    MV 
-----------*/
+/* MV */
 
 .MV {
     margin:0; /* 変更不可 */
@@ -728,10 +726,10 @@ button:hover{
     margin-bottom:0;
 }
 
+/* Category */
 
-/* ----------
-    Info 
------------*/
+
+/*  Info  */
 
 .info-list {
     width: 84%;
@@ -757,6 +755,65 @@ button:hover{
     width: 100%;
     position:absolute;
     left: 0;
+}
+
+
+/* ----------
+   Search
+------------*/
+
+.search-content {
+    width: 90%;
+    margin: 30px auto 0;
+}
+
+.search-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--brown);
+    margin-bottom: 20px;
+    padding-left: 3px;
+    position:relative;
+}
+
+.search-title::after {
+    background-image: radial-gradient(circle closest-side, var(--lightbrown), var(--lightbrown) 60%, transparent 60%, transparent);
+    background-size: 4px 3px;
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    position:absolute;
+    left: 0;
+}
+
+.search-keyword {
+    margin-bottom: 64px;
+}
+
+.search-keyword-content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.search-keyword-content input {
+    height: 36px;
+    padding: 5px 10px;
+    font-size: 16px;
+    width: auto;
+}
+
+.search-keyword-content i{
+    font-size:18px;
+    color:var(--beige);
+}
+
+.search-keyword-content button{
+    background-color:var(--brown);
+    height:35px;
+    width:35px;
+    border-radius: 10px;
+    margin-left:3px;
 }
 
 
@@ -1033,6 +1090,12 @@ button:hover{
     color: var(--brown);
 }
 
+.product-price::after {
+    content:'tax inc';
+    font-size: 14px;
+    margin-left: 10px;
+}
+
 .product-form {
     margin-bottom:24px;
 }
@@ -1043,7 +1106,19 @@ button:hover{
 
 .product-form select {
     height: 30px;
+    padding: 5px 30px 5px 10px;
+    font-size: 14px;
 }
+
+.product-form .select::after{
+    height: 9px;
+    width: 9px;
+    right: 10px;
+    border-bottom: 3px solid var(--lightbrown);
+    border-right: 3px solid var(--lightbrown);
+    border-radius: 2px;
+}
+
 
 .product-form .pcs {
     margin-bottom: 12px;
@@ -1054,6 +1129,7 @@ button:hover{
     padding-right: 40px;
     width: 100px;
     height: 30px;
+    font-size: 16px;
 }
 
 .product-form .pcs-button {
@@ -1182,20 +1258,14 @@ button:hover{
     align-items: center;
 }
 
-.cart-subtotal[type="text"]{
+
+
+.cart-subtotal {
     font-size: 24px;
-    width: 64px;
-    text-align: right;
 }
 
-.cart-subtotal-content .price-input-content::after {
-    bottom: -8px;
-    font-size: 12px;
-    color: var(--darkbrown);
-}
-
-.cart-subtotal-yen {
-    font-size: 24px;
+.cart-subtotal::before {
+    content: '￥';
 }
 
 .cart-total-content {
@@ -1204,32 +1274,26 @@ button:hover{
     margin: 0 auto 36px;
 }
 
-.cart-total-content .price-input-content {
+.cart-total-content {
     justify-content: flex-end;
-}
-
-.cart-total[type="text"]{
-    font-size: 30px;
-    font-weight: bold;
-    width: 100px;
-    text-align: right;
-}
-
-.cart-total-content .price-input-content::after {
-    bottom: -16px;
-    font-size: 14px;
-    font-weight: bold;
-    color: var(--darkbrown);
-}
-
-.cart-total-yen {
-    font-size: 30px;
-    font-weight: bold;
 }
 
 .cart-total-text {
     font-size: 18px;
 }
+
+.cart-total {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.cart-total::before {
+    content: '￥';
+}
+
+
+
+
 
 
 /* -------------

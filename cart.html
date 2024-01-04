@@ -105,7 +105,14 @@
             <div class="modal-content">
                 <ul class="modal-list">
                     <li>
-                        <a href="./mypage.html" class="modalnav">
+                        <a href="./index.html" class="modalnav">
+                            <p>TOP</p>
+                            <span>トップページ</span>
+    
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./login.html" class="modalnav">
                             <p>MyPage</p>
                             <span>マイページ</span>
     
@@ -118,6 +125,13 @@
     
                         </a>
                     </li>
+                    <li>
+                        <a href="./search.html" class="modalnav">
+                            <p>Search</p>
+                            <span>商品検索</span>
+                        </a>
+                    </li>
+                    
                     <li>
                         <a href="./index.html #info" class="modalnav">
                             <p>Information</p>
@@ -150,7 +164,7 @@
                             <div class="cart-content">
                                 <div class="cart-info">
                                     <p class="cart-name">天然木カトラリーセット</p>
-                                    <p class="cart-price">2,500yen</p>
+                                    <p class="cart-price">1,500yen</p>
                                 </div>
                                 <div class="cart-pcs">
                                     <div class="pcs">
@@ -162,13 +176,7 @@
                                 </div>
                                 <div class="cart-subtotal-content">
                                     <p class="cart-subtotal-text">小計</p>
-                                    
-                                    <div class="price-input-content">
-                                        <p class="cart-subtotal-yen">￥</p>
-                                        <div>
-                                            <input type="text" class="price-input cart-subtotal" value="5,000">
-                                        </div>
-                                    </div>
+                                    <p class="cart-subtotal"></p>           
                                 </div>
                             </div>
                         </li>
@@ -187,17 +195,12 @@
                                         <button type="button" class="pcs-dec pcs-button">－</button>
                                         <button type="button" class="pcs-inc pcs-button">+</button>
                                     </div>
-                                    <a href="">削除</a>
+                                    <button type="button">削除</button>
                                 </div>
                                 <div class="cart-subtotal-content">
                                     <p class="cart-subtotal-text">小計</p>
+                                    <p class="cart-subtotal"></p>
                                     
-                                    <div class="price-input-content">
-                                        <p class="cart-subtotal-yen">￥</p>
-                                        <div>
-                                            <input type="text" class="price-input cart-subtotal" value="5,000">
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -205,9 +208,9 @@
 
                     <div class="cart-total-content">
                         <p class="cart-total-text">合計金額</p>
-                        <div class="price-input-content">
-                            <p class="cart-total-yen">￥</p><input type="text" class="price-input cart-total" value="15,000">
-                        </div>
+                        
+                        <p class="cart-total"></p>
+                        
                     </div>
 
                     <input type="submit" class="button button-long" value="購入手続きへ">
