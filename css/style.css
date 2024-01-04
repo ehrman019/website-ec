@@ -214,6 +214,21 @@ dd {
     
 }
 
+.required-text span {
+    color:var(--pink);
+}
+
+.required::after{
+    content: '※';
+    color: var(--pink);
+}
+
+.optional::after {
+    content: '任意';
+    color: var(--white);
+    background-color: var(--lightbrown);
+}
+
 /* Default - link */
 
 a{
@@ -747,7 +762,9 @@ button:hover{
 }
 
 
-/* Login */
+/* ----------
+    Login 
+------------*/
 
 .login-content {
     width: 80%;
@@ -787,33 +804,36 @@ button:hover{
 
 .signup-content {
     width: 80%;
-    margin: 36px auto 0;
-}
-
-.signup-content p {
-    font-size: 16px;
-}
-
-.signup-form {
-    margin-bottom:36px;
+    margin: 24px auto 48px;
 }
 
 .signup-form-content {
     margin-bottom: 36px;
 }
 
-.signup-form-content-list {
-    margin-bottom: 20px;
+.signup-form-content dl{
+    margin-bottom: 10px;
 }
 
-.signup-form p {
-    margin: 5px 3px;
+.signup-form-content dt{
+    font-size: 16px;
+    margin: 3px 3px;
 }
 
-.signup-form-input {
+.signup-form-content input[type="text"],
+.signup-form-content input[type="password"]{
     width:100%;
+    font-size: 14px;
+    height:36px;
+    padding:6px 15px;
+
 }
 
+.signup-content-text {
+    text-align:center;
+    margin-top: 24px;
+    font-size: 16px;
+}
 
 /* SignupNex */
 
@@ -1226,6 +1246,7 @@ button:hover{
 }
 
 .contact-form .required-text {
+    font-size: 14px;
     margin-bottom: 10px;
 }
 
@@ -1236,21 +1257,12 @@ button:hover{
     font-size: 16px;
 }
 
-.contact-form-content .required-span{
-    margin-left:3px;
-}
-
 .contact-form-content .required::after {
-    content: '※';
-    color: var(--pink);
     font-size: 16px;
     margin-left: 3px;
 }
 
 .contact-form-content .optional::after {
-    content: '任意';
-    color: var(--white);
-    background-color: var(--lightbrown);
     font-size: 12px;
     padding: 2px 5px;
     border-radius: 5px;

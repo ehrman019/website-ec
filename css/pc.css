@@ -459,38 +459,47 @@
 
     .signup-content {
         width: 80%;
-        margin: 48px auto 0;
-    }
-
-    .signup-content p {
-        font-size:22px;
-    }
-    
-    .signup-form { 
-        margin-bottom:56px;
+        margin: 48px auto 56px;
     }
     
     .signup-form-content {
         margin-bottom: 40px;
     }
 
-    .signup-form-content-list {
+    .signup-form-content dl{
         display: flex;
         justify-content: center;
         align-items:center;
     }
 
-    .signup-form-content-list p {
-        width:270px;
+    .signup-form-content dt{
+        width: 240px;
+        font-size: 18px;
     }
     
-    .signup-form-input {
+    .signup-form-content input[type="text"],
+    .signup-form-content input[type="password"] {
         margin-bottom: 0;
         width:500px;
+        height: 42px;
+        font-size: 17px;
+        padding: 8px 20px;
+    }
+
+    .signup-form-content input[type="text"]::placeholder,
+    .signup-form-content input[type="password"]::placeholder {
+        font-size: 17px;
     }
     
     .signup-content-text {
         text-align:center;
+        margin-top: 36px;
+        font-size: 20px;
+    }
+
+    .contact-form .required-text {
+        font-size: 16px;
+        margin-bottom: 12px;
     }
 
 
@@ -776,7 +785,9 @@
 
 
 
-    /* Contact */
+    /* ------------
+        Contact 
+    --------------*/
 
     .contact-content {
         width:fit-content;

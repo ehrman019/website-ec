@@ -143,63 +143,65 @@
                         <form action="" class="signupnex-form"></form>
                         <div class="signupnex-list">
                             <h3>ご本人情報</h3>
-                            <p class="required-text"><span class="required-span">※</span>必須項目</p>
+                            <p class="required-text"><span>※</span>必須項目</p>
                             <div class="signupnex-list-content">
-                                <div class="signupnex-form-name signupnex-form-group">
-                                    <p>お名前 <span class="required-span">※</span></p>
-                                    <input type="text" placeholder="姓" class="signupnex-form-name-input">
-                                    <input type="text" placeholder="名" class="signupnex-form-name-input">
-                                </div>
-                                <div class="signupnex-form-name signupnex-form-group">
-                                    <p>お名前（ふりがな） <span class="required-span">※</span></p>
-                                    <input type="text" placeholder="せい" class="signupnex-form-name-input">
-                                    <input type="text" placeholder="めい" class="signupnex-form-name-input">
-                                </div>
-                                <div class="signupnex-form-gender signupnex-form-group">
-                                    <p>性別 <span class="required-span">※</span></p>
-                                    <div class="select">
+                                <dl>
+                                    <dt><label for="last-name" class="required">お名前</label></dt>
+                                    <dd><input type="text" name="last-name" id="last-name" placeholder="姓" ></dd>
+                                    <dd><input type="text" name="first-name" id="first-name" placeholder="名"></dd>
+                                </dl>
+                                
+                                <dl>
+                                    <dt><label for="last-name-furigana">お名前（ふりがな）</label></dt>
+                                    <dd><input type="text" name="last-name-furigana" id="last-name-furigana" placeholder="せい"></dd>
+                                    <dd><input type="text" name="last-name-furigana" id="last-name-furigana" placeholder="めい" ></dd>
+                                </dl>          
+                                <dl>
+                                    <dt><label for="gender">性別</label></dt>
+                                    <dt class="select">
                                         <select name="gender" id="gender" class="select-hidden">
                                             <option hidden>-</option>
                                             <option value="female">女性</option>
                                             <option value="male">男性</option>
                                             <option value="other">その他</option>
                                         </select>
-                                    </div>
-                                </div>
-                                <div class="signupnex-form-birth signupnex-form-group">
-                                    <p>生年月日 <span class="required-span">※</span></p>
-                                    <ul class="signupnex-form-birth-select">
-                                        <li class="select">
-                                            <select name="year" id="year" class="year select-hidden" >
-                                                <option hidden>-</option>
-                                            </select>
-                                        </li>
-                                        <li class="select">
-                                            <select name="month" id="month" class="month select-hidden">
-                                                <option hidden>-</option>
-                                            </select>
-                                        </li>
-                                        <li class="select">
-                                            <select name="day" id="day" class="day select-hidden">
-                                                <option value="" hidden>-</option>
-                                            </select>
-                                        </li>
-                                    </ul>
-                                </div>
+                                    </dt>
+                                </dl>
+                                
+                                <dl>
+                                    <dt><label for="year">生年月日</label></dt>
+                                    
+                                    <dd class="select">
+                                        <select name="year" id="year" class="year select-hidden" >
+                                            <option hidden>-</option>
+                                        </select>
+                                    </dd>
+                                    <dd class="select">
+                                        <select name="month" id="month" class="month select-hidden">
+                                            <option hidden>-</option>
+                                        </select>
+                                    </dd>
+                                    <dd class="select">
+                                        <select name="day" id="day" class="day select-hidden">
+                                            <option value="" hidden>-</option>
+                                        </select>
+                                    </dd>
+                                    
+                                </dl>
                             </div>
                         </div>
                         <div class="signupnex-list">
                             <h3>ご住所</h3>
-                            <p class="required-text"><span class="required-span">※</span>必須項目</p>
-                            <div class="signupnex-list-content">
-                                <div class="signupnex-form-address signupnex-form-group">
-                                    <p>郵便番号<span class="required-span">※</span></p>
-                                    <input type="text" placeholder="(ハイフンなし)" class="signupnex-form-postcode-input">
-                                </div>
-                                <div class="signupnex-form-address signupnex-form-group">
-                                    <p>都道府県<span class="required-span">※</span></p>
-                                    <div class="select">
-                                        <select name="prefecture" id="" class="select-hidden">
+                            <p class="required-text"><span>※</span>必須項目</p>
+                            <dl>
+                                <dl>
+                                    <dt><label for="post-code" class="required">郵便番号</label></dt>
+                                    <dd><input type="text" name="post-code" id="post-code" placeholder="(ハイフンなし)"></dd>
+                                </dl>
+                                <dl>
+                                    <dt><label for="pref">都道府県</label></dt>
+                                    <dd class="select">
+                                        <select name="pref" id="pref" class="select-hidden">
                                             <option value="" selected disabled>-</option>
                                             <optgroup label="北海道・東北">
                                                 <option value="">北海道</option>
@@ -266,30 +268,30 @@
 
                                             </optgroup>
                                         </select>
-                                    </div>
-                                </div>
-                                <div class="signupnex-form-address signupnex-form-group">
-                                    <p>市区町村<span class="required-span">※</span></p>
-                                    <input type="text" placeholder="市区町村" class="signupnex-form-short-input">
-                                </div>
-                                <div class="signupnex-form-address signupnex-form-group">
-                                    <p>番地<span class="required-span">※</span></p>
-                                    <input type="text" placeholder="番地" class="signupnex-form-long-input">
-                                </div>
-                                <div class="signupnex-form-address signupnex-form-group">
-                                <p>建物名<span class="optional-span">任意</span></p>
-                                <input type="text" placeholder="建物名" class="signupnex-form-long-input">
-                                </div>
-                            </div>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><label for="city" class="required">市区町村</label></dt>
+                                    <dd><input type="text" name="city" id="city" placeholder="市区町村"></dd>
+                                </dl>
+                                <dl>
+                                    <dt><label for="address" class="required">番地</label></dt>
+                                    <dd><input type="text" name="address" id="address" placeholder="番地"></dd>
+                                </dl>
+                                <dl>
+                                    <dt><label for="build-name">建物名</label></dt>
+                                    <dd><input type="text" name="build-name" id="build-name" placeholder="建物名"></dd>
+                                </dl>
+                            </dl>
                         </div>
                         <div class="signupnex-list">
                             <h3>ご連絡先</h3>
                             <p class="required-text"><span class="required-span">※</span>必須項目</p>
                             <div class="signupnex-list-content">
-                                <div class="signupnex-form-tel signupnex-form-group">
-                                    <p>電話番号 <span class="required-span">※</span></p>
-                                    <input type="text" placeholder="080XXXXXXX(ハイフンなし)" class="signupnex-form-long-input">
-                                </div>
+                                <dl>
+                                    <dt><label for="tel">電話番号</label></dt>
+                                    <dd><input type="text" name="tel" id="tel" placeholder="080XXXXXXX(ハイフンなし)" ></dd>
+                                </dl>
                             </div>
                         </div>
                         <div class="signupnex-button">
