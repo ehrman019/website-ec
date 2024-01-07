@@ -612,7 +612,7 @@ button:hover{
     Home 
 --------------*/
 
-/* seach */
+/* Home - Seach */
 
 .home-search{
     display:flex;
@@ -648,7 +648,7 @@ button:hover{
 
 
 
-/* MV */
+/* Home - MV */
 
 .MV {
     margin:0; /* 変更不可 */
@@ -687,12 +687,12 @@ button:hover{
     margin-bottom:0;
 }
 
-/* Category */
+/* Home - Category */
 
 
 
 
-/*  Info  */
+/*  Home - Info  */
 
 .info-list {
     width: 84%;

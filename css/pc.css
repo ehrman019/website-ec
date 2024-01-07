@@ -302,7 +302,7 @@
     ----------*/
 
 
-    /* Search */
+    /* Home - Search */
 
     .main .home-search {
         padding-top: 110px;
@@ -328,7 +328,7 @@
     }
 
 
-    /* MV */
+    /* Home - MV */
 
     .MV-img {
         box-shadow:10px 10px 15px #b2b2b2;
@@ -349,9 +349,9 @@
     .MV-content p{
         font-size:24px;
     }
-    
 
-    /* Category */
+
+    /* Home - Category */
 
     .home-category .category-list {
         margin-top: 64px;
@@ -363,7 +363,7 @@
     }
 
 
-    /* Info */
+    /* Home - Info */
 
     .info-list {
         width: 90%;
