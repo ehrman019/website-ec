@@ -9,6 +9,7 @@
     --beige:#F4F3EE;
     --pink:#E0AFA0;
     --white:#FFFFFF;
+    --shadow:#CECDC5;
 }
 
 
@@ -114,6 +115,7 @@ ul{
     list-style:none;
 }
 
+
 /* Default - form */
 
 input[type="text"],
@@ -153,11 +155,11 @@ select{
     
 }
 
-form select::-ms-expand{
+select::-ms-expand{
     display: none;
 }
 
-form .select-hidden {
+.select-hidden {
     color: var(--lightbrown);
 }
 
@@ -248,6 +250,10 @@ button {
     transition: 0.5s;
 }
 
+button[type="button"] {
+    background-color: var(--beige);
+}
+
 button:hover{
     opacity:0.8;
     transition: 0.3s;
@@ -263,7 +269,7 @@ button:hover{
     height:40px;
     cursor: pointer;
     display: block;
-    box-shadow: 0 0 6px #CECDC5;
+    box-shadow: 0 0 6px var(--shadow);
 }
 
 .button-short{
@@ -274,6 +280,7 @@ button:hover{
 .button-long {
     width: 100%;
 }
+
 
 /* Default - ProductList */
 
@@ -380,6 +387,7 @@ button:hover{
     color: var(--brown);
 }
 
+
 /* Default - PageNav */
 
 .page-nav {
@@ -402,27 +410,6 @@ button:hover{
     color: var(--brown);
     font-size: 12px;
     padding: 0 10px;
-}
-
-/* price（仮）*/
-
-.price-input[type="text"] {
-    border:none;
-    background-color: var(--beige);
-    padding: 0;
-}
-
-.price-input-content {
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-.price-input-content::after {
-    content:'(税込)';
-    display: block;
-    position: absolute;
-    right: 0;
 }
 
 
@@ -498,6 +485,11 @@ button:hover{
     }
 }
 
+/* Default - Main */
+
+.main section{
+    padding-top:64px;
+}
 
 
 
@@ -514,11 +506,9 @@ button:hover{
     opacity:0.9;
     height:auto;
     z-index:3;
-
 }
 
 .header-content{
-    
     display:flex;
     align-items:center;
     justify-content: space-between;
@@ -527,7 +517,10 @@ button:hover{
     margin:auto;
     font-size:20px;
     border-bottom:0.4px solid var(--lightbrown)
-    
+}
+
+.header-content i {
+    color: var(--brown);
 }
 
 
@@ -537,6 +530,7 @@ button:hover{
 
 .header-logo {
     margin-top:2px;
+    margin-left: 20px;
 }
 
 .header-logo svg{
@@ -544,15 +538,7 @@ button:hover{
     fill:var(--brown);
 }
 
-.icon {
-    color: var(--brown);
-}
-
-.gnav{
-    margin-right:30px;
-}
-
-.gnav i{
+.header-left-nav i{
     font-size:24px;
 }
 
@@ -562,24 +548,6 @@ button:hover{
 
 .header-right-nav li+li{
     margin-left:20px
-}
-
-.header-line{
-    
-    z-index:1;
-    position:relative;
-    width:96%;
-    margin: auto;
-    background:var(--lightbrown);
-    height:0.4px;
-    border-radius:0.2px;
-    
-}
-
-#modalOpen {
-    border:none;
-    width:32px;
-    background-color: var(--beige);
 }
 
 
@@ -598,20 +566,17 @@ button:hover{
     z-index:3;
     
 }
-.modal-button-content{
+
+.modal-button{
     width:96%;
     padding-top:16px;
     padding-left:20px;
     margin:auto;
 }
 
-#modalClose{
-    width:32px;
-    background-color: var(--beige);
-}
-
-#modalClose i{
+.modal-button i{
     font-size:28px;
+    color: var(--brown);
 }
 
 .modal-content{
@@ -627,7 +592,7 @@ button:hover{
 }
 
 .modal span{
-    font-size:12px;
+    font-size:14px;
     color:var(--brown);
 }
 
@@ -640,11 +605,7 @@ button:hover{
     border:none;
 }
 
-/* main */
 
-.main section{
-    padding-top:64px;
-}
 
 
 /*-------------
@@ -666,7 +627,7 @@ button:hover{
     align-items:center;
 }
 
-.home-search-content i{
+.home-search i{
     font-size:18px;
     color:var(--beige);
 }
@@ -679,7 +640,7 @@ button:hover{
     margin-left:3px;
 }
 
-.home-search-content input {
+.home-search input {
     height: 36px;
     padding: 6px 15px;
     width: 200px;
@@ -727,6 +688,8 @@ button:hover{
 }
 
 /* Category */
+
+
 
 
 /*  Info  */
