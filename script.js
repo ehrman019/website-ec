@@ -73,7 +73,7 @@ const modalclose = () => {
     document.removeEventListener('mousewheel', handle, { passive: false });
 }
 
-var y;
+var y=0;
 buttonOpen.addEventListener('click',()=>{
     modal.style.display = 'block';
     y=window.scrollY;
@@ -93,6 +93,7 @@ modalclick.forEach(function(Elm){
         modalclose();
     });
 });
+
 
 
 /* Birth */
