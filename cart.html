@@ -165,19 +165,20 @@
                                 <div class="cart-content">
                                     <div class="cart-info">
                                         <p class="cart-name">天然木カトラリーセット</p>
+                                        <p class="cart-type">brown</p>
                                         <p class="cart-price" data-price="1500">1,500</p>
                                     </div>
                                     <div class="cart-pcs">
                                         <div class="pcs">
                                             <input type="text" class="pcs-input"  placeholder="1" >
-                                            <button type="button" class="pcs-dec pcs-button">－</button>
-                                            <button type="button" class="pcs-inc pcs-button">+</button>
+                                            <a type="button" class="pcs-dec pcs-button">－</a>
+                                            <a type="button" class="pcs-inc pcs-button">+</a>
                                         </div>
                                         <button type="button" class="delete">削除</a>
                                     </div>
                                     <div class="cart-subtotal-content">
                                         <p class="cart-subtotal-text">小計</p>
-                                        <p class="cart-subtotal"></p>           
+                                        <p class="cart-subtotal cart-subtotal-tax tax"></p>           
                                     </div>
                                 </div>
                             </li>
@@ -188,19 +189,20 @@
                                 <div class="cart-content">
                                     <div class="cart-info">
                                         <p class="cart-name">ペンケース</p>
+                                        <p class="cart-type">blue</p>
                                         <p class="cart-price" data-price="2500">2,500</p>
                                     </div>
                                     <div class="cart-pcs">
                                         <div class="pcs">
                                             <input type="text" class="pcs-input" placeholder="1">
-                                            <button type="button" class="pcs-dec pcs-button">－</button>
-                                            <button type="button" class="pcs-inc pcs-button">+</button>
+                                            <a class="pcs-dec pcs-button">－</a>
+                                            <a class="pcs-inc pcs-button">+</a>
                                         </div>
-                                        <button type="button" class="delete">削除</button>
+                                        <a type="button" class="delete">削除</a>
                                     </div>
                                     <div class="cart-subtotal-content">
                                         <p class="cart-subtotal-text">小計</p>
-                                        <p class="cart-subtotal"></p>
+                                        <p class="cart-subtotal cart-subtotal-tax tax"></p>
                                         
                                     </div>
                                 </div>
@@ -212,7 +214,7 @@
                             <div class="cart-calc"><button type="button" id="cart-calc-button">再計算</button></div>
                             <p class="cart-total-text">合計金額</p>
                             
-                            <p class="cart-total" id="cart-total"></p>
+                            <p class="cart-total cart-total-tax tax" id="cart-total"></p>
                             
                         </div>
                     

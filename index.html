@@ -20,6 +20,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Notable&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
     
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/bd44d20742.js" crossorigin="anonymous"></script>
@@ -36,9 +37,9 @@
             <nav class="header-left">
 
                 <div class="header-left-nav mobile">
-                    <button type="button" id="modalOpen">
+                    <a id="modalOpen">
                         <i class="fa-solid fa-bars bars"></i>
-                    </button>
+                    </a>
                 </div>
                 
                 <div class="header-logo">
@@ -96,12 +97,12 @@
         </div>
         
         
-        <aside id="modal" class="modal mobile fadeOut">
+        <aside id="modal" class="modal mobile hidden">
             <div class="modal-button">
         
-                <button type="button" id="modalClose">
+                <a id="modalClose">
                     <i class="fa-solid fa-xmark icon" id="modal-close"></i>
-                </button>
+                </a>
             </div>
             <div class="modal-content">
                 <ul class="modal-list">
@@ -158,9 +159,9 @@
             <form action="" method="get">
                 <div class="home-search-content">
                     <input type="search" name="search" id="search" placeholder="キーワード検索..">
-                    <button type="submit">
+                    <a type="submit">
                         <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
+                    </a>
                 </div>
             </form>
         
@@ -327,7 +328,7 @@
     
     <footer class="footer" id="footer">
         <div class="footer-before">
-            <a href="#top" class="footer-before-button">
+            <a href="#" class="footer-before-button">
                 <div class="footer-before-button-content">
                     <i class="fa-solid fa-chevron-up"></i>
                     <p>TOP</p>

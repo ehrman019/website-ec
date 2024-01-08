@@ -48,10 +48,28 @@ const footer = document.getElementById('footer');
 
 
 
-const open = (Elm) => { changeClass(Elm,"fadeOut","fadeIn"); }
-const close = (Elm) =>{ changeClass(Elm,"fadeIn","fadeOut"); }
-const pagein = (Elm) =>{ changeClass(Elm,"fadeOutpage","fadeInpage"); }
-const pageout = (Elm) =>{ changeClass(Elm,"fadeInpage","fadeOutpage"); }
+const open = (Elm) => {
+    if(Elm.classList.contains('hidden')){
+        changeClass(Elm,"hidden","fadeIn");
+    }else{
+        changeClass(Elm,"fadeOut","fadeIn");
+    }
+    Elm.style.display='block';
+     
+}
+const close = (Elm) =>{
+    changeClass(Elm,"fadeIn","fadeOut");
+    window.setTimeout(function(){
+        Elm.style.display = 'none';
+    }, 300);
+}
+
+const pagein = (Elm) =>{
+    changeClass(Elm,"fadeOutpage","fadeInpage");
+}
+const pageout = (Elm) =>{
+    changeClass(Elm,"fadeInpage","fadeOutpage");
+}
 
 const handle = (event) => {
     event.preventDefault();
@@ -214,7 +232,7 @@ const showimages = (img,thumbnails,imagelist) =>{
             img.innerHTML += `<img src="${image}" alt="product-img${i}" class="fadeIn">`;
             thumbnails.innerHTML += `<img src="${image}" alt="product-img${i}" class="show">`;
         }else{
-            img.innerHTML += `<img src="${image}" alt="product-img${i}" class="fadeOut">`;
+            img.innerHTML += `<img src="${image}" alt="product-img${i}" class="hidden">`;
             thumbnails.innerHTML += `<img src="${image}" alt="product-img${i}" >`;
         }
         i++;
@@ -255,7 +273,7 @@ if(productImg !== null){
         thumbnails[i].addEventListener('click',function(){
             let nowIndex = getImgIndex(thumbnails);
             thumbnails[nowIndex].classList.remove('show');
-            images[nowIndex].style.display='block';     
+                 
             close(images[nowIndex])
 
             this.classList.add('show');
@@ -269,7 +287,7 @@ if(productImg !== null){
         let nowIndex =  getImgIndex(thumbnails);
 
         thumbnails[nowIndex].classList.remove('show');
-        images[nowIndex].style.display='block';
+        
         close(images[nowIndex])
 
         nowIndex+=num-1;

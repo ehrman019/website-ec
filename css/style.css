@@ -27,7 +27,7 @@ html{
 
 body{
     background-color:var(--beige);
-    font-family:'Century Gothic','Avenir','Zen Kaku Gothic New', 'Yu Gothic',sans-serif;
+    font-family:'Century Gothic','Lato','Avenir','Zen Kaku Gothic New', sans-serif;
     -webkit-text-size-adjust: 100%;
 }
 
@@ -209,13 +209,12 @@ dd {
     border-radius: 10px;
     top: 0;
     color: var(--lightbrown);
-    background-color: var(--white);
+    text-align:center;
 }
 
 .pcs-dec,
 .pcs-inc{
     position:absolute;
-    
 }
 
 .required-text span {
@@ -240,6 +239,7 @@ a{
     color:var(--brown);
     transition: 0.5s;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
+    cursor: pointer;
 }
 
 
@@ -252,14 +252,9 @@ button {
     border:none;
     cursor: pointer;
     transition: 0.5s;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    padding: 0;
     
 }
 
-button[type="button"] {
-    background-color: var(--beige);
-}
 
 button:hover{
     opacity:0.8;
@@ -286,6 +281,10 @@ button:hover{
 
 .button-long {
     width: 100%;
+}
+
+.hidden {
+    display: none;
 }
 
 
@@ -432,7 +431,6 @@ button:hover{
 }
 
 .fadeOut{
-    display: none;
     animation-name:fadeOut;
     animation-duration:0.3s;
     animation-timing-function:ease-in;
@@ -470,7 +468,7 @@ button:hover{
     }
     100%{
         opacity:0;
-        display:none;
+        display: none;
     }
 }
 
@@ -545,10 +543,6 @@ button:hover{
     fill:var(--brown);
 }
 
-.header-left-nav button {
-    width: 30px;
-}
-
 .header-left-nav i{
     font-size:24px;
 }
@@ -559,6 +553,10 @@ button:hover{
 
 .header-right-nav li+li{
     margin-left:20px
+}
+
+.header-right-nav i{
+    font-size: 20px;
 }
 
 
@@ -583,10 +581,6 @@ button:hover{
     padding-top:16px;
     padding-left:20px;
     margin:auto;
-}
-
-.modal-button button {
-    width:30px;
 }
 
 .modal-button i{
@@ -646,14 +640,17 @@ button:hover{
 .home-search i{
     font-size:18px;
     color:var(--beige);
+    line-height: 35px;
 }
 
-.home-search button{
+.home-search a{
     background-color:var(--brown);
     height:35px;
     width:35px;
     border-radius: 10px;
     margin-left:3px;
+    text-align:center;
+    align-items: center;
 }
 
 .home-search input {
@@ -1112,21 +1109,21 @@ button:hover{
 }
 
 .product-form .pcs-button {
-    width:30px;
+    width:36px;
 }
 
 .product-form .pcs-dec {
-    left:3px;
+    left:0;
     font-size: 16px;
     font-weight:800;
-    bottom:0;
+    line-height: 30px;
 }
 
 .product-form .pcs-inc {
-    right: 3px;
+    right: 0;
     font-size: 21px;
     font-weight:400;
-    bottom:0;
+    line-height: 30px;
 }
 
 .product-detail-text {
@@ -1181,7 +1178,17 @@ button:hover{
 
 .cart-name {
     font-size: 16px;
-    padding-bottom: 10px;
+    margin-bottom: 3px;
+}
+
+.cart-type::before {
+    content: 'type:';
+}
+
+.cart-type {
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: var(--brown);
 }
 
 .cart-price {
@@ -1221,28 +1228,31 @@ button:hover{
 }
 
 .cart-list .pcs-button {
-    width:20px;
-    height: 70%;
+    width:30px;
+    height: 24px;
 }
 
 .cart-list .pcs-dec {
-    left:3px;
+    left:0;
     font-size: 14px;
     font-weight:800;
-    bottom: 0;
+    line-height: 24px;
 }
 
 .cart-list .pcs-inc {
-    right: 6px;
+    right: 0;
     font-size: 18px;
     font-weight:400;
-    bottom:4px;
+    line-height: 24px;
 }
 
 .cart-subtotal-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    text-align:right;
+}
+
+.cart-subtotal-text {
+    margin-bottom: 6px;
+    font-size: 16px;
 }
 
 .cart-subtotal {
@@ -1286,6 +1296,20 @@ button:hover{
     font-size: 14px;
     padding: 3px 8px;
     border-radius: 8px;
+}
+
+.tax::after {
+    content:'(税込)';
+    display: block;
+    text-align:right;
+}
+
+.cart-subtotal-tax::after{
+    font-size: 14px;
+}
+
+.cart-total-tax::after {
+    font-size: 16px;
 }
 
 

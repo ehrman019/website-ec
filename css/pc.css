@@ -309,22 +309,26 @@
         margin-bottom: 20px;
     }
 
-    .home-search button {
-        height:36px;
-        width:36px;
-        border-radius: 10px;
+    .home-search a {
+        height:40px;
+        width:40px;
+        border-radius: 12px;
         margin-left:4px;
+        text-align: center;
+        
     }
 
     .home-search i {
-        font-size: 18px;
+        font-size: 20px;
+        line-height: 40px;
     }
 
     .home-search input {
-        height: 42px;
+        height: 43px;
         padding: 5px 12px;
         font-size: 18px;
         width: 240px;
+        
     }
 
 
@@ -761,15 +765,17 @@
     }
 
     .product-form .pcs-dec {
-        left:3px;
+        left:0;
         font-size: 20px;
         font-weight:400;
+        line-height: 38px;
     }
 
     .product-form .pcs-inc {
         right: 3px;
         font-size: 26px;
         font-weight:500;
+        line-height: 38px;
     }
 
     .product-detail-text {
@@ -792,6 +798,12 @@
     
     .cart-content {
         display: flex;
+        justify-content: flex-end;
+        
+    }
+
+    .cart-list {
+        padding-bottom: 2px;
     }
 
     .cart-list li{
@@ -803,13 +815,18 @@
     }
 
     .cart-info {
-        width: 100%;
+        width: 80%;
         padding: 20px 10px;
     }
 
     .cart-name {
         font-size: 24px;
-        padding-bottom: 16px;
+        margin-bottom: 3px;
+    }
+
+    .cart-type {
+        font-size: 16px;
+        margin-bottom: 15px;
     }
 
     .cart-price {
@@ -817,7 +834,7 @@
     }
 
     .cart-pcs {
-        margin: auto 36px;
+        margin: auto 0;
     }
 
     .cart-pcs .delete {
@@ -843,25 +860,28 @@
         left:4px;
         font-size: 16px;
         font-weight:800;
-        bottom: 0;
+        line-height: 32px;
     }
     
     .cart-list .pcs-inc {
         right: 6px;
         font-size: 22px;
         font-weight:400;
-        bottom:3px;
+        line-height: 32px;
     }
 
     .cart-subtotal-content {
         display:block;
-        margin: auto 0 auto 24px;
+        margin: auto 0;
+        width: 200px;
+        text-align:right;
 
     }
 
     .cart-subtotal-text {
         font-size: 18px;
         margin-bottom: 24px;
+        
     }
 
     .cart-subtotal {
@@ -900,6 +920,15 @@
 
     .cart input[type="submit"] {
        margin: 0 0 0 auto;
+    }
+
+    
+    .cart-subtotal-tax::after{
+        font-size: 16px;
+    }
+
+    .cart-total-tax::after {
+        font-size: 18px;
     }
 
 
