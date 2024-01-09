@@ -30,10 +30,27 @@ const calcPrice = () =>{
     
 }
 
-calcPrice();
+if(cartPrice !==null){
+    calcPrice();
+}
 
 const cartButton = document.getElementById('cart-calc-button');
 
 cartButton.addEventListener('click',()=>{
+
+    cartSubtotal.forEach((Elm)=>{        
+        Elm.classList.remove('fadeIn');
+        Elm.style.opacity = '0';          
+    })
+    cartTotal.classList.remove('fadeIn');
+    cartTotal.style.opacity = '0';
+    
     calcPrice();
+
+    window.setTimeout(function(){
+        cartSubtotal.forEach((Elm)=>{        
+            Elm.classList.add('fadeIn');        
+        })
+        cartTotal.classList.add('fadeIn');
+    }, 100);
 });
