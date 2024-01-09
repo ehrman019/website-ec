@@ -193,29 +193,49 @@ dd {
 .pcs {
     position: relative;
     width:fit-content;
+    
+}
+
+.pcs::before {
+    position:absolute;
+    content: '';
+    top:0;
+    bottom: 0;
+    margin: auto;
+    left: 10px;
+    height: 2px;
+    width: 8px;
+    border: 1px solid var(--lightbrown);
+    z-index:3;
+
 }
 
 .pcs-input {
     text-align:center;
+    z-index: 0;
 }
 
 .pcs-input::placeholder {
     text-align:center;
 }
 
-.pcs-button {
-    height:80%;
+.pcs-button { 
     margin: auto;
     border-radius: 10px;
-    top: 0;
     color: var(--lightbrown);
     text-align:center;
+    display: inline-block;
+    padding: 0;
+    background-color: transparent;
 }
 
 .pcs-dec,
 .pcs-inc{
     position:absolute;
 }
+
+
+
 
 .required-text span {
     color:var(--pink);
@@ -252,7 +272,7 @@ button {
     border:none;
     cursor: pointer;
     transition: 0.5s;
-    
+    width: fit-content;
 }
 
 
@@ -543,6 +563,12 @@ button:hover{
     fill:var(--brown);
 }
 
+.header-left-nav button {
+    display:block;
+    padding: 0;
+    background-color: transparent;
+}
+
 .header-left-nav i{
     font-size:24px;
 }
@@ -576,18 +602,23 @@ button:hover{
     
 }
 
-.modal-button{
+.modal-button-content{
     width:96%;
     padding-top:16px;
     padding-left:20px;
     margin:auto;
 }
 
-.modal-button i{
+.modal-button-content button {
+    display:block;
+    padding: 0;
+    background-color: transparent;
+}
+
+.modal-button-content i{
     font-size:28px;
     color: var(--brown);
 }
-
 
 .modal-content{
     width:64%;
