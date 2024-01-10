@@ -172,6 +172,13 @@ if(selectYear !== null){
         def.setAttribute('selected','');
     });
 
+    selectYear.addEventListener('touchstart',()=>{
+        const def = document.getElementById('default');
+        def.setAttribute('selected','');
+    });
+
+
+
     selectMonth.addEventListener('click',()=>{
         createDay();
     });

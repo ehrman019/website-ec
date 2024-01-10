@@ -258,7 +258,7 @@ a{
     text-decoration: none;
     color:var(--brown);
     transition: 0.5s;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
     cursor: pointer;
 }
 
@@ -273,6 +273,7 @@ button {
     cursor: pointer;
     transition: 0.5s;
     width: fit-content;
+    -webkit-tap-highlight-color: transparent;
 }
 
 
@@ -687,9 +688,10 @@ button:hover{
 }
 
 .home-search input {
-    height: 36px;
+    height: 40px;
     padding: 6px 15px;
     width: 200px;
+    font-size: 18px;
 }
 
 
@@ -806,9 +808,9 @@ button:hover{
 }
 
 .search-keyword-content input {
-    height: 36px;
+    height: 40px;
     padding: 5px 10px;
-    font-size: 16px;
+    font-size: 18px;
     width: auto;
 }
 
@@ -853,8 +855,8 @@ button:hover{
 .login-form-content input[type="text"],
 .login-form-content input[type="password"]{
     width:100%;
-    font-size: 14px;
-    height:36px;
+    font-size: 18px;
+    height:40px;
     padding:6px 15px;
 
 }
@@ -889,8 +891,8 @@ button:hover{
 .signup-form-content input[type="text"],
 .signup-form-content input[type="password"]{
     width:100%;
-    font-size: 14px;
-    height:36px;
+    font-size: 18px;
+    height:40px;
     padding:6px 15px;
 
 }
@@ -926,9 +928,9 @@ button:hover{
 
 .signupnex-content input[type="text"],
 .signupnex-content select{
-    height: 36px;
+    height: 40px;
     padding: 5px 24px 5px 12px;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .signupnex-content .select::after {
@@ -1154,6 +1156,7 @@ button:hover{
 }
 
 .product-form .pcs-dec {
+    top: 0;
     left:0;
     font-size: 16px;
     font-weight:800;
@@ -1161,6 +1164,7 @@ button:hover{
 }
 
 .product-form .pcs-inc {
+    top: 0;
     right: 0;
     font-size: 21px;
     font-weight:400;
@@ -1247,9 +1251,7 @@ button:hover{
     margin-bottom: 10px;
 }
 
-.cart-pcs .pcs::before {
-    height: 1.5px;
-}
+
 
 .cart-pcs .delete{
     font-size:12px;
@@ -1269,7 +1271,6 @@ button:hover{
     height: 24px;
     border-radius: 8px;
     margin: 0 0 2px auto;
-
 }
 
 .cart-list .pcs-button {
@@ -1277,14 +1278,12 @@ button:hover{
     height: 24px;
 }
 
-.cart-list .pcs-dec {
-    left:0;
-    font-size: 14px;
-    font-weight:800;
-    line-height: 24px;
-}
+.cart-pcs .pcs::before {
+    height: 1.5px;
+}/*マイナス*/
 
 .cart-list .pcs-inc {
+    top: 0;
     right: 0;
     font-size: 18px;
     font-weight:400;

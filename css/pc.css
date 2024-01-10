@@ -865,13 +865,6 @@
     .cart-list .pcs-button {
         width: 28px;
     }
-
-    .cart-list .pcs-dec {
-        left:4px;
-        font-size: 16px;
-        font-weight:800;
-        line-height: 32px;
-    }
     
     .cart-list .pcs-inc {
         right: 6px;
