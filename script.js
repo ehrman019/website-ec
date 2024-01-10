@@ -167,7 +167,7 @@ if(selectYear !== null){
     createList(1,12,selectMonth);
     createList(1,31,selectDay);
 
-    selectYear.addEventListener('focusin',()=>{
+    selectYear.addEventListener('focus',()=>{
         const def = document.getElementById('default');
         def.setAttribute('selected','');
     });

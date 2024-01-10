@@ -572,8 +572,12 @@
     .signupnex-content input[type="text"],
     .signupnex-content select{
         height: 44px;
-        padding: 6px 30px 6px 16px;
+        padding: 6px 16px;
         font-size: 18px;
+    }
+
+    .signupnex-content select{
+        padding-right: 36px;
     }
     
     .signupnex-content .select::after {
