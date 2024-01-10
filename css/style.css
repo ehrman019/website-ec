@@ -205,10 +205,10 @@ dd {
     left: 10px;
     height: 2px;
     width: 8px;
-    border: 1px solid var(--lightbrown);
+    background-color: var(--lightbrown);
+    border-radius: 1px;
     z-index:3;
-
-}
+}/* ボタンの-部分*/
 
 .pcs-input {
     text-align:center;
@@ -674,7 +674,7 @@ button:hover{
     line-height: 35px;
 }
 
-.home-search a{
+.home-search button{
     background-color:var(--brown);
     height:35px;
     width:35px;
@@ -682,6 +682,8 @@ button:hover{
     margin-left:3px;
     text-align:center;
     align-items: center;
+    display: block;
+    padding: 0;
 }
 
 .home-search input {
@@ -821,6 +823,8 @@ button:hover{
     width:35px;
     border-radius: 10px;
     margin-left:3px;
+    display: inline-block;
+    padding: 0;
 }
 
 
@@ -1131,6 +1135,12 @@ button:hover{
     margin-bottom: 12px;
 }
 
+.product-form .pcs::before {
+    width:10px;
+    left: 12px;
+
+}
+
 .product-form .pcs-input {
     padding-left: 40px;
     padding-right: 40px;
@@ -1235,6 +1245,10 @@ button:hover{
 .cart-pcs {
     text-align: right;
     margin-bottom: 10px;
+}
+
+.cart-pcs .pcs::before {
+    height: 1.5px;
 }
 
 .cart-pcs .delete{

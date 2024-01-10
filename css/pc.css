@@ -309,7 +309,7 @@
         margin-bottom: 20px;
     }
 
-    .home-search a {
+    .home-search button {
         height:40px;
         width:40px;
         border-radius: 12px;
@@ -753,6 +753,11 @@
         margin-bottom: 36px;
     }
 
+    .product-form .pcs::before {
+        width: 12px;
+        left: 15px;
+    }
+
     .product-form .pcs-input {
         width: 120px;
         height: 38px;
@@ -835,6 +840,11 @@
 
     .cart-pcs {
         margin: auto 0;
+    }
+
+    .cart-pcs .pcs::before {
+        width: 10px;
+        left: 13px;
     }
 
     .cart-pcs .delete {
