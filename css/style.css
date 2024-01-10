@@ -1389,16 +1389,11 @@ button:hover{
 .contact-form input[type="text"],
 .contact-form textarea[type="text"] {
     width:100%;
-    font-size: 14px;
-}
-
-.contact-form input[type="text"]::placeholder,
-.contact-form textarea[type="text"]::placeholder {
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .contact-form input[type="text"] {
-    height:36px;
+    height:40px;
     padding:6px 15px;
     margin-bottom: 10px;
 }
