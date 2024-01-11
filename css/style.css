@@ -1116,13 +1116,11 @@ button:hover{
     color: var(--lightbrown);
 }
 
-
 .product-thumb-list {
     display:flex;
     justify-content: center;
     align-items: center;
 }
-
 
 .product-thumb-list img{
     margin: auto;
@@ -1214,12 +1212,6 @@ button:hover{
     height: 30px;
 }
 
-.product-form .pcs-inc {
-    font-size: 21px;
-    font-weight:400;
-    line-height: 30px;
-}
-
 .product-detail-text {
     width:90%;
     margin: auto;
@@ -1228,6 +1220,7 @@ button:hover{
 .product-detail-text p{
     font-size:14px;
 }
+
 
 /* -------
    Cart 
@@ -1337,14 +1330,6 @@ button:hover{
     right: 8px;
 }
 
-.cart-list .pcs-inc {
-    top: 0;
-    right: 0;
-    font-size: 18px;
-    font-weight:400;
-    line-height: 24px;
-}
-
 .cart-subtotal-content {
     text-align:right;
 }
@@ -1366,9 +1351,6 @@ button:hover{
     text-align: right;
     width: 90%;
     margin: 0 auto 36px;
-}
-
-.cart-total-content {
     justify-content: flex-end;
 }
 
@@ -1397,7 +1379,7 @@ button:hover{
     border-radius: 8px;
 }
 
-.tax::after {
+.cart-tax::after {
     content:'(税込)';
     display: block;
     text-align:right;
@@ -1484,17 +1466,17 @@ button:hover{
 
 /* Guide */
 
-.guide-nav-list {
+.guide-nav ul{
     font-size:14px;
     font-weight:bold;
     margin: 30px 36px 0;
 }
 
-.guide-nav-list:last-child {
+.guide-nav ul:last-child {
     margin-top:12px;
 }
 
-.guide-nav-list li+li{
+.guide-nav li+li{
     margin-top:12px;
 }
 
@@ -1507,7 +1489,6 @@ button:hover{
     display:inline-block;
     font-weight: bold;
 }
-
 
 .guide-content article {
     padding-top: 48px;
@@ -1528,17 +1509,16 @@ button:hover{
     margin-bottom:24px;
 }
 
-.guide-content-list {
+.guide-content ul{
     margin-bottom: 24px;
-    
 }
 
-.guide-content-list li {
+.guide-content li{
     position: relative;
     padding-left:12px;
 }
 
-.guide-content-list li:before{
+.guide-content li:before{
     height:8px;
     width: 8px;
     border-radius:50%;
@@ -1549,7 +1529,6 @@ button:hover{
     left: 0;
     margin: auto;
     content: '';
-
 }
 
 /* 404 */
