@@ -908,7 +908,6 @@ button:hover{
     font-size: 18px;
     height:40px;
     padding:6px 15px;
-
 }
 
 .login-content-text {
@@ -1021,7 +1020,6 @@ button:hover{
     margin-left: 3px;
 }
 
-
 .signupnex-long input
  {
     width: 100%;
@@ -1101,15 +1099,20 @@ button:hover{
     width:fit-content;
     margin:0 auto;
     display: flex;
+    align-items: center;
 }
 
 .product-thumb button {
     margin:0 3px;
     background-color: var(--beige);
+    width: 20px;
+    height: 40px;
+    display: inline-block;
+    padding: 0;
 }
 
 .product-thumb i{
-    font-size:12px;
+    font-size:16px;
     color: var(--lightbrown);
 }
 

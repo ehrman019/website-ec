@@ -2,8 +2,9 @@
 ・pcsのプラスを::afterにする:済
 ・スマホ版pcsのマイナスが押せない->pcsのボタンにheight,widthをつける,z-indexを設定:済
 ・画像のshadow設定:済
-・リファクタリングの続き
+・リファクタリングの続き->search.htmlから:mypage.htmlまで
 ・その他サーバ上での不具合確認
+
 
 
 2024.1.10
