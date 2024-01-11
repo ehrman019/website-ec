@@ -6,18 +6,25 @@ const changeClass = (Elm,before,after) => {
 /* header */
 
 const Header = document.getElementById('header');
-const product = document.querySelectorAll('.product');
 
-/*
-const slideHeader = (set_position) =>{
+
+let set_position = 0;
+
+window.addEventListener('scroll',() =>{
     let now_position = document.documentElement.scrollTop;
     if (set_position  < now_position ) {
         changeClass(Header,'slideDown','slideUp');
     } else if(set_position > now_position) {
         changeClass(Header,'slideUp','slideDown');
     }
-}*/
+    set_position=now_position;
 
+});
+
+
+/*商品ページのみヘッダをスライドする場合
+
+const product = document.querySelectorAll('.product');
 window.addEventListener('scroll', function () {
     if(product !== null){
         product.forEach((elm)=>{
@@ -31,7 +38,7 @@ window.addEventListener('scroll', function () {
             }
         })
     }
-});
+});*/
 
 
 
@@ -44,8 +51,6 @@ const modalclick = document.querySelectorAll('.modalnav');
 const modal = document.getElementById('modal');
 const main = document.getElementById('main');
 const footer = document.getElementById('footer');
-
-
 
 
 const open = (Elm) => {

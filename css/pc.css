@@ -102,6 +102,7 @@
         border-radius: 10%;
         margin: 0 auto;
         display: block;
+        box-shadow: 3px 3px 5px var(--shadow);
     }
     
     .product-list p{
@@ -160,6 +161,7 @@
 
     .category-list img {
         width: 70%;
+        box-shadow: 3px 3px 5px var(--shadow);
     }
 
     
@@ -181,36 +183,6 @@
     .page-nav i {
         font-size: 18px;
         padding: 0 18px;
-    }
-
-
-    /* Default - Animation */
-
-    .slideUp {
-        animation-name: slideUp;
-        animation-duration:0.3s;
-        animation-fill-mode:forwards; 
-    }
-
-    .slideDown {
-        animation: slideDown;
-        animation-duration:0.3s;
-        animation-fill-mode:forwards;
-    }
-
-    @keyframes slideUp {
-        100% {
-            transform: translateY(-100%);
-        }
-    }
-
-    @keyframes slideDown {
-        0%{
-            transform: translateY(-100%);
-        }
-        100% {
-            transform: translateY(0);
-        }
     }
 
     /* Default - Main */
@@ -335,7 +307,7 @@
     /* Home - MV */
 
     .MV-img {
-        box-shadow:10px 10px 15px #b2b2b2;
+        box-shadow:4px 4px 12px var(--shadowMV);
         border-radius: 50px;
         width:90%;
     }
@@ -689,7 +661,7 @@
 
     .product-img img {
         width:500px;
-        box-shadow: 5px 5px 5px #CECDC5;
+        box-shadow: 3px 3px 5px var(--shadow);
     }
 
     .product-thumb i {
@@ -698,7 +670,7 @@
 
     .product-thumb-list img {
         width: 80px;
-        box-shadow:2px 2px 4px #E3E2D9;
+        box-shadow:2px 2px 4px var(--shadow);
         margin: 0 8px;
 
     }
@@ -762,6 +734,11 @@
         left: 15px;
     }
 
+    .product-form .pcs::after {
+        font-size: 28px;
+        right: 13px;
+    }
+
     .product-form .pcs-input {
         width: 120px;
         height: 38px;
@@ -770,6 +747,7 @@
     }
 
     .product-form .pcs-button {
+        height: 38px;
         width: 40px;
     }
 
@@ -821,6 +799,7 @@
 
     .cart-list-img img {
         width: 150px;
+        box-shadow: 3px 3px 5px var(--shadow);
     }
 
     .cart-info {
@@ -851,9 +830,15 @@
         left: 13px;
     }
 
+    .cart-pcs .pcs::after {
+        font-size: 24px;
+        right: 10px;
+    }
+
     .cart-pcs .delete {
         font-size: 16px;
         margin-right: 3px;
+        margin-top: 3px;
 
     }
 
@@ -867,6 +852,7 @@
     }
 
     .cart-list .pcs-button {
+        height: 32px;
         width: 28px;
     }
     
