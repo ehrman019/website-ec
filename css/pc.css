@@ -1085,7 +1085,7 @@
         margin-bottom:32px;
     }
 
-    .footer-sns {
+    .footer-sns ul{
         margin-left:0;
     }
 
@@ -1105,25 +1105,27 @@
         margin:0;
     }
 
-    .footer-right a{
-        font-size:18px;
+    .footer-right ul:first-child {
+        margin-right: 72px;
     }
 
     .footer-right li+li {
         margin-top:18px;
     }
 
-    .footer-right-1 {
-        margin-right: 72px;
+    .footer-right a{
+        font-size:18px;
     }
 
-    .copy {
+    .footer-copy{
         text-align:left;
     }
 
-    .copy p {
+    .footer-copy p {
         font-size:14px;
     }
+
+    /* Footer - TopButton */
 
     .footer-before {
         padding-right:30px;

@@ -1067,7 +1067,9 @@ button:hover{
 }
 
 
-/* ProductPage */
+/* ----------------
+    ProductPage 
+------------------*/
 
 .product-content {
     width:90%;
@@ -1464,7 +1466,9 @@ button:hover{
 }
 
 
-/* Guide */
+/* ----------
+    Guide 
+------------*/
 
 .guide-nav ul{
     font-size:14px;
@@ -1531,7 +1535,10 @@ button:hover{
     content: '';
 }
 
-/* 404 */
+
+/*----------
+    404 
+-----------*/
 
 .notfound-img {
     width:fit-content;
@@ -1576,7 +1583,9 @@ button:hover{
 }
 
 
-/* Footer */
+/*------------
+    Footer 
+-------------*/
 
 .footer-content {
     padding:48px 0;
@@ -1605,24 +1614,24 @@ button:hover{
     margin-bottom:24px;
 }
 
-.sns i{
+.footer-sns i{
     font-size:30px;
     color:var(--lightbrown);
 }
 
-.sns svg{
+.footer-sns svg{
     height:24px;
     fill:var(--lightbrown);
 }
 
-.nav-sns {
+.footer-sns ul{
     display:flex;
     width:fit-content;
-    margin:auto;
+    margin:0 auto;
     align-items:baseline;
 }
 
-.nav-sns li+li{
+.footer-sns li+li{
     margin-left:24px;
 }
 
@@ -1634,32 +1643,31 @@ button:hover{
     display:flex;
     width:fit-content;
     margin:auto;
-} 
+    margin-bottom:64px;
+}
 
-.footer-right a{
-    color:var(--lightbrown);
-    font-size:14px;
+.footer-right ul:first-child {
+    margin-right:48px;
 }
 
 .footer-right li+li {
     margin-top:10px;
 }
 
-.footer-right-1 {
-    margin-right:48px;
+.footer-right a{
+    color:var(--lightbrown);
+    font-size:14px;
 }
 
-.footer-right {
-    margin-bottom:64px;
-}
-
-.copy {
+.footer-copy{
     text-align:center; 
 }
 
-.copy p{
+.footer-copy p{
     font-size:12px;
 }
+
+/* Footer - TopButton */
 
 .footer-before {
     background-color: var(--beige);
