@@ -6,6 +6,7 @@
     .mobile{
         display:none;
     }
+
     .pc{
         display:block;
     }
@@ -188,7 +189,8 @@
     /* Default - Main */
 
     .main section{
-        padding-top:100px;
+        padding-top:24px;
+        margin-bottom: 64px;
  
     }
 
@@ -252,6 +254,7 @@
     }
 
     .header-right-nav-pc p{
+        display: block;
         font-size:12px;
         font-weight: bold;
         color: var(--brown);
@@ -266,7 +269,6 @@
     header:after{
         width:98%;
     }
-
 
 
     /*---------
@@ -341,22 +343,22 @@
 
     /* Home - Info */
 
-    .info-list {
+    .home-info-list {
         width: 90%;
         margin: 48px auto 0;
     }
     
-    .info-list span {
+    .home-info-list span {
         margin-right: 14px;
     }
     
-    .info-list p {
+    .home-info-list p {
         font-size: 20px;
         position: relative;
         margin-bottom: 10px;
     }
     
-    .info-list p::after {
+    .home-info-list p::after {
         background-size: 4px 4px;
         height: 4px;
         width: 100%;
@@ -877,19 +879,15 @@
         margin-bottom: 10px;
     }
 
-    .cart-calc button {
-        font-size: 12px;
-    }
-
     .cart-calc {
         margin-bottom: 36px;
+        
     }
     
     .cart-calc button {
         font-size: 18px;
         padding: 7px 10px;
         border-radius: 10px;
-        display: block;
     }
 
     .cart input[type="submit"] {
@@ -1150,15 +1148,5 @@
         margin-top:10px;
         font-size:20px;
     }
-
-
-
-
-
-
-    
-
-    
-
 
 }

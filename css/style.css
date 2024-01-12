@@ -564,8 +564,11 @@ button:hover{
 /* Default - Main */
 
 .main section{
-    padding-top:64px;
+    padding-top:12px;
+    margin-bottom: 48px
 }
+
+
 
 
 
@@ -706,6 +709,11 @@ button:hover{
 
 /* Home - Seach */
 
+.main .home-search {
+    padding-top: 64px;
+    margin-bottom: 16px;
+}
+
 .home-search{
     display:flex;
     justify-content: flex-end;
@@ -749,7 +757,7 @@ button:hover{
 /* Home - MV */
 
 .MV {
-    margin:0; /* 変更不可 */
+    margin:0 0 24px 0; /* 変更不可 */
     position:relative;
     width:100%;
     text-align:center;
@@ -759,6 +767,7 @@ button:hover{
     margin:0 auto;
     box-shadow:3px 3px 10px var(--shadowMV);
     border-radius:50%;
+    width: 300px;
 }
 
 .MV-content {
@@ -792,22 +801,22 @@ button:hover{
 
 /*  Home - Info  */
 
-.info-list {
+.home-info-list {
     width: 84%;
     margin: 0 auto;
 }
 
-.info-list span {
+.home-info-list span {
     margin-right: 10px;
 }
 
-.info-list p {
+.home-info-list p {
     font-size: 14px;
     position: relative;
     margin-bottom: 6px;
 }
 
-.info-list p::after {
+.home-info-list p::after {
     background-image: radial-gradient(circle closest-side, var(--lightbrown), var(--lightbrown) 60%, transparent 60%, transparent);
     background-size: 4px 3px;
     content: '';
