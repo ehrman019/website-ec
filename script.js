@@ -12,11 +12,16 @@ let set_position = 0;
 
 window.addEventListener('scroll',() =>{
     let now_position = document.documentElement.scrollTop;
-    if (set_position  < now_position ) {
+
+    if(now_position < 1){
+        changeClass(Header,'slideUp','slideDown');
+    }else if (set_position  < now_position ) {
         changeClass(Header,'slideDown','slideUp');
-    } else if(set_position > now_position) {
+    }else if(set_position > now_position) {
         changeClass(Header,'slideUp','slideDown');
     }
+
+    
     set_position=now_position;
 
 });
