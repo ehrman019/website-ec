@@ -28,7 +28,7 @@ html{
 
 body{
     background-color:var(--beige);
-    font-family:'Century Gothic','Lato','Avenir','Zen Kaku Gothic New', sans-serif;
+    font-family:'Century Gothic','League Spartan','Avenir','Zen Kaku Gothic New', sans-serif;
     -webkit-text-size-adjust: 100%;
 }
 
@@ -47,9 +47,9 @@ h1{
     font-size:24px;
     font-weight: bold;
     padding-left:3%;
+    margin: 0;
     color:var(--brown);
     position:relative;
-
 }
 
 h1:before{
@@ -563,14 +563,14 @@ button:hover{
 
 /* Default - Main */
 
-.main section{
-    padding-top:12px;
-    margin-bottom: 48px
+.main section:first-child {
+    margin-top: 56px;
 }
 
-
-
-
+.main section{
+    padding-top:12px;
+    margin-bottom: 36px;
+}
 
 /* ------------
     header 
@@ -710,7 +710,6 @@ button:hover{
 /* Home - Seach */
 
 .main .home-search {
-    padding-top: 64px;
     margin-bottom: 16px;
 }
 

@@ -1,3 +1,8 @@
+2024.1.13
+・リファクタリング:ProductPageまで終了。他h1のmarginを0に変更->main sectionのmargin,paddingの変更(mobile,pc,tablet全て確認)
+
+
+
 2024.1.12
 ・リファクタリング:終了
 ・tablet.css:homeまで終了

@@ -188,16 +188,14 @@
 
     /* Default - Main */
 
+    .main section:first-child{
+        margin-top: 64px;
+    }
+
     .main section{
         padding-top:24px;
         margin-bottom: 64px;
- 
     }
-
-    .main section:last-child{
-        margin-bottom: 64px;
-    }
-    
 
 
     /*-----------
@@ -504,24 +502,8 @@
         font-size: 17px;
         padding: 8px 20px;
     }
-
-    .signup-form-content input[type="text"]::placeholder,
-    .signup-form-content input[type="password"]::placeholder {
-        font-size: 17px;
-    }
     
-    .signup-content-text {
-        text-align:center;
-        margin-top: 36px;
-        font-size: 20px;
-    }
-
-    .contact-form .required-text {
-        font-size: 16px;
-        margin-bottom: 12px;
-    }
-
-
+    
     /* ------------
        SignupNex 
     --------------*/

@@ -185,15 +185,14 @@
 
     /* Default - Main */
 
+    .main section:first-child {
+        margin-top: 48px;
+    }
+
     .main section{
         padding-top:24px;
         margin-bottom: 48px;
     }
-
-    .main section:last-child{
-        margin-bottom: 72px;
-    }
-
 
     /*-----------
        header 
@@ -271,7 +270,7 @@
     /* Home - Search */
 
     .main .home-search {
-        padding-top: 72px;
+        padding-top: 30px;
         margin-bottom: 16px;
     }
 
@@ -362,27 +361,26 @@
 
     .search-content {
         width: 80%;
-        margin: 40px auto 0;
+        margin: 30px auto 0;
     }
 
     .search-title {
-        font-size: 20px;
+        font-size: 18px;
         font-weight: bold;
         color: var(--brown);
-        margin-bottom: 36px;
+        margin-bottom: 32px;
         padding-left: 6px;
         position: relative;
     }
 
     .search-title::after {
-        background-size: 4px 4px;
-        height: 4px;
+        background-size: 3px 3px;
+        height: 3px;
         width: 100%;
-        left: -5px;
     }
 
     .search-keyword {
-        margin-bottom: 64px;
+        margin-bottom: 60px;
     }
 
     .search-keyword-content {
@@ -390,10 +388,10 @@
     }
 
     .search-keyword-content input {
-        height: 42px;
-        padding: 5px 10px;
+        height: 40px;
+        padding: 5px 12px;
         font-size: 18px;
-        width: 300px;
+        width: 250px;
     }
 
     .search-keyword-content i{
@@ -403,16 +401,16 @@
 
     .search-keyword-content button{
         background-color:var(--brown);
-        height:40px;
-        width:40px;
+        height:37px;
+        width:37px;
         border-radius: 10px;
-        margin-left:4px;
+        margin-left:2px;
     }
 
     .search-category .category-list p {
-        font-size: 16px;
+        font-size: 12px;
         font-weight: normal;
-        margin-top: 16px;
+        margin-top: 12px;
     }
 
 
@@ -423,7 +421,7 @@
 
     .login-content {
         width: 80%;
-        margin: 48px auto 56px;
+        margin: 36px auto 48px;
     }
     
     .login-form-content {
@@ -437,17 +435,17 @@
     }
 
     .login-form-content dt{
-        width: 170px;
-        font-size: 20px;
+        width: 150px;
+        font-size: 18px;
     }
     
     .login-form-content input[type="text"],
     .login-form-content input[type="password"] {
         margin-bottom: 0;
-        width:500px;
-        height: 42px;
-        font-size: 17px;
-        padding: 8px 20px;
+        width:300px;
+        height: 40px;
+        font-size: 18px;
+        padding: 6px 16px;
     }
 
     .login-form-content input[type="text"]::placeholder,
@@ -458,7 +456,7 @@
     .login-content-text {
         text-align:center;
         margin-top: 36px;
-        font-size: 20px;
+        font-size: 18px;
     }
 
 
@@ -468,7 +466,7 @@
 
     .signup-content {
         width: 80%;
-        margin: 48px auto 56px;
+        margin: 36px auto 48px;
     }
     
     .signup-form-content {
@@ -482,33 +480,17 @@
     }
 
     .signup-form-content dt{
-        width: 240px;
-        font-size: 18px;
+        width: 200px;
+        font-size: 16px;
     }
     
     .signup-form-content input[type="text"],
     .signup-form-content input[type="password"] {
         margin-bottom: 0;
-        width:500px;
-        height: 42px;
-        font-size: 17px;
-        padding: 8px 20px;
-    }
-
-    .signup-form-content input[type="text"]::placeholder,
-    .signup-form-content input[type="password"]::placeholder {
-        font-size: 17px;
-    }
-    
-    .signup-content-text {
-        text-align:center;
-        margin-top: 36px;
-        font-size: 20px;
-    }
-
-    .contact-form .required-text {
-        font-size: 16px;
-        margin-bottom: 12px;
+        width:360px;
+        height: 38px;
+        font-size: 18px;
+        padding: 8px 14px;
     }
 
 
@@ -531,13 +513,13 @@
     }
     
     .signupnex-content .required-text {
-        font-size: 16px;
-        margin-top: 8px;
+        font-size: 14px;
+        margin-top: 6px;
     }
     
     .signupnex-content input[type="text"],
     .signupnex-content select{
-        height: 44px;
+        height: 40px;
         padding: 6px 16px;
         font-size: 18px;
     }
@@ -561,7 +543,7 @@
     
     .signupnex-content dt {
         width: 100%;
-        font-size: 18px;
+        font-size: 16px;
         margin-bottom: 8px;
     }
     
@@ -576,7 +558,7 @@
     }
     
     .signupnex-name dd {
-        width: 160px;
+        width: 140px;
     }
     
     .signupnex-name dd+dd,
@@ -598,12 +580,11 @@
 
     .signupnex-tel input {
         width: 250px;
-
     }
     
     .signupnex-content .required::after {
-        font-size: 20px;
-        margin-left: 7px;
+        font-size: 16px;
+        margin-left: 4px;
     }
     
     .signupnex-content .optional::after {
@@ -619,12 +600,12 @@
     -------------- */
   
     .mypage-content {
-        margin-top:60px;
+        margin-top:36px;
         margin-left: 72px;
     }
 
     .mypage-list li {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .mypage-list li+li {
