@@ -153,19 +153,21 @@
             <section class="login">
                 <h1 data-title="ログイン">LOGIN</h1>
                 <div class="login-content">
-                    <form method="post" action="">
-                        <div class="login-form-content">
-                            <dl>
-                                <dt><label for="uid">メールアドレス</label></dt>
-                                <dd><input type="text" name="uid"  id="uid" class="login-form-input" size="40" maxlength="32" placeholder="メールアドレス"></dd>
-                            </dl>
-                            <dl>
-                                <dt><label for="pwd">パスワード</label></dt>
-                                <input type="password" name="pwd" id="pwd" size="40" maxlength="32" class="login-form-input" placeholder="パスワード">
-                            </dl>
-                        </div>
-                        <input type="button" onclick=" location.href='./mypage.html' " value="ログイン" class="button-short button">
-                    </form>
+                    <div class="login-form">
+                        <form method="post" action="">
+                            <div class="login-form-content">
+                                <dl>
+                                    <dt><label for="uid">メールアドレス</label></dt>
+                                    <dd><input type="text" name="uid"  id="uid" class="login-form-input" size="40" maxlength="32" placeholder="メールアドレス"></dd>
+                                </dl>
+                                <dl>
+                                    <dt><label for="pwd">パスワード</label></dt>
+                                    <input type="password" name="pwd" id="pwd" size="40" maxlength="32" class="login-form-input" placeholder="パスワード">
+                                </dl>
+                            </div>
+                            <input type="button" onclick=" location.href='./mypage.html' " value="ログイン" class="button-short button">
+                        </form>
+                    </div>
 
                     <p class="login-content-text">アカウント登録が<br class="mobile">お済みでない方は<a href="./signup.html">こちら</a></p>
                 </div>
@@ -175,7 +177,7 @@
     </main>
     
     <footer class="footer" id="footer">
-        <div class="footer-before">
+        <div class="footer-before footer-before-hidden">
             <a href="#" class="footer-before-button">
                 <div class="footer-before-button-content">
                     <i class="fa-solid fa-chevron-up"></i>

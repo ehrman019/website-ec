@@ -47,7 +47,7 @@ h1{
     font-size:24px;
     font-weight: bold;
     padding-left:3%;
-    margin: 0;
+    margin:0 0 24px;
     color:var(--brown);
     position:relative;
 }
@@ -79,7 +79,7 @@ h3 {
     color: var(--darkbrown);
     position:relative;
     padding-left: 20px;
-    margin-bottom: 2px;
+    margin: 0;
 }
 
 h3:before {
@@ -88,7 +88,7 @@ h3:before {
     width: 12px;
     background-color: var(--brown);
     border-radius: 3px;
-    top:0;
+    top: 0;
     bottom:0;
     left:4px;
     margin:auto;
@@ -337,7 +337,7 @@ button:hover{
     grid-template-columns: 1fr 1fr;
     gap: 18px 0;
     width: 90%;
-    margin: 24px auto;
+    margin: 0 auto 24px;
 }
 
 .product-list img {
@@ -350,9 +350,8 @@ button:hover{
 
 .product-list p{
     text-align:center;
-    margin: 3px;
+    margin: 6px;
     font-size: 14px;
-
 }
 
 .product-list span {
@@ -443,7 +442,7 @@ button:hover{
 .page-nav {
     font-size: 16px;
     display: flex;
-    margin: 24px auto;
+    margin: 0 auto;
     width: fit-content;
 }
 
@@ -564,7 +563,7 @@ button:hover{
 /* Default - Main */
 
 .main section:first-child {
-    margin-top: 56px;
+    margin-top: 54px;
 }
 
 .main section{
@@ -833,7 +832,7 @@ button:hover{
 
 .search-content {
     width: 90%;
-    margin: 30px auto 0;
+    margin: 0 auto;
 }
 
 .search-title {
@@ -894,7 +893,11 @@ button:hover{
 
 .login-content {
     width: 80%;
-    margin: 0 auto 48px;
+    margin: 0 auto;
+}
+
+.login-form {
+    margin-bottom: 24px;
 }
 
 .login-form-content {
@@ -920,7 +923,6 @@ button:hover{
 
 .login-content-text {
     text-align:center;
-    margin-top: 24px;
     font-size: 16px;
 }
 
@@ -966,11 +968,15 @@ button:hover{
 
 .signupnex-content {
     width:90%;
-    margin: 48px auto;
+    margin: 0 auto;
+}
+
+.signupnex-content h3{
+    margin-bottom: 6px;
 }
 
 .signupnex-list {
-    margin-bottom: 64px;
+    margin-bottom: 48px;
 }
 
 .signupnex-list-content {
@@ -980,7 +986,6 @@ button:hover{
 
 .signupnex-content .required-text {
     font-size: 14px;
-    margin-top: 6px;
 }
 
 .signupnex-content input[type="text"],
@@ -1061,7 +1066,6 @@ button:hover{
 /* MyPage */
 
 .mypage-content {
-    margin-top: 30px;
     margin-left: 36px;
 }
 
@@ -1081,7 +1085,8 @@ button:hover{
 
 .product-content {
     width:90%;
-    margin: 36px auto 0;
+    margin: 0 auto;
+    padding-top: 24px;
 }
 
 .product-images {
@@ -1411,7 +1416,7 @@ button:hover{
 
 .contact-content {
     width:80%;
-    margin: 30px auto;
+    margin: 0 auto;
 }
 
 .contact-content p{
@@ -1478,14 +1483,18 @@ button:hover{
     Guide 
 ------------*/
 
+.guide-nav {
+    margin-bottom: 36px;
+}
+
 .guide-nav ul{
     font-size:14px;
     font-weight:bold;
-    margin: 30px 36px 0;
+    margin: 0 36px;
 }
 
-.guide-nav ul:last-child {
-    margin-top:12px;
+.guide-nav ul:first-child {
+    margin-bottom:12px;
 }
 
 .guide-nav li+li{
@@ -1497,19 +1506,21 @@ button:hover{
     margin:auto;
 }
 
+.guide-content h3{
+    margin-bottom: 24px;
+}
+
 .guide-content a{
     display:inline-block;
     font-weight: bold;
 }
 
 .guide-content article {
-    padding-top: 48px;
+    padding-top: 12px;
 }
 
 .guide-article {
-    margin-top:30px;
-    margin-left:6%;
-    margin-right:6%;
+    margin: 0 6% 36px;
 }
 
 .guide-article {
@@ -1519,6 +1530,10 @@ button:hover{
 
 .guide-article-text {
     margin-bottom:24px;
+}
+
+.guide-article-text:last-child {
+    margin-bottom: 0;
 }
 
 .guide-content ul{
@@ -1550,7 +1565,7 @@ button:hover{
 
 .notfound-img {
     width:fit-content;
-    margin: 36px auto 0;
+    margin: 0 auto 36px;
     position:relative;
 }
 
@@ -1577,13 +1592,17 @@ button:hover{
 
 .notfound-content {
     width:80%;
-    margin: 48px auto 64px;
+    margin: 0 auto;
 }
 
 .notfound-content p{
     font-size: 16px;
     margin: 0 auto 16px;
     width: fit-content;
+}
+
+.notfound-content p:last-child{
+    margin-bottom: 0;
 }
 
 .notfound-content .notice {
