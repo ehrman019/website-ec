@@ -1,5 +1,6 @@
 2024.1.14
-・リファクタリング:mypageまで終了。->productpageが1080pxくらいのとき大幅にレイアウトが崩れるため、pc.cssを改善する必要あり。
+・リファクタリング:mypageまで終了。->productpageが1080pxくらいのとき大幅にレイアウトが崩れるため、pc.cssを改善する必要あり。->済
+・tablet.css:productpageから
 
 
 2024.1.13
