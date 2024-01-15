@@ -256,8 +256,6 @@ dd {
     right: 0;
 }
 
-
-
 .required-text span {
     color:var(--pink);
 }
@@ -761,7 +759,7 @@ button:hover{
 /* Home - MV */
 
 .MV {
-    margin:0 0 24px 0; /* 変更不可 */
+    margin:0; /* 変更不可 */
     position:relative;
     width:100%;
     text-align:center;
@@ -917,7 +915,7 @@ button:hover{
 }
 
 .login-form-content dl{
-    margin-bottom: 10px;
+    margin: 0 0 18px;
 }
 
 .login-form-content dt{
@@ -943,7 +941,7 @@ button:hover{
 
 .signup-content {
     width: 80%;
-    margin: 24px auto 48px;
+    margin: 0 auto;
 }
 
 .signup-form-content {
@@ -951,12 +949,12 @@ button:hover{
 }
 
 .signup-form-content dl{
-    margin-bottom: 10px;
+    margin: 0 0 18px;
 }
 
 .signup-form-content dt{
     font-size: 16px;
-    margin: 3px 3px;
+    padding: 3px 6px;
 }
 
 .signup-form-content input[type="text"],
@@ -1020,6 +1018,10 @@ button:hover{
     border-radius: 2px;
 }
 
+.signupnex-content dl {
+    margin: 0 0 18px;
+}
+
 .signupnex-content dt {
     width: 100%;
     font-size: 16px;
@@ -1075,7 +1077,9 @@ button:hover{
 }
 
 
-/* MyPage */
+/* ----------
+    MyPage
+------------ */
 
 .mypage-content {
     margin-left: 36px;
@@ -1087,7 +1091,7 @@ button:hover{
 }
 
 .mypage-list li+li {
-    margin-top: 14px;
+    margin-top: 16px;
 }
 
 
@@ -1102,7 +1106,7 @@ button:hover{
 }
 
 .product-images {
-    margin-bottom: 48px;
+    margin-bottom: 36px;
 }
 
 .product-img {
@@ -1165,7 +1169,7 @@ button:hover{
 
 .product-info {
     width: 90%;
-    margin: 0 auto 36px;
+    margin: 0 auto;
 }
 
 .product-text {
@@ -1427,7 +1431,7 @@ button:hover{
 ---------------*/
 
 .contact-content {
-    width:80%;
+    width:84%;
     margin: 0 auto;
 }
 
@@ -1436,11 +1440,12 @@ button:hover{
 }
 
 .contact-content-text {
+    font-size: 16px;
     margin:0 0 36px;
 }
 
 .contact-form {
-    width: 90%;
+    width: 96%;
     margin:auto;
 }
 
@@ -1457,7 +1462,6 @@ button:hover{
 .contact-form input[type="text"] {
     height:40px;
     padding:6px 15px;
-    margin-bottom: 10px;
 }
 
 .contact-form textarea[type="text"] {
@@ -1471,10 +1475,14 @@ button:hover{
     margin-bottom: 10px;
 }
 
+.contact-form dl {
+    margin: 0 0 16px;
+}
+
 .contact-form-content dt{
     color: var(--darkbrown);
-    margin-bottom:4px;
-    margin-left:4px;
+    padding-bottom:4px;
+    padding-left:4px;
     font-size: 16px;
 }
 
@@ -1510,7 +1518,7 @@ button:hover{
 }
 
 .guide-nav li+li{
-    margin-top:12px;
+    margin-top:16px;
 }
 
 .guide-content {
