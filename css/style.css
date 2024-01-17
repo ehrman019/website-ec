@@ -291,7 +291,6 @@ button {
     border:none;
     cursor: pointer;
     transition: 0.5s;
-    width: fit-content;
     -webkit-tap-highlight-color: transparent;
 }
 
