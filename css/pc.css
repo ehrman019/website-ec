@@ -640,6 +640,13 @@
         padding-right: 5%;
         padding-left: auto;
     }
+
+    .product-images-content {
+        padding: 5% 1%;
+        background-color: var(--white);
+        border-radius: 20px;
+    }
+    
     
     .product-img {
         width: 90%;
@@ -654,7 +661,7 @@
     }
 
     .product-thumb i {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .product-thumb-list img {
@@ -765,6 +772,7 @@
     .cart-content {
         display: flex;
         justify-content: flex-end;
+        margin-left: 36px;
     }
 
     .cart-list {
