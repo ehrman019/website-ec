@@ -558,6 +558,112 @@ button:hover{
     }
 }
 
+/* Animation - bar */
+
+.bar1{
+    animation-name:bar1;
+    animation-duration:0.3s;
+    animation-timing-function:ease-in;
+    animation-fill-mode:forwards;
+}
+
+@keyframes bar1{
+    100%{
+        transform: translate(0,7px) rotate(45deg);
+    }
+}
+
+.bar2{
+    animation-name:bar2;
+    animation-duration:0.3s;
+    animation-timing-function:ease-in;
+    animation-fill-mode:forwards;
+}
+
+@keyframes bar2{
+    100%{
+        opacity: 0;
+    }
+}
+
+.bar3{
+    animation-name:bar3;
+    animation-duration:0.3s;
+    animation-timing-function:ease-in;
+    animation-fill-mode:forwards;
+}
+
+@keyframes bar3{
+    100%{
+        transform: translate(0,-7px) rotate(-45deg);
+    }
+}
+
+.bar1-r{
+    animation-name:bar1-r;
+    animation-duration:0.3s;
+    animation-timing-function:ease-in;
+    animation-fill-mode:forwards;
+}
+
+@keyframes bar1-r{
+    0%{
+        transform: translate(0,7px) rotate(45deg);
+    }
+    100%{
+        transform: translate(0,0) rotate(0);
+    }
+}
+
+.bar2-r{
+    animation-name:bar2-r;
+    animation-duration:0.3s;
+    animation-timing-function:ease-in;
+    animation-fill-mode:forwards;
+}
+
+@keyframes bar2-r{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.bar3-r{
+    animation-name:bar3-r;
+    animation-duration:0.3s;
+    animation-timing-function:ease-in;
+    animation-fill-mode:forwards;
+}
+
+@keyframes bar3-r{
+    0%{
+        transform: translate(0,-7px) rotate(-45deg);
+    }  
+    100%{
+        transform: translate(0,0) rotate(0);
+    }
+}
+
+.header-left-nav button {
+    display: inline-block;
+    background-color: transparent;
+    padding: 0;
+    height: 30px;
+}
+
+.bar{
+    background-color: var(--brown);
+    width: 20px;
+    height: 2px;
+    border: 2px solid var(--brown);
+    border-radius: 6px;
+    margin-bottom: 4px;
+}
+
+
 /* Default - Main */
 
 .main section:first-child {
@@ -670,6 +776,7 @@ button:hover{
     display:block;
     padding: 0;
     background-color: transparent;
+    height: 30px;
 }
 
 .modal-button-content i{
