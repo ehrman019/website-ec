@@ -568,7 +568,7 @@ button:hover{
 
 @keyframes bar1{
     100%{
-        transform: translate(0,7px) rotate(45deg);
+        transform: translate(0,6.3px) rotate(45deg);
     }
 }
 
@@ -594,7 +594,7 @@ button:hover{
 
 @keyframes bar3{
     100%{
-        transform: translate(0,-7px) rotate(-45deg);
+        transform: translate(0,-6.3px) rotate(-45deg);
     }
 }
 
@@ -607,7 +607,7 @@ button:hover{
 
 @keyframes bar1-r{
     0%{
-        transform: translate(0,7px) rotate(45deg);
+        transform: translate(0,6.3px) rotate(45deg);
     }
     100%{
         transform: translate(0,0) rotate(0);
@@ -639,7 +639,7 @@ button:hover{
 
 @keyframes bar3-r{
     0%{
-        transform: translate(0,-7px) rotate(-45deg);
+        transform: translate(0,-6.3px) rotate(-45deg);
     }  
     100%{
         transform: translate(0,0) rotate(0);
@@ -655,9 +655,8 @@ button:hover{
 
 .bar{
     background-color: var(--brown);
-    width: 20px;
-    height: 2px;
-    border: 2px solid var(--brown);
+    width: 22px;
+    height: 2.5px;
     border-radius: 6px;
     margin-bottom: 4px;
 }
