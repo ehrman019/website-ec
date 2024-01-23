@@ -66,7 +66,7 @@ window.addEventListener('scroll', function () {
 
 const buttonOpen = document.getElementById('modalOpen');
 const buttonClose = document.getElementById('modalClose');
-const modalclick = document.querySelectorAll('.modalnav');
+const modalNav = document.querySelectorAll('.modalnav');
 
 const modal = document.getElementById('modal');
 const main = document.getElementById('main');
@@ -116,62 +116,25 @@ const modalclose = () => {
     document.removeEventListener('mousewheel', handle, { passive: false });
 }
 
-var y=0;
-buttonOpen.addEventListener('click',()=>{
-    modal.style.display = 'block';
-    y=window.scrollY;
-    modalopen();
-});
-
-buttonClose.addEventListener('click',()=>{
-    modalclose();
-    window.scroll({
-        top:y,
-        behavior:"instant"
-    });
-});
-
-modalclick.forEach(function(Elm){
-    Elm.addEventListener('click',()=>{
-        modalclose();
-    });
-});
-
-const modalButton = document.querySelectorAll('.modal-button');
 const Bar1 = document.querySelectorAll('.bar-1');
 const Bar2 = document.querySelectorAll('.bar-2');
 const Bar3 = document.querySelectorAll('.bar-3');
 
 
-buttonOpen.addEventListener('click',() => {
+const barOpen = () => {
     Bar1.forEach((Elm) => {
-        if(Elm.classList.contains('bar1-r')){
-            replaceClass(Elm,'bar1-r','bar1');
-        }else{
-            Elm.classList.add('bar1');
-        }
-        
+        replaceClass(Elm,'bar1-r','bar1');
     });
     Bar2.forEach((Elm) => {
-        if(Elm.classList.contains('bar2-r')){
-            replaceClass(Elm,'bar2-r','bar2');
-        }else{
-            Elm.classList.add('bar2');
-        }
-        
+        replaceClass(Elm,'bar2-r','bar2');
     });
     Bar3.forEach((Elm) => {
-        if(Elm.classList.contains('bar3-r')){
-            replaceClass(Elm,'bar3-r','bar3');
-        }else{
-            Elm.classList.add('bar3');
-        }
-        
+        replaceClass(Elm,'bar3-r','bar3');
     });
-});
+};
 
 
-buttonClose.addEventListener('click',() => {
+const barClose = () => {
     Bar1.forEach((Elm) => {
         replaceClass(Elm,'bar1','bar1-r');
     });
@@ -181,8 +144,37 @@ buttonClose.addEventListener('click',() => {
     Bar3.forEach((Elm) => {
         replaceClass(Elm,'bar3','bar3-r');
     });
+};
+
+var y=0;
+buttonOpen.addEventListener('click',()=>{
+    modal.style.display = 'block';
+    y=window.scrollY;
+    modalopen();
+    barOpen();
 });
 
+buttonClose.addEventListener('click',()=>{
+    modalclose();
+    barClose();
+    window.scroll({
+        top:y,
+        behavior:"instant"
+    });
+});
+
+modalNav.forEach((Elm) => {
+    Elm.addEventListener('click',() => {
+    barClose();
+    modalclose();
+    })
+});
+
+
+window.addEventListener('beforeunload',()=>{
+    barClose();
+    modalclose();
+});
 
 
 /* Birth */
