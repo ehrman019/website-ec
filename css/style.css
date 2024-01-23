@@ -41,7 +41,7 @@ body{
 }
 
 
-/* Default - h1 h3 p ul */
+/* Default - title and text */
 
 h1{
     font-size:24px;
@@ -50,6 +50,7 @@ h1{
     margin:0 0 24px;
     color:var(--brown);
     position:relative;
+    padding-bottom: 0;
 }
 
 h1:before{
@@ -110,6 +111,7 @@ h3:after {
 p {
     color:var(--darkbrown);
     margin: 0;
+    padding-bottom: 0;
 }
 
 ul{
@@ -665,11 +667,11 @@ button:hover{
 /* Default - Main */
 
 .main section:first-child {
-    margin-top: 54px;
+    margin-top: 18px;
 }
 
 .main section{
-    padding-top:12px;
+    padding-top:64px;
     margin-bottom: 36px;
 }
 
@@ -683,7 +685,7 @@ button:hover{
     top:0;
     left:0;
     background-color:var(--beige);
-    opacity:0.9;
+    opacity:0.85;
     height:auto;
     z-index:3;
 }
@@ -696,7 +698,7 @@ button:hover{
     padding:16px 20px 10px;
     margin:auto;
     font-size:20px;
-    border-bottom:0.4px solid var(--lightbrown)
+    border-bottom:0.4px solid var(--lightbrown);
 }
 
 .header-content i {
@@ -739,7 +741,7 @@ button:hover{
 }
 
 .header-right-nav li+li{
-    margin-left:20%;
+    margin-left:16px;
 }
 
 .header-right-nav i{
@@ -818,6 +820,7 @@ button:hover{
 /* Home - Seach */
 
 .main .home-search {
+    padding-top: 48px;
     margin-bottom: 16px;
 }
 
@@ -1625,7 +1628,7 @@ button:hover{
 }
 
 .guide-nav ul:first-child {
-    margin-bottom:12px;
+    margin-bottom:16px;
 }
 
 .guide-nav li+li{
@@ -1647,8 +1650,7 @@ button:hover{
 }
 
 .guide-content article {
-    padding-top: 12px;
-    margin-bottom: 36px;
+    padding-top:64px;
 }
 
 .guide-article {

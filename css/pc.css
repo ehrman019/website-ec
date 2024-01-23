@@ -187,11 +187,11 @@
     /* Default - Main */
 
     .main section:first-child{
-        margin-top: 90px;
+        margin-top: 24px;
     }
 
     .main section{
-        padding-top:20px;
+        padding-top:84px;
         margin-bottom: 64px;
     }
 
@@ -206,7 +206,7 @@
     }
 
     .header-content{
-        padding:24px 48px 24px 48px;
+        padding:18px 48px;
         margin:0 auto;
         width:98%;
     }
@@ -275,7 +275,7 @@
     /* Home - Search */
 
     .main .home-search {
-        padding-top: 16px;
+        padding-top: 72px;
         margin-bottom: 16px;
     }
 
@@ -981,7 +981,6 @@
         display:flex;
         width:500px;
         margin-left:160px;
-        margin-bottom: 64px;
         justify-content: space-between;
     }
 
@@ -1002,7 +1001,7 @@
     }
 
     .guide-content article {
-        margin-bottom: 64px;
+        padding-top: 96px;
     }
 
     .guide-article {

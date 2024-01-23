@@ -5,9 +5,24 @@ const replaceClass = (Elm,before,after) => {
 
 /* header */
 
+const HeaderContent = document.getElementById('header-content');
+
+window.addEventListener('scroll',() =>{
+    let now_position = document.documentElement.scrollTop;
+
+    if(now_position !== 0){
+        HeaderContent.style.borderBottom='none';
+    }else{
+        HeaderContent.style.borderBottom='0.4px solid var(--lightbrown)'
+    }
+
+});
+
+
+
+/* スクロールでスライドする場合
+
 const Header = document.getElementById('header');
-
-
 let set_position = 0;
 
 window.addEventListener('scroll',() =>{
@@ -24,7 +39,7 @@ window.addEventListener('scroll',() =>{
     
     set_position=now_position;
 
-});
+});*/
 
 
 /*商品ページのみヘッダをスライドする場合
@@ -312,6 +327,11 @@ const getImgIndex = (list) =>{
 }
 
 
+
+
+
+
+
 const productImg = document.getElementById('product-img');
 const productThumbnails = document.getElementById('product-thumb-list');
 const thumbPrev = document.getElementById('thumb-prev');
@@ -332,6 +352,23 @@ if(productImg !== null){
     const images = document.querySelectorAll('.product-img img');
     const num = thumbnails.length;
 
+    const nextImg = () =>{
+        let nowIndex =  getImgIndex(thumbnails);
+    
+            thumbnails[nowIndex].classList.remove('show');
+            images[nowIndex].style.display='block';
+            close(images[nowIndex])
+    
+            nowIndex++;
+            nowIndex%=num;
+    
+            thumbnails[nowIndex].classList.add('show');
+            open(images[nowIndex]);
+    }
+
+    let autoImg = window.setInterval(nextImg,4000);
+
+
     for(var i=0;i<num;i++){
         thumbnails[i].addEventListener('click',function(){
             let nowIndex = getImgIndex(thumbnails);
@@ -343,6 +380,7 @@ if(productImg !== null){
             nowIndex = getImgIndex(thumbnails);
             
             open(images[nowIndex]);
+            window.clearInterval(autoImg);
         });
     }
 
@@ -358,6 +396,9 @@ if(productImg !== null){
 
         thumbnails[nowIndex].classList.add('show');
         open(images[nowIndex]);
+
+        window.clearInterval(autoImg);
+        autoImg = setInterval(nextImg,4000);
     });
 
     thumbNex.addEventListener('click',()=>{
@@ -372,6 +413,9 @@ if(productImg !== null){
 
         thumbnails[nowIndex].classList.add('show');
         open(images[nowIndex]);
+
+        window.clearInterval(autoImg);
+        autoImg = setInterval(nextImg,4000);
     });
 }
 

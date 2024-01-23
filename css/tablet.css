@@ -186,12 +186,12 @@
     /* Default - Main */
 
     .main section:first-child {
-        margin-top: 64px;
+        margin-top: 12px;
     }
 
     .main section{
-        padding-top:24px;
-        margin-bottom: 48px;
+        padding-top:72px;
+
     }
 
     /*-----------
@@ -270,7 +270,7 @@
     /* Home - Search */
 
     .main .home-search {
-        padding-top: 12px;
+        padding-top: 64px;
         margin-bottom: 16px;
     }
 
@@ -956,7 +956,7 @@
         display:flex;
         width:450px;
         margin-left:80px;
-        margin-bottom: 48px;
+        margin-bottom: 0px;
         justify-content: space-between;
     }
 
@@ -977,7 +977,7 @@
     }
 
     .guide-content article {
-        margin-bottom: 64px;
+        padding-top: 72px;
     }
 
     .guide-article {
