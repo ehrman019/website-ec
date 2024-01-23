@@ -173,7 +173,15 @@ modalNav.forEach((Elm) => {
 
 window.addEventListener('beforeunload',()=>{
     barClose();
-    modalclose();
+    Bar1.forEach((Elm) => {
+        Elm.classList.remove('bar1');
+    });
+    Bar2.forEach((Elm) => {
+        Elm.classList.remove('bar2');
+    });
+    Bar3.forEach((Elm) => {
+        Elm.classList.remove('bar3');
+    });
 });
 
 

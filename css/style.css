@@ -661,6 +661,7 @@ button:hover{
     height: 2.5px;
     border-radius: 6px;
     margin-bottom: 4px;
+    transform: translate(0,0);
 }
 
 
