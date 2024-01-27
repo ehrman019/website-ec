@@ -25,16 +25,17 @@
     }
 
     h1:before{
-        background-size: 6px 6px;
-        height: 6px;
+        background-size: 8px 7px;
+        height: 7px;
         width: 100%;
         left:0;
-        top:40px;
+        bottom:23px;
     }
 
     h1::after{
         font-size:18px;
-        margin-top:8px;
+        line-height: 18px;
+        margin-top:12px;
     }
 
     h3 {
@@ -447,15 +448,10 @@
         margin-bottom: 0;
         width:500px;
         height: 42px;
-        font-size: 17px;
-        padding: 8px 20px;
+        font-size: 18px;
+        padding: 8px 14px;
     }
 
-    .login-form-content input[type="text"]::placeholder,
-    .login-form-content input[type="password"]::placeholder {
-        font-size: 17px;
-    }
-    
     .login-content-text {
         text-align:center;
         margin-top: 36px;

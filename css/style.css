@@ -28,7 +28,7 @@ html{
 
 body{
     background-color:var(--beige);
-    font-family:'Century Gothic','League Spartan','Avenir','Zen Kaku Gothic New', sans-serif;
+    font-family:'League Spartan','Century Gothic','Avenir','Zen Kaku Gothic New', sans-serif;
     -webkit-text-size-adjust: 100%;
 }
 
@@ -62,12 +62,13 @@ h1:before{
     width: 100%;
     position:absolute;
     left:0;
-    top:25px;
+    bottom:17px;
 }
 
 h1:after{
     content:attr(data-title);
     font-size:12px;
+    line-height: 12px;
     margin-top:6px;
     color: var(--pink);
     display:block;

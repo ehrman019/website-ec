@@ -19,22 +19,23 @@
 
     h1 {
         font-size:28px;
+        line-height: 28px;
         padding-left:16px;
     }
 
     h1:before{
-        background-size: 4px 4px;
-        height: 4px;
+        background-size: 6px 5px;
+        height: 5px;
         width: 100%;
         left:0;
-        top:30px;
+        bottom:18px;
     }
 
     h1::after{
         font-size:14px;
-        margin-top:4px;
+        line-height: 14px;
+        margin-top:7px;
     }
-
     h3 {
         font-size:20px;
         padding-left: 24px;
