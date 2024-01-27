@@ -193,7 +193,6 @@
 
     .main section{
         padding-top:84px;
-        margin-bottom: 64px;
     }
 
 
@@ -281,8 +280,8 @@
     }
 
     .home-search button {
-        height:40px;
-        width:40px;
+        height:38px;
+        width:38px;
         border-radius: 12px;
         margin-left:4px;
         text-align: center;
@@ -290,13 +289,14 @@
 
     .home-search i {
         font-size: 20px;
-        line-height: 40px;
+        line-height: 38px;
     }
 
     .home-search input {
-        height: 43px;
-        padding: 5px 12px;
+        height: 40px;
+        padding: 6px 12px;
         font-size: 18px;
+        line-height: 20px;
         width: 240px;
     }
 
