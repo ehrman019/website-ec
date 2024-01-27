@@ -221,6 +221,7 @@ dd {
     right: 5px;
     color: var(--lightbrown);
     height: fit-content;
+    font-family: san-serif;
 }
 
 .pcs-input {
@@ -1341,7 +1342,7 @@ button:hover{
 }
 
 .product-form .pcs::after {
-    font-size: 24px;
+    font-size: 20px;
     right: 10px;
 }
 
@@ -1443,6 +1444,7 @@ button:hover{
 .cart-pcs .delete{
     font-size:14px;
     margin-right: 2px;
+    margin-top: 6px;
     color: var(--brown);
     background-color: var(--beige);
     display:inline-block;
@@ -1456,6 +1458,7 @@ button:hover{
 .cart-pcs .pcs-input {
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 0px;
     width: 80px;
     height: 28px;
     border-radius: 8px;
@@ -1472,7 +1475,7 @@ button:hover{
 }/*マイナス*/
 
 .cart-pcs .pcs::after {
-    font-size: 18px;
+    font-size: 16px;
     right: 8px;
 }
 
@@ -1521,7 +1524,8 @@ button:hover{
     color: var(--beige);
     background-color: var(--lightbrown);
     font-size: 14px;
-    padding: 3px 8px;
+    height: 24px;
+    padding: 6px 8px;
     border-radius: 8px;
 }
 

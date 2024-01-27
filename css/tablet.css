@@ -726,7 +726,7 @@
     }
 
     .product-form .pcs::after {
-        font-size: 26px;
+        font-size: 20px;
         right: 10px;
     }
 
@@ -808,14 +808,14 @@
     }
 
     .cart-pcs .pcs::after {
-        font-size: 24px;
-        right: 8px;
+        font-size: 18px;
+        right: 10px;
     }
 
     .cart-pcs .delete {
         font-size: 16px;
         margin-right: 3px;
-        margin-top: 3px;
+        margin-top: 10px;
     }
 
     .cart-list .pcs-input {
@@ -868,6 +868,7 @@
     
     .cart-calc button {
         font-size: 16px;
+        height: 28px;
         padding: 6px 10px;
         border-radius: 10px;
     }
