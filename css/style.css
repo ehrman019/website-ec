@@ -1211,6 +1211,7 @@ button:hover{
 
 .product-content {
     width:90%;
+    max-width: 400px;
     margin: 0 auto;
     padding-top: 24px;
 }
@@ -1221,9 +1222,8 @@ button:hover{
 
 .product-images-content {
     padding: 5% 1%;
-    background-color: var(--white);
     border-radius: 5px;
-    box-shadow: 0 0 6px #fff;
+    
 }
 
 .product-img {

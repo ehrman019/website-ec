@@ -621,6 +621,7 @@
     .product-content {
         padding-top: 1%;
         width: 96%;
+        max-width: 96%;
     }
 
     .product-content-top {
@@ -654,7 +655,7 @@
     }
 
     .product-thumb i {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .product-thumb-list img {
