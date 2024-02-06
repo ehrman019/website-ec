@@ -1208,8 +1208,12 @@ button:hover{
     ProductPage 
 ------------------*/
 
+.main .product {
+    padding-top: 24px;
+}
+
 .product-content {
-    width:90%;
+    width:96%;
     max-width: 400px;
     margin: 0 auto;
     padding-top: 24px;
