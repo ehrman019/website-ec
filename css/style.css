@@ -676,6 +676,10 @@ button:hover{
     padding-top:64px;
 }
 
+.main section:last-child {
+    margin-bottom: 36px;
+}
+
 /* ------------
     header 
 --------------*/
@@ -1050,7 +1054,7 @@ button:hover{
 
 .signup-content {
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto ;
 }
 
 .signup-form-content {

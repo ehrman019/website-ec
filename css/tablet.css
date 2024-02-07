@@ -194,6 +194,10 @@
         padding-top:72px;
     }
 
+    .main section:last-child {
+        margin-bottom: 48px;
+    }
+
     /*-----------
        header 
     ------------*/
@@ -418,7 +422,7 @@
 
     .login-content {
         width: 80%;
-        margin: 36px auto 48px;
+        margin: 36px auto 0px;
     }
     
     .login-form-content {
@@ -463,7 +467,7 @@
 
     .signup-content {
         width: 80%;
-        margin: 36px auto 48px;
+        margin: 36px auto 0px;
     }
     
     .signup-form-content {

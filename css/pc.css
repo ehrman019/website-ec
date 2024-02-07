@@ -194,6 +194,9 @@
     .main section{
         padding-top:84px;
     }
+    .main section:last-child {
+        margin-bottom: 64px;
+    }
 
 
     /*-----------
