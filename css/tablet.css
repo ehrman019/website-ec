@@ -621,6 +621,10 @@
        ProductPage 
     ----------------*/
 
+    .main .product{
+        padding-top: 48px;
+    }
+
     .product-content {
         padding-top: 1%;
         width: 96%;
