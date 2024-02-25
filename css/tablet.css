@@ -72,11 +72,13 @@
     /* Default - link */
 
     .button {
-        font-size: 16px;
+        font-size: 18px;
+        line-height: 18px;
+        border-radius: 12px;
+        padding: 14px 0px 8px;
     }
 
     .button-short {
-        height: 40px;
         width: 200px;
     }
 

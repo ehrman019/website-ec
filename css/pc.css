@@ -76,10 +76,12 @@
 
     .button {
         font-size: 20px;
+        line-height: 20px;
+        padding: 15px 0px 10px;
+        border-radius: 15px;
     }
 
     .button-short {
-        height: 50px;
         width: 250px;
     }
 
