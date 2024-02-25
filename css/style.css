@@ -11,6 +11,8 @@
     --white:#FFFFFF;
     --shadow:#E8E8E3;
     --shadowMV:#A19E8F;
+    --footerbutton-color: var(--lightbrown);
+    --footerbutton-background: transparent;
 }
 
 
@@ -1854,22 +1856,27 @@ button:hover{
 .footer-before-button {
     text-align: center;
     border: 2px solid var(--lightbrown);
+    background-color: var(--footerbutton-background);
     border-radius: 5px;
     height:48px;
     width: 48px;
     display: block;
     text-align: center;
+    transition: 0.5s;
 }
 
 .footer-before-button p{
     margin:0;
     font-size: 14px;
     font-weight: bold;
+    color: var(--footerbutton-color);
+    transition: 0.5s;
 }
 
 .footer-before-button i{
-    color: var(--lightbrown);
+    color: var(--footerbutton-color);
     margin-top:7px;
+    transition: 0.5s;
 }
 
 .footer-before-hidden {

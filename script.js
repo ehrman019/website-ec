@@ -1,3 +1,5 @@
+const root = document.querySelector(':root');
+
 const replaceClass = (Elm,before,after) => {
     Elm.classList.remove(before);
     Elm.classList.add(after);
@@ -7,7 +9,7 @@ const replaceClass = (Elm,before,after) => {
 
 const HeaderContent = document.getElementById('header-content');
 
-window.addEventListener('scroll',() =>{
+window.addEventListener('scroll',() => {
     let now_position = document.documentElement.scrollTop;
 
     if(now_position !== 0){
@@ -146,7 +148,7 @@ const barClose = () => {
     });
 };
 
-var y=0;
+let y=0;
 buttonOpen.addEventListener('click',()=>{
     modal.style.display = 'block';
     y=window.scrollY;
@@ -171,7 +173,7 @@ modalNav.forEach((Elm) => {
 });
 
 
-window.addEventListener('beforeunload',()=>{
+window.addEventListener('beforeunload',() => {
     barClose();
     Bar1.forEach((Elm) => {
         Elm.classList.remove('bar1');
@@ -185,6 +187,24 @@ window.addEventListener('beforeunload',()=>{
 });
 
 
+/* FooterButton */
+
+const footerButton = document.getElementById('footer-before-button');
+
+if(footerButton !== null){
+    footerButton.addEventListener('mouseenter',() => {
+        root.style.setProperty("--footerbutton-color", 'var(--beige)');
+        root.style.setProperty("--footerbutton-background", 'var(--lightbrown)');
+    });
+    footerButton.addEventListener('mouseleave',() => {
+        root.style.setProperty("--footerbutton-color", 'var(--lightbrown)');
+        root.style.setProperty("--footerbutton-background", 'transition');
+    });
+
+}
+
+
+
 /* Birth */
 
 const selectYear = document.getElementById('year');
@@ -195,13 +215,13 @@ const nowYear = new Date().getFullYear();
 const thirtyone = ['1','3','5','7','8','10','12'];
 const thirty = ['4','6','9','11'];
 
-const createList = (l,r,elm,def) =>{
+const createList = (l,r,elm,def) => {
     if(def===undefined){
-        for(var i=l;i<=r;i++){
+        for(let i=l;i<=r;i++){
             elm.innerHTML += `<option value="${i}">${i}</option>`
         }
     }else{
-        for(var i=l;i<=r;i++){
+        for(let i = l; i <= r; i++){
             if(i === def){
                 elm.innerHTML += `<option value="${i}" id="default">${i}</option>`
             }else{
@@ -215,7 +235,7 @@ const createDay = () => {
     let year = selectYear.value;
     let month = selectMonth.value;
     console.log(month);
-    if(year!=='-' && month!=='-'){
+    if(year !==' -' && month !== '-'){
         selectDay.innerHTML = `<option value="" hidden>-</option>`;
         let num = 0;
         if(thirtyone.includes(month)){
@@ -280,11 +300,10 @@ const pcsNum = document.querySelectorAll('.pcs-input');
 
 let sz = pcsNum.length;
 
-for(let i = 0;i < sz;i++) {
+for(let i = 0; i < sz; i++) {
 
     if(pcsNum[i] !== null){
         pcsNum[i].value = 1;
-        
         decButton[i].addEventListener('click',()=>{
             if(pcsNum[i].value>1){
                 pcsNum[i].value--;
@@ -304,8 +323,8 @@ for(let i = 0;i < sz;i++) {
 /* Product Img */
 
 const showimages = (img,thumbnails,imagelist) =>{
-    var i=1;
-    imagelist.forEach((image)=>{
+    let i=1;
+    imagelist.forEach((image) => {
         if(i === 1){
             img.innerHTML += `<img src="${image}" alt="product-img${i}" class="fadeIn">`;
             thumbnails.innerHTML += `<img src="${image}" alt="product-img${i}" class="show">`;
@@ -317,9 +336,9 @@ const showimages = (img,thumbnails,imagelist) =>{
     });
 }
 
-const getImgIndex = (list) =>{
+const getImgIndex = (list) => {
     const num = list.length;
-    for(var i=0;i<num;i++){
+    for(let i = 0; i < num; i++){
         if(list[i].classList.contains('show')){
             return i;
         }
@@ -369,7 +388,7 @@ if(productImg !== null){
     let autoImg = window.setInterval(nextImg,4000);
 
 
-    for(var i=0;i<num;i++){
+    for(let i = 0; i < num; i++){
         thumbnails[i].addEventListener('click',function(){
             let nowIndex = getImgIndex(thumbnails);
             thumbnails[nowIndex].classList.remove('show');
