@@ -345,6 +345,7 @@
     
     .home-info-list span {
         margin-right: 14px;
+        width: 120px;
     }
     
     .home-info-list p {
@@ -1144,13 +1145,13 @@
     .footer-before-button {
         border: 3px solid var(--lightbrown);
         border-radius: 7px;
-        height: 64px;
-        width: 64px;
+        height: 60px;
+        width: 60px;
     }
     
     .footer-before-button p{
         margin:0;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: bold;
     }
     

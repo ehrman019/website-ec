@@ -931,6 +931,9 @@ button:hover{
 
 .home-info-list span {
     margin-right: 10px;
+    display: inline-block;
+    text-align: center;
+    width: 75px;
 }
 
 .home-info-list p {
