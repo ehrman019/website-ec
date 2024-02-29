@@ -58,13 +58,13 @@ h1{
 h1:before{
     background-image: radial-gradient(circle closest-side, var(--lightbrown), var(--lightbrown) 60%, transparent 60%, transparent);
     background-size: 6px 5px;
+    height: 4px;
     content: '';
     display: block;
-    height: 4px;
     width: 100%;
     position:absolute;
     left:0;
-    bottom:17px;
+    bottom:18px;
 }
 
 h1:after{
@@ -82,7 +82,7 @@ h3 {
     font-weight: normal;
     color: var(--darkbrown);
     position:relative;
-    padding-left: 20px;
+    padding-left: 22px;
     margin: 0;
 }
 
@@ -92,8 +92,7 @@ h3:before {
     width: 12px;
     background-color: var(--brown);
     border-radius: 3px;
-    top: 0;
-    bottom:0;
+    top: 2px;
     left:4px;
     margin:auto;
     position:absolute;
@@ -373,6 +372,25 @@ button:hover{
     font-weight: bold;
     color: var(--brown);
     padding-right: 5%;
+    height: 20px;
+}
+
+.product-more a::after {
+    background-image: radial-gradient(circle closest-side, var(--lightbrown), var(--lightbrown) 60%, transparent 60%, transparent);
+    background-size: 6px 5px;
+    height: 4px;
+    content: '';
+    display: block;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.product-more a:hover {
+    opacity: 0.9;
+}
+
+.product-more a:hover::after{
+    opacity: 1;
 }
 
 /* ProductList flex */
@@ -1192,7 +1210,7 @@ button:hover{
 
 .signupnex-content .optional::after {
     font-size: 12px;
-    padding: 1px 4px;
+    padding: 3px 4px 1px;
     border-radius: 5px;
     margin-left: 5px;
 }
@@ -1627,7 +1645,7 @@ button:hover{
 
 .contact-form-content .optional::after {
     font-size: 12px;
-    padding: 2px 5px;
+    padding: 3px 5px 1px;
     border-radius: 5px;
     margin-left: 4px;
 }
